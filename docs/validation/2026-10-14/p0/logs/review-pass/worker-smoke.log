@@ -1,0 +1,5 @@
+Worker binary: /Users/funshow/Desktop/0_funshow/Career/experiments/p0/.artifacts/review/osx-arm64/worker/P0.Worker.dll (sha256=0fc80dcc23797d57f14175dfddf8cb877b0585c3eae075996ef0f19992712a2b)
+PASS: MAF tool loop, approval JSON round-trip, session restart, host receipt continuation
+PASS: approval denial avoids tool execution; host errors return no success result
+PASS: malformed record_note arguments rejected before host side effect
+PASS: repeated calls stop at MAF cap and unresolved tool call fails closed

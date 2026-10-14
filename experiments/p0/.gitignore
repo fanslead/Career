@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+Web/node_modules/
+Web/dist/
+.artifacts/
+.state/

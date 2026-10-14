@@ -1,0 +1,63 @@
+{
+  "activeText": "取消运行",
+  "buttons": [
+    {
+      "disabled": false,
+      "text": "↻ 刷新状态",
+      "top": 34.5
+    },
+    {
+      "disabled": false,
+      "text": "创建并运行 →",
+      "top": 691.09375
+    },
+    {
+      "disabled": false,
+      "text": "P0 复审 C：窄屏键盘顺序，随后取消。8c819cadb9ca4bc79853daefccfa7a19等待审批",
+      "top": 842.09375
+    },
+    {
+      "disabled": false,
+      "text": "P0 复审 B：切换后取消，不产生回执。61c503e2f5314e75ac7c2df60ead5dae已取消",
+      "top": 937.59375
+    },
+    {
+      "disabled": false,
+      "text": "P0 复审 A：断线恢复后只写入一次。225a8a5e57304855a7c661f77d37ce8f已完成",
+      "top": 1033.09375
+    },
+    {
+      "disabled": false,
+      "text": "取消运行",
+      "top": 1535.7890625
+    },
+    {
+      "disabled": false,
+      "text": "拒绝",
+      "top": 1897.7890625
+    },
+    {
+      "disabled": false,
+      "text": "批准并继续",
+      "top": 1897.7890625
+    }
+  ],
+  "sections": [
+    {
+      "height": 323.59375,
+      "selector": ".create-card",
+      "top": 425.5
+    },
+    {
+      "height": 372.5,
+      "selector": ".runs-card",
+      "top": 767.09375
+    },
+    {
+      "height": 1272.1953125,
+      "selector": ".detail-card",
+      "top": 1157.59375
+    }
+  ],
+  "width": 390
+}

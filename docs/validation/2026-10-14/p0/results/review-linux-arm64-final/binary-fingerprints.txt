@@ -1,0 +1,22 @@
+captured_utc=2026-10-14T11:52:07Z
+docker_server_platform=linux/arm64
+target_platform=linux/arm64
+execution_boundary=native arm64 container on arm64 Docker daemon
+image_tag=career-p0-linux-arm64:10.0.400
+image_id=sha256:d876d8f94e19fa90b79cd84d373bd4f9e175c18beb27e6fb28c4d21d315a74bc
+fingerprint_container=career-p0-arm64-fingerprint-20261014T115207Z-6616 (docker run --rm)
+host_sha256:
+07029d29d163cc7d9ad60305400d34aa895593d0e70dfb10a8c48f5365ca10a1  /out/host/P0.Host
+host_elf_architecture:
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Machine:                           AArch64
+worker_sha256:
+6ea8606b8801f363d448850b67dc6c6893a39b6ebac2699b7bd69c87470e4ef0  /out/worker/P0.Worker.dll
+worker_elf_probe:
+Worker is a framework-dependent managed DLL (UseAppHost=false), not a standalone ELF; it runs on the arm64 dotnet runtime.
+readelf: Error: Not an ELF file - it has the wrong magic bytes at the start
+dotnet_runtime_elf_architecture:
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Machine:                           AArch64

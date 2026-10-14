@@ -1,0 +1,19 @@
+{
+  "url": "http://127.0.0.1:63977",
+  "host": "/Users/funshow/Desktop/0_funshow/Career/experiments/p0/.artifacts/review/osx-arm64/host/P0.Host",
+  "worker": "/Users/funshow/Desktop/0_funshow/Career/experiments/p0/.artifacts/review/osx-arm64/worker/P0.Worker.dll",
+  "state": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/review-browser/state",
+  "generations": [
+    {
+      "pid": 5234,
+      "startedUtc": "2026-10-14T11:50:03Z",
+      "terminationRequested": "SIGKILL after both runs WaitingApproval"
+    },
+    {
+      "pid": 6931,
+      "startedUtc": "2026-10-14T11:52:35Z",
+      "terminationRequested": "SIGTERM after browser closed"
+    }
+  ],
+  "cleanedUp": true
+}

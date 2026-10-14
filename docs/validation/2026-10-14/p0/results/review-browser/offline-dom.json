@@ -1,0 +1,19 @@
+{
+  "actions": [
+    {
+      "disabled": true,
+      "text": "取消运行"
+    },
+    {
+      "disabled": true,
+      "text": "拒绝"
+    },
+    {
+      "disabled": true,
+      "text": "批准并继续"
+    }
+  ],
+  "detailRun": "225a8a5e57304855a7c661f77d37ce8f",
+  "notice": "读取 run 状态失败：Failed to fetch。当前内容是上次成功读取的数据，写操作已禁用。",
+  "selected": "P0 复审 A：断线恢复后只写入一次。225a8a5e57304855a7c661f77d37ce8f等待审批"
+}

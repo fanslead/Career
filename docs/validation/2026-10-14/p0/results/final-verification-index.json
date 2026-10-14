@@ -1,0 +1,112 @@
+{
+  "capturedUtc": "2026-10-14T11:23:05.346121+00:00",
+  "scope": "P0 recovery experiment; no complete business implementation or production-release claim",
+  "distinctCases": 23,
+  "totalFinalCaseExecutions": 69,
+  "suites": [
+    {
+      "platform": "macos-arm64",
+      "mode": "native arm64 macOS",
+      "summary": "results/macos-lock-guard-final/summary.json",
+      "summarySha256": "f8599f2eeb3264e73c74f9c461402a6cb4a29acc124baf5ac057979bc5454af9",
+      "executionId": "20261014T110825Z-73573-a574cf9f",
+      "startedUtc": "2026-10-14T11:08:25Z",
+      "finishedUtc": "2026-10-14T11:08:53Z",
+      "passed": 23,
+      "failed": 0,
+      "caseCount": 23,
+      "uncleanOwnedProcessRecords": []
+    },
+    {
+      "platform": "linux-arm64",
+      "mode": "Docker local named volume, arm64",
+      "summary": "results/linux-arm64-volume-final/validation/summary.json",
+      "summarySha256": "f89b504c644a3bb8f76c93e5d686ec804814e8b739d8d79dc33710bfa586cde4",
+      "executionId": "20261014T111031Z-7-aeefc053",
+      "startedUtc": "2026-10-14T11:10:31Z",
+      "finishedUtc": "2026-10-14T11:10:57Z",
+      "passed": 23,
+      "failed": 0,
+      "caseCount": 23,
+      "uncleanOwnedProcessRecords": []
+    },
+    {
+      "platform": "linux-x64",
+      "mode": "Docker local named volume, amd64 emulation on linux/arm64 daemon",
+      "summary": "results/linux-x64-volume-final/validation/summary.json",
+      "summarySha256": "9bec2daacbbe5f8b1b2b3dbe2f8ecba99997d5cde6c9851b8c1ba327689e555b",
+      "executionId": "20261014T111921Z-7-1491fff8",
+      "startedUtc": "2026-10-14T11:19:21Z",
+      "finishedUtc": "2026-10-14T11:20:37Z",
+      "passed": 23,
+      "failed": 0,
+      "caseCount": 23,
+      "uncleanOwnedProcessRecords": []
+    }
+  ],
+  "sourceAndMacBinaryManifest": "results/source-and-macos-binaries.json",
+  "sourceCount": 24,
+  "macBinaryCount": 2,
+  "fingerprintMismatches": [],
+  "protectedFileCount": 3,
+  "protectedFileMismatches": [],
+  "containerResources": [
+    {
+      "platform": "linux-arm64",
+      "resources": {
+        "container": {
+          "name": "career-p0-linux-arm64-20261014T110903Z-74546-26979-validation",
+          "absent": true
+        },
+        "volume": {
+          "name": "career-p0-linux-arm64-20261014T110903Z-74546-26979-results",
+          "absent": true
+        }
+      },
+      "cleanupLog": "results/linux-arm64-volume-final/resource-cleanup.log",
+      "lockfileChecks": [
+        "P0.Host.packages.lock.osx-arm64.json: OK",
+        "P0.Host.packages.lock.linux-arm64.json: OK",
+        "P0.Worker.packages.lock.json: OK"
+      ]
+    },
+    {
+      "platform": "linux-x64",
+      "resources": {
+        "container": {
+          "name": "career-p0-linux-x64-20261014T111329Z-78887-6432-validation",
+          "absent": true
+        },
+        "volume": {
+          "name": "career-p0-linux-x64-20261014T111329Z-78887-6432-results",
+          "absent": true
+        }
+      },
+      "cleanupLog": "results/linux-x64-volume-final/resource-cleanup.log",
+      "lockfileChecks": [
+        "P0.Host.packages.lock.osx-arm64.json: OK",
+        "P0.Host.packages.lock.linux-x64.json: OK",
+        "P0.Worker.packages.lock.json: OK"
+      ]
+    }
+  ],
+  "unsupportedBindMountGuard": {
+    "assertion": "results/linux-arm64-container/diagnostics/lock-guard-bind-rejected/assertion.json",
+    "passed": true
+  },
+  "notValidated": [
+    "real model providers and complete usage accounting",
+    "Windows",
+    "native Linux x64 hardware",
+    "real HTTP/SMTP/shell side effects",
+    "power loss and real disk exhaustion",
+    "cross-version checkpoints and complete backup/restore",
+    "full Task/Attempt/lease and business workflows",
+    "200 percent zoom, narrow-screen, and full keyboard acceptance"
+  ],
+  "versionControl": "No files staged or committed; existing ignore rules retained.",
+  "documentationLocalLinks": {
+    "checked": 83,
+    "missing": []
+  }
+}

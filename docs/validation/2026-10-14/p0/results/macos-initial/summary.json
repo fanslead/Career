@@ -1,0 +1,4391 @@
+{
+  "suite": "P0 process integration",
+  "executionId": "20261014T103927Z-56496-f3a8d79c",
+  "host": "/Users/funshow/Desktop/0_funshow/Career/experiments/p0/.artifacts/osx-arm64/host/P0.Host",
+  "worker": "/Users/funshow/Desktop/0_funshow/Career/experiments/p0/.artifacts/osx-arm64/worker/P0.Worker.dll",
+  "dotnet": "dotnet",
+  "startedUtc": "2026-10-14T10:39:27Z",
+  "finishedUtc": "2026-10-14T10:39:45Z",
+  "passed": 11,
+  "failed": 3,
+  "cases": [
+    {
+      "name": "normal",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:27Z",
+      "details": {
+        "runId": "47f656800d904e898ed38ea299d2ba81",
+        "waiting": {
+          "id": "47f656800d904e898ed38ea299d2ba81",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "f7605a02009a0f6f0492f29b690027787b8c3a55fc6b590fa9d367818d1cc6b3",
+          "argumentsHash": "56b46bb19e407a4b535ec9666cd59b16763e7b748c25f9c6669df9b5aa34eeb7",
+          "workerPid": 56573,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "succeeded": {
+          "id": "47f656800d904e898ed38ea299d2ba81",
+          "status": "Succeeded",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "f7605a02009a0f6f0492f29b690027787b8c3a55fc6b590fa9d367818d1cc6b3",
+          "argumentsHash": "56b46bb19e407a4b535ec9666cd59b16763e7b748c25f9c6669df9b5aa34eeb7",
+          "workerPid": 56576,
+          "modelCalls": 3,
+          "toolCalls": 2,
+          "text": "Completed the requested note. The record_note tool result was: { receiptId = f7605a02009a0f6f0492f29b690027787b8c3a55fc6b590fa9d367818d1cc6b3, text = P0 record a restart-safe note }",
+          "error": null,
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "sseCursor": 4,
+        "sseEventsAfterReconnect": 6
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56498,
+          "processGroupId": 56498,
+          "url": "http://127.0.0.1:49573",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/normal/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/normal/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:27Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:29Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/normal/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/normal/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/normal/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:29Z"
+    },
+    {
+      "name": "denied",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:29Z",
+      "details": {
+        "runId": "e4940908b2d648da914ee21a0c446377",
+        "waiting": {
+          "id": "e4940908b2d648da914ee21a0c446377",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "3d57a79dedc439c2061cfa5b55d9c186755b8394a4c746b9db88aba7a13f143c",
+          "argumentsHash": "1c1192d6e06877fffe97fa1860ba8437bdd2d50d9483aeb6b379ff649a47a3c3",
+          "workerPid": 56579,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "denied": {
+          "id": "e4940908b2d648da914ee21a0c446377",
+          "status": "Denied",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "3d57a79dedc439c2061cfa5b55d9c186755b8394a4c746b9db88aba7a13f143c",
+          "argumentsHash": "1c1192d6e06877fffe97fa1860ba8437bdd2d50d9483aeb6b379ff649a47a3c3",
+          "workerPid": 56584,
+          "modelCalls": 3,
+          "toolCalls": 1,
+          "text": "Completed the requested note. The record_note tool result was: Tool call invocation rejected. P0 host decision",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56578,
+          "processGroupId": 56578,
+          "url": "http://127.0.0.1:49615",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/denied/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/denied/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:29Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:30Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/denied/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/denied/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/denied/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:30Z"
+    },
+    {
+      "name": "invalid-arguments",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:30Z",
+      "details": {
+        "runId": "85f10a98c6fb46038f3b3f53a0a8c185",
+        "failed": {
+          "id": "85f10a98c6fb46038f3b3f53a0a8c185",
+          "status": "Failed",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": null,
+          "argumentsHash": null,
+          "workerPid": 56586,
+          "modelCalls": 0,
+          "toolCalls": 0,
+          "text": "",
+          "error": "record_note requires exactly one non-empty text argument (max 1000).",
+          "receiptCount": 0,
+          "argumentsJson": null
+        },
+        "evidence": {
+          "run": {
+            "status": "Failed",
+            "scenario": "invalid-arguments",
+            "session": {
+              "present": false,
+              "validJson": false,
+              "bytes": 0,
+              "sha256": null
+            },
+            "approval": {
+              "present": false,
+              "validJson": false,
+              "bytes": 0,
+              "sha256": null
+            },
+            "argumentsJson": {
+              "present": false,
+              "validJson": false,
+              "bytes": 0,
+              "sha256": null
+            },
+            "arguments": null,
+            "argumentsHash": null,
+            "decision": null,
+            "operationId": null,
+            "faultInjected": "",
+            "error": "record_note requires exactly one non-empty text argument (max 1000)."
+          },
+          "ledger": null,
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56586"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "Failed",
+              "payload": {
+                "text": "record_note requires exactly one non-empty text argument (max 1000)."
+              }
+            }
+          ],
+          "receiptFile": null,
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [],
+            "staging": [],
+            "quarantine": []
+          }
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56585,
+          "processGroupId": 56585,
+          "url": "http://127.0.0.1:49626",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/invalid-arguments/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/invalid-arguments/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:30Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:30Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/invalid-arguments/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/invalid-arguments/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/invalid-arguments/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:30Z"
+    },
+    {
+      "name": "endless",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:30Z",
+      "details": {
+        "runId": "431edb5a62934bf186e63a59b5dc6fbc",
+        "failed": {
+          "id": "431edb5a62934bf186e63a59b5dc6fbc",
+          "status": "Failed",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": null,
+          "argumentsHash": null,
+          "workerPid": 56588,
+          "modelCalls": 0,
+          "toolCalls": 0,
+          "text": "",
+          "error": "Worker exit=1; P0.Worker failed: System.InvalidOperationException: MAF returned unresolved tool call 'add' after the configured six-iteration loop cap.\n   at P0.Worker.Program.Main() in /Users/funshow/Desktop/0_funshow/Career/experiments/p0/P0.Worker/Program.cs:line 101\n",
+          "receiptCount": 0,
+          "argumentsJson": null
+        },
+        "evidence": {
+          "run": {
+            "status": "Failed",
+            "scenario": "endless",
+            "session": {
+              "present": false,
+              "validJson": false,
+              "bytes": 0,
+              "sha256": null
+            },
+            "approval": {
+              "present": false,
+              "validJson": false,
+              "bytes": 0,
+              "sha256": null
+            },
+            "argumentsJson": {
+              "present": false,
+              "validJson": false,
+              "bytes": 0,
+              "sha256": null
+            },
+            "arguments": null,
+            "argumentsHash": null,
+            "decision": null,
+            "operationId": null,
+            "faultInjected": "",
+            "error": "Worker exit=1; P0.Worker failed: System.InvalidOperationException: MAF returned unresolved tool call 'add' after the configured six-iteration loop cap.\n   at P0.Worker.Program.Main() in /Users/funshow/Desktop/0_funshow/Career/experiments/p0/P0.Worker/Program.cs:line 101\n"
+          },
+          "ledger": null,
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56588"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "Failed",
+              "payload": {
+                "text": "Worker exit=1; P0.Worker failed: System.InvalidOperationException: MAF returned unresolved tool call 'add' after the configured six-iteration loop cap.\n   at P0.Worker.Program.Main() in /Users/funshow/Desktop/0_funshow/Career/experiments/p0/P0.Worker/Program.cs:line 101\n"
+              }
+            }
+          ],
+          "receiptFile": null,
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [],
+            "staging": [],
+            "quarantine": []
+          }
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56587,
+          "processGroupId": 56587,
+          "url": "http://127.0.0.1:49634",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/endless/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/endless/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:30Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:31Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/endless/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/endless/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/endless/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:31Z"
+    },
+    {
+      "name": "approval-restart",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:31Z",
+      "details": {
+        "runId": "1f07f5ad98e44c7cabcebcc1e2bbf390",
+        "waitingBeforeRestart": {
+          "id": "1f07f5ad98e44c7cabcebcc1e2bbf390",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+          "argumentsHash": "5f6cba50827d5775a770dfd79d26a707cf2450c969ba43813b7b6faf8012aab0",
+          "workerPid": 56590,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "checkpointBeforeRestart": {
+          "run": {
+            "status": "WaitingApproval",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "5f6cba50827d5775a770dfd79d26a707cf2450c969ba43813b7b6faf8012aab0",
+            "decision": null,
+            "operationId": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+            "faultInjected": "",
+            "error": null
+          },
+          "ledger": null,
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56590"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            }
+          ],
+          "receiptFile": null,
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "restored": {
+          "id": "1f07f5ad98e44c7cabcebcc1e2bbf390",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+          "argumentsHash": "5f6cba50827d5775a770dfd79d26a707cf2450c969ba43813b7b6faf8012aab0",
+          "workerPid": 56590,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "checkpointAfterRestart": {
+          "run": {
+            "status": "WaitingApproval",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "5f6cba50827d5775a770dfd79d26a707cf2450c969ba43813b7b6faf8012aab0",
+            "decision": null,
+            "operationId": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+            "faultInjected": "",
+            "error": null
+          },
+          "ledger": null,
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56590"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            }
+          ],
+          "receiptFile": null,
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "succeeded": {
+          "id": "1f07f5ad98e44c7cabcebcc1e2bbf390",
+          "status": "Succeeded",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+          "argumentsHash": "5f6cba50827d5775a770dfd79d26a707cf2450c969ba43813b7b6faf8012aab0",
+          "workerPid": 56592,
+          "modelCalls": 3,
+          "toolCalls": 2,
+          "text": "Completed the requested note. The record_note tool result was: { receiptId = 5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5, text = P0 record a restart-safe note }",
+          "error": null,
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "finalPersistenceEvidence": {
+          "run": {
+            "status": "Succeeded",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 1878,
+              "sha256": "3f90d1e68ec947dd1bcbe030c63749997c2d0063f86fbac81f4afdf182161d91"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "5f6cba50827d5775a770dfd79d26a707cf2450c969ba43813b7b6faf8012aab0",
+            "decision": 1,
+            "operationId": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+            "faultInjected": "",
+            "error": null
+          },
+          "ledger": {
+            "id": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+            "state": "Succeeded",
+            "argumentsHash": "5f6cba50827d5775a770dfd79d26a707cf2450c969ba43813b7b6faf8012aab0",
+            "result": {
+              "receiptId": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56590"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56592"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "RunSucceeded",
+              "payload": {
+                "text": "Completed the requested note. The record_note tool result was: { receiptId = 5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5, text = P0 record a restart-safe note }"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5.json",
+                "bytes": 119,
+                "sha256": "eeb8f456802682157b70ad4cd5b4b8dbc50b001293107f348556d18c04fbecf2",
+                "validJson": true,
+                "json": {
+                  "receiptId": "5da0b04b2642298feaabf147f42efd126e3fab2d410759ce91a44835e3f038f5",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI1ZGEwYjA0YjI2NDIyOThmZWFhYmYxNDdmNDJlZmQxMjZlM2ZhYjJkNDEwNzU5Y2U5MWE0NDgzNWUzZjAzOGY1IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56589,
+          "processGroupId": 56589,
+          "url": "http://127.0.0.1:49640",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/approval-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/approval-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:31Z",
+          "terminationRequested": "SIGKILL",
+          "returnCode": -9,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:31Z"
+        },
+        {
+          "generation": 2,
+          "pid": 56591,
+          "processGroupId": 56591,
+          "url": "http://127.0.0.1:49647",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/approval-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/approval-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stderr.log",
+          "startedUtc": "2026-10-14T10:39:31Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:31Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/approval-restart/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/approval-restart/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/approval-restart/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:31Z"
+    },
+    {
+      "name": "fault-before-effect",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": false,
+      "startedUtc": "2026-10-14T10:39:31Z",
+      "error": "PermissionError: [Errno 1] Operation not permitted",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 1257, in run_case\n    result[\"details\"] = function(run_dir, supervisor)\n                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 1211, in <lambda>\n    \"fault-before-effect\": lambda case, supervisor: case_fault_recovery(case, supervisor, \"before-effect\"),\n                                                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 854, in case_fault_recovery\n    supervisor.kill(process, force=True)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 287, in kill\n    self._send_force_kill(process, pgid)\n    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 314, in _send_force_kill\n    os.killpg(pgid, signal.SIGKILL)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\nPermissionError: [Errno 1] Operation not permitted\n",
+      "hostLogsTail": "host-1.stderr.log:\n\nhost-1.stdout.log:\nstics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49657/api/runs/de5997e4c8d847dbbe02bc85b1e249b2 - 200 - application/json;+charset=utf-8 0.1434ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49657/api/runs/de5997e4c8d847dbbe02bc85b1e249b2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49657/api/runs/de5997e4c8d847dbbe02bc85b1e249b2 - 200 - application/json;+charset=utf-8 0.2025ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49657/api/runs/de5997e4c8d847dbbe02bc85b1e249b2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49657/api/runs/de5997e4c8d847dbbe02bc85b1e249b2 - 200 - application/json;+charset=utf-8 0.2238ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 POST http://127.0.0.1:49657/api/runs/de5997e4c8d847dbbe02bc85b1e249b2/decision - application/json 99\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: POST /api/runs/{id}/decision'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[1]\n      Setting HTTP status code 202.\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: POST /api/runs/{id}/decision'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 POST http://127.0.0.1:49657/api/runs/de5997e4c8d847dbbe02bc85b1e249b2/decision - 202 - application/json;+charset=utf-8 4.0882ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49657/api/runs/de5997e4c8d847dbbe02bc85b1e249b2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49657/api/runs/de5997e4c8d847dbbe02bc85b1e249b2 - 200 - application/json;+charset=utf-8 0.2375ms\n",
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56593,
+          "processGroupId": 56593,
+          "url": "http://127.0.0.1:49657",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-before-effect/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-before-effect/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:31Z",
+          "terminationRequested": "already-exited",
+          "returnCode": -9,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:32Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-before-effect/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-before-effect/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-before-effect/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:32Z"
+    },
+    {
+      "name": "fault-after-effect",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:32Z",
+      "details": {
+        "runId": "9a32c57da8894835bc5eee09ab51d983",
+        "fault": "after-effect",
+        "waiting": {
+          "id": "9a32c57da8894835bc5eee09ab51d983",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+          "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+          "workerPid": 56597,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "checkpointAtFault": {
+          "run": {
+            "status": "Executing",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+            "decision": 1,
+            "operationId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+            "faultInjected": "after-effect",
+            "error": null
+          },
+          "ledger": {
+            "id": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+            "state": "Executing",
+            "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56597"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56598"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0.json",
+                "bytes": 119,
+                "sha256": "0de9ee6322843cf038539bd03ed822b49b44aad4f933cc94ebeddebb4b8bd62d",
+                "validJson": true,
+                "json": {
+                  "receiptId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiIyYmQyNTFjOTlmN2VkOTQ0ZWY3NzU2ODQ0YWNjMjM3MzkxNDE5ZGIxOTk2NjJjMDk0OTQ1ZjI2NzgwYjNiYmMwIiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "pausedAtFault": {
+          "id": "9a32c57da8894835bc5eee09ab51d983",
+          "status": "Executing",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+          "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+          "workerPid": 56598,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "unknownAfterRestart": {
+          "id": "9a32c57da8894835bc5eee09ab51d983",
+          "status": "UnknownOutcome",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+          "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+          "workerPid": 56598,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": "host_interrupted_during_tool",
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "unknownAfterIdle": {
+          "id": "9a32c57da8894835bc5eee09ab51d983",
+          "status": "UnknownOutcome",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+          "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+          "workerPid": 56598,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": "host_interrupted_during_tool",
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "unknownPersistenceEvidence": {
+          "run": {
+            "status": "UnknownOutcome",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+            "decision": 1,
+            "operationId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+            "faultInjected": "after-effect",
+            "error": "host_interrupted_during_tool"
+          },
+          "ledger": {
+            "id": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+            "state": "Executing",
+            "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56597"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56598"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0.json",
+                "bytes": 119,
+                "sha256": "0de9ee6322843cf038539bd03ed822b49b44aad4f933cc94ebeddebb4b8bd62d",
+                "validJson": true,
+                "json": {
+                  "receiptId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiIyYmQyNTFjOTlmN2VkOTQ0ZWY3NzU2ODQ0YWNjMjM3MzkxNDE5ZGIxOTk2NjJjMDk0OTQ1ZjI2NzgwYjNiYmMwIiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "succeeded": {
+          "id": "9a32c57da8894835bc5eee09ab51d983",
+          "status": "Succeeded",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+          "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+          "workerPid": 56666,
+          "modelCalls": 3,
+          "toolCalls": 2,
+          "text": "Completed the requested note. The record_note tool result was: { receiptId = 2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0, text = P0 record a restart-safe note }",
+          "error": null,
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "finalPersistenceEvidence": {
+          "run": {
+            "status": "Succeeded",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 1878,
+              "sha256": "2c5f5a658a8f649c81cb1db7b6c943cac061ec5d5feeff090269d2c79ca0dcf8"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+            "decision": 1,
+            "operationId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+            "faultInjected": "",
+            "error": null
+          },
+          "ledger": {
+            "id": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+            "state": "Succeeded",
+            "argumentsHash": "0e7a623d9348bedd0f6130878fab8edf99421bd9fad23ce981921fdd83166943",
+            "result": {
+              "receiptId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56597"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56598"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "OutcomeReconciled",
+              "payload": {
+                "text": "已核对本地完整 receipt，恢复时只回传缓存结果"
+              }
+            },
+            {
+              "seq": 11,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 12,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56666"
+              }
+            },
+            {
+              "seq": 13,
+              "type": "ToolResultReused",
+              "payload": {
+                "text": "已确认的结果被复用，没有再次执行副作用"
+              }
+            },
+            {
+              "seq": 14,
+              "type": "RunSucceeded",
+              "payload": {
+                "text": "Completed the requested note. The record_note tool result was: { receiptId = 2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0, text = P0 record a restart-safe note }"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0.json",
+                "bytes": 119,
+                "sha256": "0de9ee6322843cf038539bd03ed822b49b44aad4f933cc94ebeddebb4b8bd62d",
+                "validJson": true,
+                "json": {
+                  "receiptId": "2bd251c99f7ed944ef7756844acc237391419db199662c094945f26780b3bbc0",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiIyYmQyNTFjOTlmN2VkOTQ0ZWY3NzU2ODQ0YWNjMjM3MzkxNDE5ZGIxOTk2NjJjMDk0OTQ1ZjI2NzgwYjNiYmMwIiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56596,
+          "processGroupId": 56596,
+          "url": "http://127.0.0.1:49666",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-after-effect/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-after-effect/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:32Z",
+          "terminationRequested": "SIGKILL",
+          "returnCode": -9,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:32Z"
+        },
+        {
+          "generation": 2,
+          "pid": 56599,
+          "processGroupId": 56599,
+          "url": "http://127.0.0.1:49676",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-after-effect/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-after-effect/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stderr.log",
+          "startedUtc": "2026-10-14T10:39:32Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:33Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-after-effect/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-after-effect/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/fault-after-effect/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:33Z"
+    },
+    {
+      "name": "receipt-partial",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": false,
+      "startedUtc": "2026-10-14T10:39:33Z",
+      "error": "PermissionError: [Errno 1] Operation not permitted",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 1257, in run_case\n    result[\"details\"] = function(run_dir, supervisor)\n                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 1213, in <lambda>\n    \"receipt-partial\": lambda case, supervisor: case_staged_receipt_recovery(case, supervisor, \"receipt-partial\"),\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 946, in case_staged_receipt_recovery\n    supervisor.kill(process, force=True)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 287, in kill\n    self._send_force_kill(process, pgid)\n    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 314, in _send_force_kill\n    os.killpg(pgid, signal.SIGKILL)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\nPermissionError: [Errno 1] Operation not permitted\n",
+      "hostLogsTail": "host-1.stderr.log:\n\nhost-1.stdout.log:\nstics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49686/api/runs/fbd939b70484417883653cc67f834df2 - 200 - application/json;+charset=utf-8 0.0847ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49686/api/runs/fbd939b70484417883653cc67f834df2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49686/api/runs/fbd939b70484417883653cc67f834df2 - 200 - application/json;+charset=utf-8 0.1473ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49686/api/runs/fbd939b70484417883653cc67f834df2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49686/api/runs/fbd939b70484417883653cc67f834df2 - 200 - application/json;+charset=utf-8 0.2027ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 POST http://127.0.0.1:49686/api/runs/fbd939b70484417883653cc67f834df2/decision - application/json 99\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: POST /api/runs/{id}/decision'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[1]\n      Setting HTTP status code 202.\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: POST /api/runs/{id}/decision'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 POST http://127.0.0.1:49686/api/runs/fbd939b70484417883653cc67f834df2/decision - 202 - application/json;+charset=utf-8 3.3493ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49686/api/runs/fbd939b70484417883653cc67f834df2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49686/api/runs/fbd939b70484417883653cc67f834df2 - 200 - application/json;+charset=utf-8 0.2236ms\n",
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56667,
+          "processGroupId": 56667,
+          "url": "http://127.0.0.1:49686",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-partial/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-partial/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:33Z",
+          "terminationRequested": "already-exited",
+          "returnCode": -9,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:34Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-partial/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-partial/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-partial/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:34Z"
+    },
+    {
+      "name": "receipt-flushed",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": false,
+      "startedUtc": "2026-10-14T10:39:34Z",
+      "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-flushed/runs/20261014T103927Z-56496-f3a8d79c/state/fault-ready'",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 1257, in run_case\n    result[\"details\"] = function(run_dir, supervisor)\n                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 1214, in <lambda>\n    \"receipt-flushed\": lambda case, supervisor: case_staged_receipt_recovery(case, supervisor, \"receipt-flushed\"),\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/funshow/Desktop/0_funshow/Career/experiments/p0/scripts/validate.py\", line 978, in case_staged_receipt_recovery\n    \"faultMarker\": marker.read_text(encoding=\"utf-8\", errors=\"replace\"),\n                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 787, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py\", line 771, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-flushed/runs/20261014T103927Z-56496-f3a8d79c/state/fault-ready'\n",
+      "hostLogsTail": "host-1.stderr.log:\n\nhost-1.stdout.log:\nstics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49695/api/runs/f6273fabba4c478c8bc8001c108e30a2 - 200 - application/json;+charset=utf-8 0.1437ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49695/api/runs/f6273fabba4c478c8bc8001c108e30a2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49695/api/runs/f6273fabba4c478c8bc8001c108e30a2 - 200 - application/json;+charset=utf-8 0.1411ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49695/api/runs/f6273fabba4c478c8bc8001c108e30a2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49695/api/runs/f6273fabba4c478c8bc8001c108e30a2 - 200 - application/json;+charset=utf-8 0.2157ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 POST http://127.0.0.1:49695/api/runs/f6273fabba4c478c8bc8001c108e30a2/decision - application/json 99\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: POST /api/runs/{id}/decision'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[1]\n      Setting HTTP status code 202.\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: POST /api/runs/{id}/decision'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 POST http://127.0.0.1:49695/api/runs/f6273fabba4c478c8bc8001c108e30a2/decision - 202 - application/json;+charset=utf-8 4.2317ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49695/api/runs/f6273fabba4c478c8bc8001c108e30a2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49695/api/runs/f6273fabba4c478c8bc8001c108e30a2 - 200 - application/json;+charset=utf-8 0.1718ms\n\nhost-2.stderr.log:\n\nhost-2.stdout.log:\nsting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49704/api/runs/f6273fabba4c478c8bc8001c108e30a2 - 200 - application/json;+charset=utf-8 0.5564ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 POST http://127.0.0.1:49704/api/runs/f6273fabba4c478c8bc8001c108e30a2/reconcile - - 0\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: POST /api/runs/{id}/reconcile'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[1]\n      Setting HTTP status code 202.\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: POST /api/runs/{id}/reconcile'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 POST http://127.0.0.1:49704/api/runs/f6273fabba4c478c8bc8001c108e30a2/reconcile - 202 - application/json;+charset=utf-8 6.5367ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49704/api/runs/f6273fabba4c478c8bc8001c108e30a2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49704/api/runs/f6273fabba4c478c8bc8001c108e30a2 - 200 - application/json;+charset=utf-8 0.0811ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49704/api/runs/f6273fabba4c478c8bc8001c108e30a2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49704/api/runs/f6273fabba4c478c8bc8001c108e30a2 - 200 - application/json;+charset=utf-8 0.2162ms\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[1]\n      Request starting HTTP/1.1 GET http://127.0.0.1:49704/api/runs/f6273fabba4c478c8bc8001c108e30a2 - - -\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]\n      Executing endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Http.Result.JsonResult[3]\n      Writing value of type 'RunView' as Json.\ninfo: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]\n      Executed endpoint 'HTTP: GET /api/runs/{id}'\ninfo: Microsoft.AspNetCore.Hosting.Diagnostics[2]\n      Request finished HTTP/1.1 GET http://127.0.0.1:49704/api/runs/f6273fabba4c478c8bc8001c108e30a2 - 200 - application/json;+charset=utf-8 0.1817ms\n",
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56671,
+          "processGroupId": 56671,
+          "url": "http://127.0.0.1:49695",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-flushed/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-flushed/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:34Z",
+          "terminationRequested": "SIGKILL",
+          "returnCode": -9,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:34Z"
+        },
+        {
+          "generation": 2,
+          "pid": 56674,
+          "processGroupId": 56674,
+          "url": "http://127.0.0.1:49704",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-flushed/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-flushed/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stderr.log",
+          "startedUtc": "2026-10-14T10:39:34Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:35Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-flushed/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-flushed/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-flushed/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:35Z"
+    },
+    {
+      "name": "receipt-corrupt-json",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:35Z",
+      "details": {
+        "runId": "1b01602460374beca205514348c24f8e",
+        "fault": "after-effect",
+        "corruption": "bad-json",
+        "faultMarker": "after-effect",
+        "waiting": {
+          "id": "1b01602460374beca205514348c24f8e",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+          "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+          "workerPid": 56681,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "evidenceAtFault": {
+          "run": {
+            "status": "Executing",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "decision": 1,
+            "operationId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "faultInjected": "after-effect",
+            "error": null
+          },
+          "ledger": {
+            "id": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "state": "Executing",
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56681"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56684"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd.json",
+                "bytes": 119,
+                "sha256": "5251e4e61a1cb646a3e1c87e526310d39f09ac3e87fc46176ccbb8505cc028fb",
+                "validJson": true,
+                "json": {
+                  "receiptId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiIxZGQxMTUyYjk1ZGY1ZjQ0NDcyNDY0M2Q2NGUyMmY1ZmRhYTk2ODY3ZDg3Y2I5NDgyNDQ5ZjNhMTg0NWM2YmJkIiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "unknownAfterRestart": {
+          "id": "1b01602460374beca205514348c24f8e",
+          "status": "UnknownOutcome",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+          "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+          "workerPid": 56684,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": "host_interrupted_during_tool",
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "unknownPersistenceEvidence": {
+          "run": {
+            "status": "UnknownOutcome",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "decision": 1,
+            "operationId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "faultInjected": "after-effect",
+            "error": "host_interrupted_during_tool"
+          },
+          "ledger": {
+            "id": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "state": "Executing",
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56681"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56684"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd.json",
+                "bytes": 119,
+                "sha256": "5251e4e61a1cb646a3e1c87e526310d39f09ac3e87fc46176ccbb8505cc028fb",
+                "validJson": true,
+                "json": {
+                  "receiptId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiIxZGQxMTUyYjk1ZGY1ZjQ0NDcyNDY0M2Q2NGUyMmY1ZmRhYTk2ODY3ZDg3Y2I5NDgyNDQ5ZjNhMTg0NWM2YmJkIiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "evidenceAfterCorruption": {
+          "run": {
+            "status": "UnknownOutcome",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "decision": 1,
+            "operationId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "faultInjected": "after-effect",
+            "error": "host_interrupted_during_tool"
+          },
+          "ledger": {
+            "id": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "state": "Executing",
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56681"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56684"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            }
+          ],
+          "receiptFile": null,
+          "receiptFileError": "invalid JSON: Expecting value: line 1 column 14 (char 13)",
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd.json",
+                "bytes": 13,
+                "sha256": "e6247a6f998f61ee928fc2b4ad1b932ceedaeca300b6b6b16367b7cba6fd1fbd",
+                "validJson": false,
+                "json": null,
+                "contentUtf8": "{\"receiptId\":",
+                "contentBase64": "eyJyZWNlaXB0SWQiOg=="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "corruptedReceiptBase64": "eyJyZWNlaXB0SWQiOg==",
+        "firstReconcile": {
+          "status": 409,
+          "body": {
+            "error": "cannot_reconcile"
+          }
+        },
+        "quarantinedRun": {
+          "id": "1b01602460374beca205514348c24f8e",
+          "status": "UnknownOutcome",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+          "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+          "workerPid": 56684,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": "receipt_corrupt_or_conflicting",
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "quarantinedEvidence": {
+          "run": {
+            "status": "UnknownOutcome",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "decision": 1,
+            "operationId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "faultInjected": "after-effect",
+            "error": "receipt_corrupt_or_conflicting"
+          },
+          "ledger": {
+            "id": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "state": "Quarantined",
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56681"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56684"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "ReceiptQuarantined",
+              "payload": {
+                "text": "最终回执损坏或内容冲突，保留未知结果并阻止再次执行"
+              }
+            }
+          ],
+          "receiptFile": null,
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [],
+            "staging": [],
+            "quarantine": [
+              {
+                "path": "quarantine/1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd-60fb9f16877842f887f9c39c54e964c7.json",
+                "bytes": 13,
+                "sha256": "e6247a6f998f61ee928fc2b4ad1b932ceedaeca300b6b6b16367b7cba6fd1fbd",
+                "validJson": false,
+                "json": null,
+                "contentUtf8": "{\"receiptId\":",
+                "contentBase64": "eyJyZWNlaXB0SWQiOg=="
+              }
+            ]
+          }
+        },
+        "repeatedReconcile": {
+          "status": 409,
+          "body": {
+            "error": "cannot_reconcile"
+          }
+        },
+        "evidenceAfterRepeatedReconcile": {
+          "run": {
+            "status": "UnknownOutcome",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "decision": 1,
+            "operationId": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "faultInjected": "after-effect",
+            "error": "receipt_corrupt_or_conflicting"
+          },
+          "ledger": {
+            "id": "1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd",
+            "state": "Quarantined",
+            "argumentsHash": "77280cc2d4eec8fbb1a1874a92a7369733eb16231bd55c29a1d7374c294c12a9",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56681"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56684"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "ReceiptQuarantined",
+              "payload": {
+                "text": "最终回执损坏或内容冲突，保留未知结果并阻止再次执行"
+              }
+            }
+          ],
+          "receiptFile": null,
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [],
+            "staging": [],
+            "quarantine": [
+              {
+                "path": "quarantine/1dd1152b95df5f444724643d64e22f5fdaa96867d87cb9482449f3a1845c6bbd-60fb9f16877842f887f9c39c54e964c7.json",
+                "bytes": 13,
+                "sha256": "e6247a6f998f61ee928fc2b4ad1b932ceedaeca300b6b6b16367b7cba6fd1fbd",
+                "validJson": false,
+                "json": null,
+                "contentUtf8": "{\"receiptId\":",
+                "contentBase64": "eyJyZWNlaXB0SWQiOg=="
+              }
+            ]
+          }
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56677,
+          "processGroupId": 56677,
+          "url": "http://127.0.0.1:49725",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-corrupt-json/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-corrupt-json/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:35Z",
+          "terminationRequested": "SIGKILL",
+          "returnCode": -9,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:35Z"
+        },
+        {
+          "generation": 2,
+          "pid": 56685,
+          "processGroupId": 56685,
+          "url": "http://127.0.0.1:49733",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-corrupt-json/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-corrupt-json/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stderr.log",
+          "startedUtc": "2026-10-14T10:39:35Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:36Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-corrupt-json/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-corrupt-json/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-corrupt-json/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:36Z"
+    },
+    {
+      "name": "receipt-conflicting-final",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:36Z",
+      "details": {
+        "runId": "5b7d13a3d12c47a4ab67bd99080d9ed1",
+        "fault": "after-effect",
+        "corruption": "conflicting-content",
+        "faultMarker": "after-effect",
+        "waiting": {
+          "id": "5b7d13a3d12c47a4ab67bd99080d9ed1",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+          "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+          "workerPid": 56689,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "evidenceAtFault": {
+          "run": {
+            "status": "Executing",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "decision": 1,
+            "operationId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "faultInjected": "after-effect",
+            "error": null
+          },
+          "ledger": {
+            "id": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "state": "Executing",
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56689"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56690"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4.json",
+                "bytes": 119,
+                "sha256": "f1ff3b75f7aaaa32adca3d352fc43be516218359352c2f7abf008dc6929acac6",
+                "validJson": true,
+                "json": {
+                  "receiptId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiJlZTBkNTI4ZmRmYTkwZGVjN2VhMjA4MDAxOWRjYjYwMWJjOGI0ZTcxMmUxOTI1YjVhYjkzMTYxNmJjOWVhYmM0IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "unknownAfterRestart": {
+          "id": "5b7d13a3d12c47a4ab67bd99080d9ed1",
+          "status": "UnknownOutcome",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+          "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+          "workerPid": 56690,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": "host_interrupted_during_tool",
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "unknownPersistenceEvidence": {
+          "run": {
+            "status": "UnknownOutcome",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "decision": 1,
+            "operationId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "faultInjected": "after-effect",
+            "error": "host_interrupted_during_tool"
+          },
+          "ledger": {
+            "id": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "state": "Executing",
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56689"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56690"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4.json",
+                "bytes": 119,
+                "sha256": "f1ff3b75f7aaaa32adca3d352fc43be516218359352c2f7abf008dc6929acac6",
+                "validJson": true,
+                "json": {
+                  "receiptId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiJlZTBkNTI4ZmRmYTkwZGVjN2VhMjA4MDAxOWRjYjYwMWJjOGI0ZTcxMmUxOTI1YjVhYjkzMTYxNmJjOWVhYmM0IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "evidenceAfterCorruption": {
+          "run": {
+            "status": "UnknownOutcome",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "decision": 1,
+            "operationId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "faultInjected": "after-effect",
+            "error": "host_interrupted_during_tool"
+          },
+          "ledger": {
+            "id": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "state": "Executing",
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56689"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56690"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "text": "P0 record a restart-safe note [conflict]"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4.json",
+                "bytes": 130,
+                "sha256": "f7dcac857017da7a76f5fe65e7013382e8f384f2a1ff312212271cbdf23ff422",
+                "validJson": true,
+                "json": {
+                  "receiptId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+                  "text": "P0 record a restart-safe note [conflict]"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiJlZTBkNTI4ZmRmYTkwZGVjN2VhMjA4MDAxOWRjYjYwMWJjOGI0ZTcxMmUxOTI1YjVhYjkzMTYxNmJjOWVhYmM0IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIFtjb25mbGljdF0ifQ=="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "corruptedReceiptBase64": "eyJyZWNlaXB0SWQiOiJlZTBkNTI4ZmRmYTkwZGVjN2VhMjA4MDAxOWRjYjYwMWJjOGI0ZTcxMmUxOTI1YjVhYjkzMTYxNmJjOWVhYmM0IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIFtjb25mbGljdF0ifQ==",
+        "firstReconcile": {
+          "status": 409,
+          "body": {
+            "error": "cannot_reconcile"
+          }
+        },
+        "quarantinedRun": {
+          "id": "5b7d13a3d12c47a4ab67bd99080d9ed1",
+          "status": "UnknownOutcome",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+          "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+          "workerPid": 56690,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": "receipt_corrupt_or_conflicting",
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "quarantinedEvidence": {
+          "run": {
+            "status": "UnknownOutcome",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "decision": 1,
+            "operationId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "faultInjected": "after-effect",
+            "error": "receipt_corrupt_or_conflicting"
+          },
+          "ledger": {
+            "id": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "state": "Quarantined",
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56689"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56690"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "ReceiptQuarantined",
+              "payload": {
+                "text": "最终回执损坏或内容冲突，保留未知结果并阻止再次执行"
+              }
+            }
+          ],
+          "receiptFile": null,
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [],
+            "staging": [],
+            "quarantine": [
+              {
+                "path": "quarantine/ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4-be05b62f7a0e464b994cf2f502b1b89b.json",
+                "bytes": 130,
+                "sha256": "f7dcac857017da7a76f5fe65e7013382e8f384f2a1ff312212271cbdf23ff422",
+                "validJson": true,
+                "json": {
+                  "receiptId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+                  "text": "P0 record a restart-safe note [conflict]"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiJlZTBkNTI4ZmRmYTkwZGVjN2VhMjA4MDAxOWRjYjYwMWJjOGI0ZTcxMmUxOTI1YjVhYjkzMTYxNmJjOWVhYmM0IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIFtjb25mbGljdF0ifQ=="
+              }
+            ]
+          }
+        },
+        "repeatedReconcile": {
+          "status": 409,
+          "body": {
+            "error": "cannot_reconcile"
+          }
+        },
+        "evidenceAfterRepeatedReconcile": {
+          "run": {
+            "status": "UnknownOutcome",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "decision": 1,
+            "operationId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "faultInjected": "after-effect",
+            "error": "receipt_corrupt_or_conflicting"
+          },
+          "ledger": {
+            "id": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+            "state": "Quarantined",
+            "argumentsHash": "2c5d8404a92b2c182d942d27116ec8e9172603b26cc3b678ae9955d4b2294bd7",
+            "result": null
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56689"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56690"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "OutcomeUnknown",
+              "payload": {
+                "text": "不自动重放工具，等待核对"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "ReceiptQuarantined",
+              "payload": {
+                "text": "最终回执损坏或内容冲突，保留未知结果并阻止再次执行"
+              }
+            }
+          ],
+          "receiptFile": null,
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [],
+            "staging": [],
+            "quarantine": [
+              {
+                "path": "quarantine/ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4-be05b62f7a0e464b994cf2f502b1b89b.json",
+                "bytes": 130,
+                "sha256": "f7dcac857017da7a76f5fe65e7013382e8f384f2a1ff312212271cbdf23ff422",
+                "validJson": true,
+                "json": {
+                  "receiptId": "ee0d528fdfa90dec7ea2080019dcb601bc8b4e712e1925b5ab931616bc9eabc4",
+                  "text": "P0 record a restart-safe note [conflict]"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiJlZTBkNTI4ZmRmYTkwZGVjN2VhMjA4MDAxOWRjYjYwMWJjOGI0ZTcxMmUxOTI1YjVhYjkzMTYxNmJjOWVhYmM0IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIFtjb25mbGljdF0ifQ=="
+              }
+            ]
+          }
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56688,
+          "processGroupId": 56688,
+          "url": "http://127.0.0.1:49743",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-conflicting-final/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-conflicting-final/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:36Z",
+          "terminationRequested": "SIGKILL",
+          "returnCode": -9,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:37Z"
+        },
+        {
+          "generation": 2,
+          "pid": 56691,
+          "processGroupId": 56691,
+          "url": "http://127.0.0.1:49752",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-conflicting-final/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-conflicting-final/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stderr.log",
+          "startedUtc": "2026-10-14T10:39:37Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:37Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-conflicting-final/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-conflicting-final/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/receipt-conflicting-final/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:37Z"
+    },
+    {
+      "name": "after-ledger-host-restart",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:37Z",
+      "details": {
+        "runId": "07a13a5e0cfa420caff971acfc66d568",
+        "fault": "after-ledger",
+        "faultMarker": "after-ledger",
+        "waiting": {
+          "id": "07a13a5e0cfa420caff971acfc66d568",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+          "argumentsHash": "4a833448d7315facce887e2a90a2c9e7effe6204f5afa8536a6b69e73215871b",
+          "workerPid": 56693,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "pausedAtFault": {
+          "id": "07a13a5e0cfa420caff971acfc66d568",
+          "status": "Running",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+          "argumentsHash": "4a833448d7315facce887e2a90a2c9e7effe6204f5afa8536a6b69e73215871b",
+          "workerPid": 56694,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "evidenceAtFault": {
+          "run": {
+            "status": "Running",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "4a833448d7315facce887e2a90a2c9e7effe6204f5afa8536a6b69e73215871b",
+            "decision": 1,
+            "operationId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+            "faultInjected": "after-ledger",
+            "error": null
+          },
+          "ledger": {
+            "id": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+            "state": "Succeeded",
+            "argumentsHash": "4a833448d7315facce887e2a90a2c9e7effe6204f5afa8536a6b69e73215871b",
+            "result": {
+              "receiptId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56693"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56694"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828.json",
+                "bytes": 119,
+                "sha256": "065223c2373c1a652e420fa6f97cb22a03fb44a597243fc655d3336397cd1c3f",
+                "validJson": true,
+                "json": {
+                  "receiptId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI2Mjg3ZTlkZmE5YzM2OTYyY2JiNTk2M2M3Mjk3MzU3ZTdjNzRhNWNlMzBhYmQ2YmQwNjI3ZTU2ZTFhZDZmODI4IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "succeeded": {
+          "id": "07a13a5e0cfa420caff971acfc66d568",
+          "status": "Succeeded",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+          "argumentsHash": "4a833448d7315facce887e2a90a2c9e7effe6204f5afa8536a6b69e73215871b",
+          "workerPid": 56696,
+          "modelCalls": 3,
+          "toolCalls": 2,
+          "text": "Completed the requested note. The record_note tool result was: { receiptId = 6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828, text = P0 record a restart-safe note }",
+          "error": null,
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "finalPersistenceEvidence": {
+          "run": {
+            "status": "Succeeded",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 1878,
+              "sha256": "d4ba33abff8dc0888397c7ef4d1b7d1b07dc060cb52c672974580e96ab9f3201"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "4a833448d7315facce887e2a90a2c9e7effe6204f5afa8536a6b69e73215871b",
+            "decision": 1,
+            "operationId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+            "faultInjected": "after-ledger",
+            "error": null
+          },
+          "ledger": {
+            "id": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+            "state": "Succeeded",
+            "argumentsHash": "4a833448d7315facce887e2a90a2c9e7effe6204f5afa8536a6b69e73215871b",
+            "result": {
+              "receiptId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56693"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56694"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "RecoveryScheduled",
+              "payload": {
+                "text": "从持久化安全边界恢复"
+              }
+            },
+            {
+              "seq": 11,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 12,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56696"
+              }
+            },
+            {
+              "seq": 13,
+              "type": "ToolResultReused",
+              "payload": {
+                "text": "已确认的结果被复用，没有再次执行副作用"
+              }
+            },
+            {
+              "seq": 14,
+              "type": "RunSucceeded",
+              "payload": {
+                "text": "Completed the requested note. The record_note tool result was: { receiptId = 6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828, text = P0 record a restart-safe note }"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828.json",
+                "bytes": 119,
+                "sha256": "065223c2373c1a652e420fa6f97cb22a03fb44a597243fc655d3336397cd1c3f",
+                "validJson": true,
+                "json": {
+                  "receiptId": "6287e9dfa9c36962cbb5963c7297357e7c74a5ce30abd6bd0627e56e1ad6f828",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI2Mjg3ZTlkZmE5YzM2OTYyY2JiNTk2M2M3Mjk3MzU3ZTdjNzRhNWNlMzBhYmQ2YmQwNjI3ZTU2ZTFhZDZmODI4IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56692,
+          "processGroupId": 56692,
+          "url": "http://127.0.0.1:49762",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-host-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-host-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:37Z",
+          "terminationRequested": "SIGKILL",
+          "returnCode": -9,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:38Z"
+        },
+        {
+          "generation": 2,
+          "pid": 56695,
+          "processGroupId": 56695,
+          "url": "http://127.0.0.1:49771",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-host-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-host-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stderr.log",
+          "startedUtc": "2026-10-14T10:39:38Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:38Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-host-restart/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-host-restart/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-host-restart/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:38Z"
+    },
+    {
+      "name": "before-final-commit-resume",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:38Z",
+      "details": {
+        "runId": "784b4e293522470c887b7d4681dbb74c",
+        "fault": "before-final-commit",
+        "timeoutSeconds": 3,
+        "faultMarker": "before-final-commit",
+        "waiting": {
+          "id": "784b4e293522470c887b7d4681dbb74c",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+          "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+          "workerPid": 56698,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "evidenceAtFault": {
+          "run": {
+            "status": "Running",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+            "decision": 1,
+            "operationId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "faultInjected": "",
+            "error": null
+          },
+          "ledger": {
+            "id": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "state": "Succeeded",
+            "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+            "result": {
+              "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56698"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56700"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7.json",
+                "bytes": 119,
+                "sha256": "2964b0c0d6ad472c6f7e5ae51d9d2f30bac1c43aad5ddf458afe1f9b9cabb91b",
+                "validJson": true,
+                "json": {
+                  "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI2NDMwMjMwN2ViN2JhNzNjY2U4ZTRlNzViYWY2NWEwYjg1Yzk1ZWYzMTUzNTAwZDQ0ZTE0OWQ2MTNhNzUyZWE3IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "finalizationPending": {
+          "id": "784b4e293522470c887b7d4681dbb74c",
+          "status": "FinalizationPending",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+          "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+          "workerPid": 56700,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": "worker_cancelled_or_timed_out",
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "pendingEvidence": {
+          "run": {
+            "status": "FinalizationPending",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+            "decision": 1,
+            "operationId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "faultInjected": "",
+            "error": "worker_cancelled_or_timed_out"
+          },
+          "ledger": {
+            "id": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "state": "Succeeded",
+            "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+            "result": {
+              "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56698"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56700"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "FinalizationPending",
+              "payload": {
+                "text": "worker_cancelled_or_timed_out"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7.json",
+                "bytes": 119,
+                "sha256": "2964b0c0d6ad472c6f7e5ae51d9d2f30bac1c43aad5ddf458afe1f9b9cabb91b",
+                "validJson": true,
+                "json": {
+                  "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI2NDMwMjMwN2ViN2JhNzNjY2U4ZTRlNzViYWY2NWEwYjg1Yzk1ZWYzMTUzNTAwZDQ0ZTE0OWQ2MTNhNzUyZWE3IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "resumeResponse": {
+          "status": 202,
+          "body": {
+            "id": "784b4e293522470c887b7d4681dbb74c",
+            "status": "Running",
+            "prompt": "P0 record a restart-safe note",
+            "operationId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+            "workerPid": 56771,
+            "modelCalls": 2,
+            "toolCalls": 1,
+            "text": "",
+            "error": null,
+            "receiptCount": 1,
+            "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+          }
+        },
+        "succeeded": {
+          "id": "784b4e293522470c887b7d4681dbb74c",
+          "status": "Succeeded",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+          "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+          "workerPid": 56771,
+          "modelCalls": 3,
+          "toolCalls": 2,
+          "text": "Completed the requested note. The record_note tool result was: { receiptId = 64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7, text = P0 record a restart-safe note }",
+          "error": null,
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "finalPersistenceEvidence": {
+          "run": {
+            "status": "Succeeded",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 1878,
+              "sha256": "96afafe3a3623915fd4479fbb64fa7b3108b4284ca8efe789f8279ae28f1f0db"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+            "decision": 1,
+            "operationId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "faultInjected": "",
+            "error": null
+          },
+          "ledger": {
+            "id": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "state": "Succeeded",
+            "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+            "result": {
+              "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56698"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56700"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "FinalizationPending",
+              "payload": {
+                "text": "worker_cancelled_or_timed_out"
+              }
+            },
+            {
+              "seq": 11,
+              "type": "FinalizationResumed",
+              "payload": {
+                "text": "工具已成功，仅继续整理结果；副作用不会再次执行"
+              }
+            },
+            {
+              "seq": 12,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 13,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56771"
+              }
+            },
+            {
+              "seq": 14,
+              "type": "ToolResultReused",
+              "payload": {
+                "text": "已确认的结果被复用，没有再次执行副作用"
+              }
+            },
+            {
+              "seq": 15,
+              "type": "RunSucceeded",
+              "payload": {
+                "text": "Completed the requested note. The record_note tool result was: { receiptId = 64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7, text = P0 record a restart-safe note }"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7.json",
+                "bytes": 119,
+                "sha256": "2964b0c0d6ad472c6f7e5ae51d9d2f30bac1c43aad5ddf458afe1f9b9cabb91b",
+                "validJson": true,
+                "json": {
+                  "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI2NDMwMjMwN2ViN2JhNzNjY2U4ZTRlNzViYWY2NWEwYjg1Yzk1ZWYzMTUzNTAwZDQ0ZTE0OWQ2MTNhNzUyZWE3IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "rejectedRepeatResume": {
+          "status": 409,
+          "body": {
+            "error": "cannot_resume_finalization"
+          }
+        },
+        "evidenceAfterRejectedRepeatResume": {
+          "run": {
+            "status": "Succeeded",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 1878,
+              "sha256": "96afafe3a3623915fd4479fbb64fa7b3108b4284ca8efe789f8279ae28f1f0db"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+            "decision": 1,
+            "operationId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "faultInjected": "",
+            "error": null
+          },
+          "ledger": {
+            "id": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "state": "Succeeded",
+            "argumentsHash": "164e9384674d456b04aa6d52dcd280ddd6859189bfa645bd6c3b71d4ce2b9f25",
+            "result": {
+              "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56698"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56700"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "FinalizationPending",
+              "payload": {
+                "text": "worker_cancelled_or_timed_out"
+              }
+            },
+            {
+              "seq": 11,
+              "type": "FinalizationResumed",
+              "payload": {
+                "text": "工具已成功，仅继续整理结果；副作用不会再次执行"
+              }
+            },
+            {
+              "seq": 12,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 13,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56771"
+              }
+            },
+            {
+              "seq": 14,
+              "type": "ToolResultReused",
+              "payload": {
+                "text": "已确认的结果被复用，没有再次执行副作用"
+              }
+            },
+            {
+              "seq": 15,
+              "type": "RunSucceeded",
+              "payload": {
+                "text": "Completed the requested note. The record_note tool result was: { receiptId = 64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7, text = P0 record a restart-safe note }"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7.json",
+                "bytes": 119,
+                "sha256": "2964b0c0d6ad472c6f7e5ae51d9d2f30bac1c43aad5ddf458afe1f9b9cabb91b",
+                "validJson": true,
+                "json": {
+                  "receiptId": "64302307eb7ba73cce8e4e75baf65a0b85c95ef3153500d44e149d613a752ea7",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI2NDMwMjMwN2ViN2JhNzNjY2U4ZTRlNzViYWY2NWEwYjg1Yzk1ZWYzMTUzNTAwZDQ0ZTE0OWQ2MTNhNzUyZWE3IiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56697,
+          "processGroupId": 56697,
+          "url": "http://127.0.0.1:49778",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/before-final-commit-resume/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/before-final-commit-resume/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:38Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:42Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/before-final-commit-resume/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/before-final-commit-resume/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/before-final-commit-resume/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:42Z"
+    },
+    {
+      "name": "after-ledger-worker-death-timeout-restart",
+      "executionId": "20261014T103927Z-56496-f3a8d79c",
+      "ok": true,
+      "startedUtc": "2026-10-14T10:39:42Z",
+      "details": {
+        "runId": "197e8ae9395247319882023c12fbb6a1",
+        "fault": "after-ledger",
+        "failure": "worker-killed-and-timeout",
+        "timeoutSeconds": 3,
+        "faultMarker": "after-ledger",
+        "waiting": {
+          "id": "197e8ae9395247319882023c12fbb6a1",
+          "status": "WaitingApproval",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+          "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+          "workerPid": 56773,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 0,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "pausedAtFault": {
+          "id": "197e8ae9395247319882023c12fbb6a1",
+          "status": "Running",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+          "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+          "workerPid": 56774,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": null,
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "killedWorkerPid": 56774,
+        "evidenceAtFault": {
+          "run": {
+            "status": "Running",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+            "decision": 1,
+            "operationId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+            "faultInjected": "after-ledger",
+            "error": null
+          },
+          "ledger": {
+            "id": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+            "state": "Succeeded",
+            "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+            "result": {
+              "receiptId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56773"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56774"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d.json",
+                "bytes": 119,
+                "sha256": "02b743775a70ca6b6b7d979865ae4bd5eb8407d9b9b3f053d311f8ede75f691c",
+                "validJson": true,
+                "json": {
+                  "receiptId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI4NmRiYzZiZjgzMWVjYzIxMmIyMjY4M2NhOGExMGU1NGQyNTlkNjhlM2M1MWIwMGRjNmJiN2U2ZjhkYmE1YTlkIiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "finalizationPending": {
+          "id": "197e8ae9395247319882023c12fbb6a1",
+          "status": "FinalizationPending",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+          "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+          "workerPid": 56774,
+          "modelCalls": 2,
+          "toolCalls": 1,
+          "text": "",
+          "error": "worker_cancelled_or_timed_out",
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "pendingEvidence": {
+          "run": {
+            "status": "FinalizationPending",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 986,
+              "sha256": "4a313f346b228921cacfb52641952134066754c1765d09286affe0ba90ddc1d5"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+            "decision": 1,
+            "operationId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+            "faultInjected": "after-ledger",
+            "error": "worker_cancelled_or_timed_out"
+          },
+          "ledger": {
+            "id": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+            "state": "Succeeded",
+            "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+            "result": {
+              "receiptId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56773"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56774"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "FinalizationPending",
+              "payload": {
+                "text": "worker_cancelled_or_timed_out"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d.json",
+                "bytes": 119,
+                "sha256": "02b743775a70ca6b6b7d979865ae4bd5eb8407d9b9b3f053d311f8ede75f691c",
+                "validJson": true,
+                "json": {
+                  "receiptId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI4NmRiYzZiZjgzMWVjYzIxMmIyMjY4M2NhOGExMGU1NGQyNTlkNjhlM2M1MWIwMGRjNmJiN2U2ZjhkYmE1YTlkIiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        },
+        "succeededAfterHostRestart": {
+          "id": "197e8ae9395247319882023c12fbb6a1",
+          "status": "Succeeded",
+          "prompt": "P0 record a restart-safe note",
+          "operationId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+          "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+          "workerPid": 56851,
+          "modelCalls": 3,
+          "toolCalls": 2,
+          "text": "Completed the requested note. The record_note tool result was: { receiptId = 86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d, text = P0 record a restart-safe note }",
+          "error": null,
+          "receiptCount": 1,
+          "argumentsJson": "{\"text\":\"P0 record a restart-safe note\"}"
+        },
+        "finalPersistenceEvidence": {
+          "run": {
+            "status": "Succeeded",
+            "scenario": "normal",
+            "session": {
+              "present": true,
+              "validJson": true,
+              "bytes": 1878,
+              "sha256": "ae6094a7634e49cea69b0b6a61bbae4fe9bf5ff7720abfc7a6871490dfb3008e"
+            },
+            "approval": {
+              "present": true,
+              "validJson": true,
+              "bytes": 219,
+              "sha256": "c914aa9b0a0b0842f507e5bd97a5179423c17f72d1c19688e19cd40a8cb971a9"
+            },
+            "argumentsJson": {
+              "present": true,
+              "validJson": true,
+              "bytes": 40,
+              "sha256": "d8ea6b47591fb5c24183d071880fffa5ac90b6791b5076c8ed079790c28e815d"
+            },
+            "arguments": {
+              "text": "P0 record a restart-safe note"
+            },
+            "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+            "decision": 1,
+            "operationId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+            "faultInjected": "after-ledger",
+            "error": null
+          },
+          "ledger": {
+            "id": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+            "state": "Succeeded",
+            "argumentsHash": "8e4549ac2ea00ae38c105e10638de594a20937b2f96015df71b163feebc31060",
+            "result": {
+              "receiptId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+              "text": "P0 record a restart-safe note"
+            }
+          },
+          "events": [
+            {
+              "seq": 1,
+              "type": "RunQueued",
+              "payload": {
+                "text": "真实 MAF + 可控模型替身"
+              }
+            },
+            {
+              "seq": 2,
+              "type": "RunStarted",
+              "payload": {
+                "text": "创建 MAF 会话"
+              }
+            },
+            {
+              "seq": 3,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56773"
+              }
+            },
+            {
+              "seq": 4,
+              "type": "ApprovalRequested",
+              "payload": {
+                "text": "工具尚未执行；请求、参数 hash 与 MAF 会话已保存"
+              }
+            },
+            {
+              "seq": 5,
+              "type": "ApprovalGranted",
+              "payload": {
+                "text": "已绑定不可变操作与参数 hash"
+              }
+            },
+            {
+              "seq": 6,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 7,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56774"
+              }
+            },
+            {
+              "seq": 8,
+              "type": "ToolExecuting",
+              "payload": {
+                "text": "意图已持久化，开始已批准的本地测试写入"
+              }
+            },
+            {
+              "seq": 9,
+              "type": "ToolCompleted",
+              "payload": {
+                "text": "测试 receipt 已持久化，结果已记账"
+              }
+            },
+            {
+              "seq": 10,
+              "type": "FinalizationPending",
+              "payload": {
+                "text": "worker_cancelled_or_timed_out"
+              }
+            },
+            {
+              "seq": 11,
+              "type": "RecoveryScheduled",
+              "payload": {
+                "text": "从持久化安全边界恢复"
+              }
+            },
+            {
+              "seq": 12,
+              "type": "RunStarted",
+              "payload": {
+                "text": "从已保存的 MAF 会话恢复"
+              }
+            },
+            {
+              "seq": 13,
+              "type": "WorkerStarted",
+              "payload": {
+                "text": "pid=56851"
+              }
+            },
+            {
+              "seq": 14,
+              "type": "ToolResultReused",
+              "payload": {
+                "text": "已确认的结果被复用，没有再次执行副作用"
+              }
+            },
+            {
+              "seq": 15,
+              "type": "RunSucceeded",
+              "payload": {
+                "text": "Completed the requested note. The record_note tool result was: { receiptId = 86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d, text = P0 record a restart-safe note }"
+              }
+            }
+          ],
+          "receiptFile": {
+            "receiptId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+            "text": "P0 record a restart-safe note"
+          },
+          "receiptFileError": null,
+          "receiptArtifacts": {
+            "receipts": [
+              {
+                "path": "receipts/86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d.json",
+                "bytes": 119,
+                "sha256": "02b743775a70ca6b6b7d979865ae4bd5eb8407d9b9b3f053d311f8ede75f691c",
+                "validJson": true,
+                "json": {
+                  "receiptId": "86dbc6bf831ecc212b22683ca8a10e54d259d68e3c51b00dc6bb7e6f8dba5a9d",
+                  "text": "P0 record a restart-safe note"
+                },
+                "contentUtf8": null,
+                "contentBase64": "eyJyZWNlaXB0SWQiOiI4NmRiYzZiZjgzMWVjYzIxMmIyMjY4M2NhOGExMGU1NGQyNTlkNjhlM2M1MWIwMGRjNmJiN2U2ZjhkYmE1YTlkIiwidGV4dCI6IlAwIHJlY29yZCBhIHJlc3RhcnQtc2FmZSBub3RlIn0="
+              }
+            ],
+            "staging": [],
+            "quarantine": []
+          }
+        }
+      },
+      "processes": [
+        {
+          "generation": 1,
+          "pid": 56772,
+          "processGroupId": 56772,
+          "url": "http://127.0.0.1:49825",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-worker-death-timeout-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-worker-death-timeout-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-1.stderr.log",
+          "startedUtc": "2026-10-14T10:39:42Z",
+          "terminationRequested": "SIGKILL",
+          "returnCode": -9,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:45Z"
+        },
+        {
+          "generation": 2,
+          "pid": 56849,
+          "processGroupId": 56849,
+          "url": "http://127.0.0.1:49868",
+          "stdoutLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-worker-death-timeout-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stdout.log",
+          "stderrLog": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-worker-death-timeout-restart/runs/20261014T103927Z-56496-f3a8d79c/logs/host-2.stderr.log",
+          "startedUtc": "2026-10-14T10:39:45Z",
+          "terminationRequested": "SIGTERM",
+          "returnCode": 0,
+          "groupPresentAfterCleanup": false,
+          "cleanupCompletedUtc": "2026-10-14T10:39:45Z"
+        }
+      ],
+      "runDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-worker-death-timeout-restart/runs/20261014T103927Z-56496-f3a8d79c",
+      "logsDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-worker-death-timeout-restart/runs/20261014T103927Z-56496-f3a8d79c/logs",
+      "stateDirectory": "/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/macos-initial/cases/after-ledger-worker-death-timeout-restart/runs/20261014T103927Z-56496-f3a8d79c/state",
+      "finishedUtc": "2026-10-14T10:39:45Z"
+    }
+  ]
+}

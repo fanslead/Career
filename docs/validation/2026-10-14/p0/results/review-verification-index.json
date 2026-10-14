@@ -1,0 +1,48 @@
+{
+  "capturedUtc": "2026-10-14T11:57:30.941560+00:00",
+  "distinctIntegrationCases": 23,
+  "integrationExecutions": 69,
+  "platforms": [
+    {
+      "platform": "macos-arm64",
+      "summary": "results/review-macos-final/summary.json",
+      "sha256": "cb7d780045e843bdaa576c5bcab3f18ad768c7b8a8cde9cef2d450908e052b8b",
+      "executionId": "20261014T114902Z-4457-e46087ff",
+      "passed": 23,
+      "failed": 0,
+      "uncleanOwnedProcesses": []
+    },
+    {
+      "platform": "linux-arm64",
+      "summary": "results/review-linux-arm64-final/validation/summary.json",
+      "sha256": "3014de9696ee3bf4f1c8de549dffe12345cb447e3fa4bc07d2c41a68f0f560c7",
+      "executionId": "20261014T115119Z-7-f8fa7323",
+      "passed": 23,
+      "failed": 0,
+      "uncleanOwnedProcesses": []
+    },
+    {
+      "platform": "linux-x64-emulated",
+      "summary": "results/review-linux-x64-final/validation/summary.json",
+      "sha256": "29dfaffcca7d1d97f9147b81b23fdefbbd05d7535de2bf473cfc388bdf25f68c",
+      "executionId": "20261014T115456Z-7-ba5ab08b",
+      "passed": 23,
+      "failed": 0,
+      "uncleanOwnedProcesses": []
+    }
+  ],
+  "targetedTests": {
+    "webReadGate": 4,
+    "workerDeadlineAndCleanup": 2,
+    "validationDriver": 10
+  },
+  "workerSmokeGroups": 4,
+  "browserSummary": "results/review-browser/summary.json",
+  "sourceManifest": "results/review-source-and-macos-binaries.json",
+  "protectedFilesUnchanged": [
+    ".gitignore",
+    ".DS_Store",
+    ".vscode/settings.json"
+  ],
+  "scope": "P0 only. Real MAF with deterministic model and isolated receipt files. No full business development. Local Git commit authorized; no push."
+}

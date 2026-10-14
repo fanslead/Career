@@ -1,0 +1,3 @@
+sourceHostTargets=net10.0,net10.0/osx-arm64
+linuxHostTargets=net10.0,net10.0/linux-arm64
+workerTargets=net10.0

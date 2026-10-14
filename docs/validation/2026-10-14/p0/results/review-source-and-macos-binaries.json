@@ -1,0 +1,43 @@
+{
+  "capturedUtc": "2026-10-14T11:57:30.941560+00:00",
+  "sources": {
+    "experiments/p0/.dockerignore": "df641f02e7ace2b411c683b87f438011c376bbdebad2aeb93d3ef277ead8639b",
+    "experiments/p0/.gitignore": "26dbb75337a2c3a252465c3841297a5478a64d284dbbca33226f6962115100cb",
+    "experiments/p0/Dockerfile": "827a698b29e3db7c5b86d130a1e87f7bd7896f5bd8e244bfa11f8763d41080cf",
+    "experiments/p0/P0.Host/Contracts.cs": "084fa79fc7ea42f71043aa5aabeab1dafe21fb2e17e6e4589bff23101b20d80e",
+    "experiments/p0/P0.Host/P0.Host.csproj": "b73c16f9c649d202df723d27ea43d94311ab064adabddc092ee23d37b6316b52",
+    "experiments/p0/P0.Host/ProbeStore.cs": "5dcb8b96c99299d8fedfc9228dfb1ddd76676fdbc07be20578e48ba6718a57a4",
+    "experiments/p0/P0.Host/Program.cs": "e3903218d21a25db79f0ab2c1f3b3c0500b89293fd9a11035cdec5511400f219",
+    "experiments/p0/P0.Host/WorkerRunner.cs": "b8d4ca62fb7bbcf0ee711ea96e7386969b8943dd5fa726c932686befc3ef2c26",
+    "experiments/p0/P0.Host/WorkspaceLock.cs": "89f62e3be5d47860915583d90d46f6833ac6cee68fe94312937d122457ec5aca",
+    "experiments/p0/P0.Host/packages.lock.json": "69310c793e197092c52d531800aed38055f13b5f5c057b32ee367622f70c41e9",
+    "experiments/p0/P0.Worker/P0.Worker.csproj": "6c267aa7f3d8b82457d60b76d0111825cc17e3acb5e96c06e6bb7610a7118be7",
+    "experiments/p0/P0.Worker/Program.cs": "48aa81117ba87b8591feca2947e954ed27fc0124acac0c7d398ee223579079a9",
+    "experiments/p0/P0.Worker/README.md": "d0f6cbfd47bfb15260214fe7bb0aea1f93ce88862d36bc6544aedfe72a2c73e2",
+    "experiments/p0/P0.Worker/packages.lock.json": "c2e2f4627d36314ccc4ab14485eb953d58616c4295a5a51d24153c8dcbd76dbf",
+    "experiments/p0/P0.Worker/smoke.py": "517de806286c8218a8485e8a54a88689ee9a6a1920c48e24dde0a9a1bf410de9",
+    "experiments/p0/P0.Worker/smoke_test.py": "fcf39e9044a524e79988de083fbd26b66fdd0d110fe6e6a22b0103a94b502e8e",
+    "experiments/p0/Web/index.html": "4a17f7ac01e2005c9dbd52f2ea78b9b5f5062ee098c6b0acfbcca2df1ae1ec09",
+    "experiments/p0/Web/package-lock.json": "3fce3621c9ec1eb8a69973828dbfdccc4bcf2f3738a76503caad000001c101ea",
+    "experiments/p0/Web/package.json": "9f6e2a6e3e6e7fcdc45272b915a1418bdda76f60e46f7471ce99bfcc0edfcad7",
+    "experiments/p0/Web/src/App.tsx": "6572c6d5a276eabec4611dbf310da8eb17cb218fc8da7ddec89dd0a7dd58003d",
+    "experiments/p0/Web/src/latestReadGate.d.mts": "ff43a85dbc244fc49a70437405409600cc680c9995686137ff1a9e438686626c",
+    "experiments/p0/Web/src/latestReadGate.mjs": "88940feb76cb6ddc896b704fa9d067089be0f1cd90182190a677f0f127c05682",
+    "experiments/p0/Web/src/latestReadGate.test.mjs": "671c3e81c017e62d7ec9f952cf54f618836a3319044fc62ad2bb077178fa1a33",
+    "experiments/p0/Web/src/main.tsx": "2920a4000cc6d3fc87e25eda0e9ce9b9fc514fb0982bb7e9953111141888f46f",
+    "experiments/p0/Web/src/style.css": "8a4f8369ededa0d7e0a8926a7b0b68539113b991f042bbc101bb470373e8f28b",
+    "experiments/p0/Web/tsconfig.app.json": "91404fc532d648f70245d8e2025abac3e551db6620dcea8b6bd22674ebb75186",
+    "experiments/p0/Web/tsconfig.json": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+    "experiments/p0/Web/tsconfig.node.json": "f3a28580a92fbf37b9134952103f7013151c37a508b84c5dab51891bc1c21799",
+    "experiments/p0/Web/vite.config.ts": "9c1bc06fcbd0cfce77bf3d2c0d076c0f45a3737044f9896e9ea8e6631ac8d85e",
+    "experiments/p0/global.json": "a69d331ea6406150b6daea73038798cf25d2aa8f73dbc25be09cf53160e09935",
+    "experiments/p0/scripts/test_validate.py": "48f2e905c1cdc5130321e8e7b6dd576dbe8574e54ea963ecb8d9592b47d3099d",
+    "experiments/p0/scripts/validate-linux-container.sh": "a9c8c96eec3cc213d4a5796f2a7f5db1dc55d01cd794dfd2162a21ec8fa4eb2c",
+    "experiments/p0/scripts/validate.py": "ad68c3d91991ec25a69aaeb8fbe7d38c1808da368456d33107e4f384a229b172"
+  },
+  "binaries": {
+    "experiments/p0/.artifacts/review/osx-arm64/host/P0.Host": "10772663a9640a5c341fd63fe20b67a821785d5a8af3e88a0c9be50b53263a28",
+    "experiments/p0/.artifacts/review/osx-arm64/worker/P0.Worker.dll": "0fc80dcc23797d57f14175dfddf8cb877b0585c3eae075996ef0f19992712a2b"
+  },
+  "scope": "All 33 P0 source/config/test/doc inputs; generated files excluded. Captured before local Git commit."
+}

@@ -1,0 +1,212 @@
+{
+  "passed": true,
+  "browser": "Codex in-app browser",
+  "url": "http://127.0.0.1:5278",
+  "actions": [
+    "create via UI, refresh pending approval, kill Host 60213, restart Host 60688, approve via UI",
+    "create via UI, cancel WaitingApproval via UI",
+    "prepare before-final-commit fault via test API, resume FinalizationPending via UI on final reviewed Host 63084"
+  ],
+  "runs": [
+    {
+      "id": "8260cc8ee149449e8eae0f23e90f8672",
+      "status": "Succeeded",
+      "prompt": "P0 浏览器验收：审批重启后仅保存一次。",
+      "operation_id": "01403c29915efc3c4e986d7ae7c34f065a6b1f8f417301303d1b3519597d3207",
+      "worker_pid": 60792,
+      "model_calls": 3,
+      "tool_calls": 2,
+      "error": null,
+      "cancel_requested": 0,
+      "events": [
+        {
+          "seq": 1,
+          "type": "RunQueued",
+          "payload": "{\"text\":\"\\u771F\\u5B9E MAF \\u002B \\u53EF\\u63A7\\u6A21\\u578B\\u66FF\\u8EAB\"}"
+        },
+        {
+          "seq": 2,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u521B\\u5EFA MAF \\u4F1A\\u8BDD\"}"
+        },
+        {
+          "seq": 3,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=60577\"}"
+        },
+        {
+          "seq": 4,
+          "type": "ApprovalRequested",
+          "payload": "{\"text\":\"\\u5DE5\\u5177\\u5C1A\\u672A\\u6267\\u884C\\uFF1B\\u8BF7\\u6C42\\u3001\\u53C2\\u6570 hash \\u4E0E MAF \\u4F1A\\u8BDD\\u5DF2\\u4FDD\\u5B58\"}"
+        },
+        {
+          "seq": 5,
+          "type": "ApprovalGranted",
+          "payload": "{\"text\":\"\\u5DF2\\u7ED1\\u5B9A\\u4E0D\\u53EF\\u53D8\\u64CD\\u4F5C\\u4E0E\\u53C2\\u6570 hash\"}"
+        },
+        {
+          "seq": 6,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u4ECE\\u5DF2\\u4FDD\\u5B58\\u7684 MAF \\u4F1A\\u8BDD\\u6062\\u590D\"}"
+        },
+        {
+          "seq": 7,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=60792\"}"
+        },
+        {
+          "seq": 8,
+          "type": "ToolExecuting",
+          "payload": "{\"text\":\"\\u610F\\u56FE\\u5DF2\\u6301\\u4E45\\u5316\\uFF0C\\u5F00\\u59CB\\u5DF2\\u6279\\u51C6\\u7684\\u672C\\u5730\\u6D4B\\u8BD5\\u5199\\u5165\"}"
+        },
+        {
+          "seq": 9,
+          "type": "ToolCompleted",
+          "payload": "{\"text\":\"\\u6D4B\\u8BD5 receipt \\u5DF2\\u6301\\u4E45\\u5316\\uFF0C\\u7ED3\\u679C\\u5DF2\\u8BB0\\u8D26\"}"
+        },
+        {
+          "seq": 10,
+          "type": "RunSucceeded",
+          "payload": "{\"text\":\"Completed the requested note. The record_note tool result was: { receiptId = 01403c29915efc3c4e986d7ae7c34f065a6b1f8f417301303d1b3519597d3207, text = P0 \\u6D4F\\u89C8\\u5668\\u9A8C\\u6536\\uFF1A\\u5BA1\\u6279\\u91CD\\u542F\\u540E\\u4EC5\\u4FDD\\u5B58\\u4E00\\u6B21\\u3002 }\"}"
+        }
+      ],
+      "receiptSha256": "52d5e397c5339bf353c4490d1e3dcec3ff72117530cb71046b668c7f958735f9"
+    },
+    {
+      "id": "ab45f0cb715f4637bf43ba4835758253",
+      "status": "Cancelled",
+      "prompt": "P0 浏览器验收：取消待审批运行。",
+      "operation_id": "851fe6c9377970fe9d1085f72a396779ddb637f3ba93bb8225c1493992a5b9b4",
+      "worker_pid": 60970,
+      "model_calls": 2,
+      "tool_calls": 1,
+      "error": "cancel_requested",
+      "cancel_requested": 1,
+      "events": [
+        {
+          "seq": 11,
+          "type": "RunQueued",
+          "payload": "{\"text\":\"\\u771F\\u5B9E MAF \\u002B \\u53EF\\u63A7\\u6A21\\u578B\\u66FF\\u8EAB\"}"
+        },
+        {
+          "seq": 12,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u521B\\u5EFA MAF \\u4F1A\\u8BDD\"}"
+        },
+        {
+          "seq": 13,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=60970\"}"
+        },
+        {
+          "seq": 14,
+          "type": "ApprovalRequested",
+          "payload": "{\"text\":\"\\u5DE5\\u5177\\u5C1A\\u672A\\u6267\\u884C\\uFF1B\\u8BF7\\u6C42\\u3001\\u53C2\\u6570 hash \\u4E0E MAF \\u4F1A\\u8BDD\\u5DF2\\u4FDD\\u5B58\"}"
+        },
+        {
+          "seq": 15,
+          "type": "RunCancelRequested",
+          "payload": "{\"text\":\"\\u53D6\\u6D88\\u610F\\u56FE\\u5DF2\\u6301\\u4E45\\u4FDD\\u5B58\\uFF0C\\u505C\\u6B62\\u65B0\\u52A8\\u4F5C\\u5E76\\u6838\\u5BF9\\u5728\\u9014\\u6548\\u679C\"}"
+        },
+        {
+          "seq": 16,
+          "type": "Cancelled",
+          "payload": "{\"text\":\"cancel_requested\"}"
+        }
+      ],
+      "receiptSha256": null
+    },
+    {
+      "id": "1f7db033470b4393a7c3cc375b2465ca",
+      "status": "Succeeded",
+      "prompt": "P0 浏览器验收：工具已成功，仅继续收尾。",
+      "operation_id": "4a622989f69be74622870230840811830b41ce6831e9ebd5de4399ced0e114d5",
+      "worker_pid": 63958,
+      "model_calls": 3,
+      "tool_calls": 2,
+      "error": null,
+      "cancel_requested": 0,
+      "events": [
+        {
+          "seq": 17,
+          "type": "RunQueued",
+          "payload": "{\"text\":\"\\u771F\\u5B9E MAF \\u002B \\u53EF\\u63A7\\u6A21\\u578B\\u66FF\\u8EAB\"}"
+        },
+        {
+          "seq": 18,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u521B\\u5EFA MAF \\u4F1A\\u8BDD\"}"
+        },
+        {
+          "seq": 19,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=63091\"}"
+        },
+        {
+          "seq": 20,
+          "type": "ApprovalRequested",
+          "payload": "{\"text\":\"\\u5DE5\\u5177\\u5C1A\\u672A\\u6267\\u884C\\uFF1B\\u8BF7\\u6C42\\u3001\\u53C2\\u6570 hash \\u4E0E MAF \\u4F1A\\u8BDD\\u5DF2\\u4FDD\\u5B58\"}"
+        },
+        {
+          "seq": 21,
+          "type": "ApprovalGranted",
+          "payload": "{\"text\":\"\\u5DF2\\u7ED1\\u5B9A\\u4E0D\\u53EF\\u53D8\\u64CD\\u4F5C\\u4E0E\\u53C2\\u6570 hash\"}"
+        },
+        {
+          "seq": 22,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u4ECE\\u5DF2\\u4FDD\\u5B58\\u7684 MAF \\u4F1A\\u8BDD\\u6062\\u590D\"}"
+        },
+        {
+          "seq": 23,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=63092\"}"
+        },
+        {
+          "seq": 24,
+          "type": "ToolExecuting",
+          "payload": "{\"text\":\"\\u610F\\u56FE\\u5DF2\\u6301\\u4E45\\u5316\\uFF0C\\u5F00\\u59CB\\u5DF2\\u6279\\u51C6\\u7684\\u672C\\u5730\\u6D4B\\u8BD5\\u5199\\u5165\"}"
+        },
+        {
+          "seq": 25,
+          "type": "ToolCompleted",
+          "payload": "{\"text\":\"\\u6D4B\\u8BD5 receipt \\u5DF2\\u6301\\u4E45\\u5316\\uFF0C\\u7ED3\\u679C\\u5DF2\\u8BB0\\u8D26\"}"
+        },
+        {
+          "seq": 26,
+          "type": "FinalizationPending",
+          "payload": "{\"text\":\"worker_cancelled_or_timed_out\"}"
+        },
+        {
+          "seq": 27,
+          "type": "FinalizationResumed",
+          "payload": "{\"text\":\"\\u5DE5\\u5177\\u5DF2\\u6210\\u529F\\uFF0C\\u4EC5\\u7EE7\\u7EED\\u6574\\u7406\\u7ED3\\u679C\\uFF1B\\u526F\\u4F5C\\u7528\\u4E0D\\u4F1A\\u518D\\u6B21\\u6267\\u884C\"}"
+        },
+        {
+          "seq": 28,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u4ECE\\u5DF2\\u4FDD\\u5B58\\u7684 MAF \\u4F1A\\u8BDD\\u6062\\u590D\"}"
+        },
+        {
+          "seq": 29,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=63958\"}"
+        },
+        {
+          "seq": 30,
+          "type": "ToolResultReused",
+          "payload": "{\"text\":\"\\u5DF2\\u786E\\u8BA4\\u7684\\u7ED3\\u679C\\u88AB\\u590D\\u7528\\uFF0C\\u6CA1\\u6709\\u518D\\u6B21\\u6267\\u884C\\u526F\\u4F5C\\u7528\"}"
+        },
+        {
+          "seq": 31,
+          "type": "RunSucceeded",
+          "payload": "{\"text\":\"Completed the requested note. The record_note tool result was: { receiptId = 4a622989f69be74622870230840811830b41ce6831e9ebd5de4399ced0e114d5, text = P0 \\u6D4F\\u89C8\\u5668\\u9A8C\\u6536\\uFF1A\\u5DE5\\u5177\\u5DF2\\u6210\\u529F\\uFF0C\\u4EC5\\u7EE7\\u7EED\\u6536\\u5C3E\\u3002 }\"}"
+        }
+      ],
+      "receiptSha256": "4c4de0a7aaaec605172a47dbbd1f2009f86ad15887b1c9c3925af6c688723f00"
+    }
+  ],
+  "boundary": "First two UI flows used pre-review Host; finalization UI used final reviewed Host. The final full process suite covers all cases against the final binary. No responsive, keyboard or real-provider certification.",
+  "hostSha256": "387cf2d93f66fd3f1e68ecc41a9c477d08748e419e2625599d0a246eb66beb8c",
+  "workerSha256": "0fc80dcc23797d57f14175dfddf8cb877b0585c3eae075996ef0f19992712a2b"
+}

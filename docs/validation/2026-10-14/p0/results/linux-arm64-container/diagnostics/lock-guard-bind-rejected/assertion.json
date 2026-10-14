@@ -1,0 +1,8 @@
+{
+  "host_exit_code": -6,
+  "host_timed_out": false,
+  "stderr_has_workspace_lock_not_enforced": true,
+  "app_db_exists": false,
+  "state_path": "/diag/workspace",
+  "host_signal": "SIGABRT"
+}

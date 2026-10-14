@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "--probe-workspace-lock"
+    ],
+    "exitCode": 64,
+    "appDbCreated": false
+  },
+  {
+    "arguments": [
+      "--probe-workspace-lock",
+      ""
+    ],
+    "exitCode": 64,
+    "appDbCreated": false
+  }
+]

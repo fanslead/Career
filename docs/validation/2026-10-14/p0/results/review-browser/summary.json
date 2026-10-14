@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "browser": "Codex in-app browser",
+  "hostSha256": "10772663a9640a5c341fd63fe20b67a821785d5a8af3e88a0c9be50b53263a28",
+  "workerSha256": "0fc80dcc23797d57f14175dfddf8cb877b0585c3eae075996ef0f19992712a2b",
+  "flows": [
+    "UI creates A and B; switch A-B-A, verify selected record matches details and events",
+    "Host stopped while both wait approval; cached status warning visible and all writes disabled",
+    "Host restarted; authoritative read restores action availability",
+    "UI cancels B without receipt, approves A exactly once",
+    "390px: create C, Tab through C/B/A record buttons then detail Cancel; visual section order matches DOM; cancel C"
+  ],
+  "runs": [
+    {
+      "id": "8c819cadb9ca4bc79853daefccfa7a19",
+      "status": "Cancelled",
+      "prompt": "P0 复审 C：窄屏键盘顺序，随后取消。",
+      "operationId": "66cdeaaebe71e95e5280fa3e0489dbfeaa3e2822c0c56c4d9c9547194404bc4b",
+      "argumentsHash": "61d213037827f04c4e0f621004921c9756207da3fc8c58bbd2e2b0215ce944e7",
+      "workerPid": 7802,
+      "modelCalls": 2,
+      "toolCalls": 1,
+      "text": "",
+      "error": "cancel_requested",
+      "receiptCount": 0,
+      "argumentsJson": "{\"text\":\"P0 \\u590D\\u5BA1 C\\uFF1A\\u7A84\\u5C4F\\u952E\\u76D8\\u987A\\u5E8F\\uFF0C\\u968F\\u540E\\u53D6\\u6D88\\u3002\"}",
+      "events": [
+        {
+          "seq": 17,
+          "type": "RunQueued",
+          "payload": "{\"text\":\"\\u771F\\u5B9E MAF \\u002B \\u53EF\\u63A7\\u6A21\\u578B\\u66FF\\u8EAB\"}"
+        },
+        {
+          "seq": 18,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u521B\\u5EFA MAF \\u4F1A\\u8BDD\"}"
+        },
+        {
+          "seq": 19,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=7802\"}"
+        },
+        {
+          "seq": 20,
+          "type": "ApprovalRequested",
+          "payload": "{\"text\":\"\\u5DE5\\u5177\\u5C1A\\u672A\\u6267\\u884C\\uFF1B\\u8BF7\\u6C42\\u3001\\u53C2\\u6570 hash \\u4E0E MAF \\u4F1A\\u8BDD\\u5DF2\\u4FDD\\u5B58\"}"
+        },
+        {
+          "seq": 21,
+          "type": "RunCancelRequested",
+          "payload": "{\"text\":\"\\u53D6\\u6D88\\u610F\\u56FE\\u5DF2\\u6301\\u4E45\\u4FDD\\u5B58\\uFF0C\\u505C\\u6B62\\u65B0\\u52A8\\u4F5C\\u5E76\\u6838\\u5BF9\\u5728\\u9014\\u6548\\u679C\"}"
+        },
+        {
+          "seq": 22,
+          "type": "Cancelled",
+          "payload": "{\"text\":\"cancel_requested\"}"
+        }
+      ]
+    },
+    {
+      "id": "61c503e2f5314e75ac7c2df60ead5dae",
+      "status": "Cancelled",
+      "prompt": "P0 复审 B：切换后取消，不产生回执。",
+      "operationId": "feefe535862fafacfbe8273bd918859db5d89b84f3e115a4a3f473abc67c1e7a",
+      "argumentsHash": "a9b31df4441337eb1157185e34d63a4700c44cc4ed742bf992b709f734be06c4",
+      "workerPid": 5594,
+      "modelCalls": 2,
+      "toolCalls": 1,
+      "text": "",
+      "error": "cancel_requested",
+      "receiptCount": 0,
+      "argumentsJson": "{\"text\":\"P0 \\u590D\\u5BA1 B\\uFF1A\\u5207\\u6362\\u540E\\u53D6\\u6D88\\uFF0C\\u4E0D\\u4EA7\\u751F\\u56DE\\u6267\\u3002\"}",
+      "events": [
+        {
+          "seq": 5,
+          "type": "RunQueued",
+          "payload": "{\"text\":\"\\u771F\\u5B9E MAF \\u002B \\u53EF\\u63A7\\u6A21\\u578B\\u66FF\\u8EAB\"}"
+        },
+        {
+          "seq": 6,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u521B\\u5EFA MAF \\u4F1A\\u8BDD\"}"
+        },
+        {
+          "seq": 7,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=5594\"}"
+        },
+        {
+          "seq": 8,
+          "type": "ApprovalRequested",
+          "payload": "{\"text\":\"\\u5DE5\\u5177\\u5C1A\\u672A\\u6267\\u884C\\uFF1B\\u8BF7\\u6C42\\u3001\\u53C2\\u6570 hash \\u4E0E MAF \\u4F1A\\u8BDD\\u5DF2\\u4FDD\\u5B58\"}"
+        },
+        {
+          "seq": 9,
+          "type": "RunCancelRequested",
+          "payload": "{\"text\":\"\\u53D6\\u6D88\\u610F\\u56FE\\u5DF2\\u6301\\u4E45\\u4FDD\\u5B58\\uFF0C\\u505C\\u6B62\\u65B0\\u52A8\\u4F5C\\u5E76\\u6838\\u5BF9\\u5728\\u9014\\u6548\\u679C\"}"
+        },
+        {
+          "seq": 10,
+          "type": "Cancelled",
+          "payload": "{\"text\":\"cancel_requested\"}"
+        }
+      ]
+    },
+    {
+      "id": "225a8a5e57304855a7c661f77d37ce8f",
+      "status": "Succeeded",
+      "prompt": "P0 复审 A：断线恢复后只写入一次。",
+      "operationId": "e88d3f73fbfbed2e5279d3af86bd67d6ab3d3c5d219b244ba819dc04f02fb5e4",
+      "argumentsHash": "9ed652452bed85570e0ba638087556a56116af6ec427a5e1e7054ce6fc2b6773",
+      "workerPid": 7164,
+      "modelCalls": 3,
+      "toolCalls": 2,
+      "text": "Completed the requested note. The record_note tool result was: { receiptId = e88d3f73fbfbed2e5279d3af86bd67d6ab3d3c5d219b244ba819dc04f02fb5e4, text = P0 复审 A：断线恢复后只写入一次。 }",
+      "error": null,
+      "receiptCount": 1,
+      "argumentsJson": "{\"text\":\"P0 \\u590D\\u5BA1 A\\uFF1A\\u65AD\\u7EBF\\u6062\\u590D\\u540E\\u53EA\\u5199\\u5165\\u4E00\\u6B21\\u3002\"}",
+      "events": [
+        {
+          "seq": 1,
+          "type": "RunQueued",
+          "payload": "{\"text\":\"\\u771F\\u5B9E MAF \\u002B \\u53EF\\u63A7\\u6A21\\u578B\\u66FF\\u8EAB\"}"
+        },
+        {
+          "seq": 2,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u521B\\u5EFA MAF \\u4F1A\\u8BDD\"}"
+        },
+        {
+          "seq": 3,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=5404\"}"
+        },
+        {
+          "seq": 4,
+          "type": "ApprovalRequested",
+          "payload": "{\"text\":\"\\u5DE5\\u5177\\u5C1A\\u672A\\u6267\\u884C\\uFF1B\\u8BF7\\u6C42\\u3001\\u53C2\\u6570 hash \\u4E0E MAF \\u4F1A\\u8BDD\\u5DF2\\u4FDD\\u5B58\"}"
+        },
+        {
+          "seq": 11,
+          "type": "ApprovalGranted",
+          "payload": "{\"text\":\"\\u5DF2\\u7ED1\\u5B9A\\u4E0D\\u53EF\\u53D8\\u64CD\\u4F5C\\u4E0E\\u53C2\\u6570 hash\"}"
+        },
+        {
+          "seq": 12,
+          "type": "RunStarted",
+          "payload": "{\"text\":\"\\u4ECE\\u5DF2\\u4FDD\\u5B58\\u7684 MAF \\u4F1A\\u8BDD\\u6062\\u590D\"}"
+        },
+        {
+          "seq": 13,
+          "type": "WorkerStarted",
+          "payload": "{\"text\":\"pid=7164\"}"
+        },
+        {
+          "seq": 14,
+          "type": "ToolExecuting",
+          "payload": "{\"text\":\"\\u610F\\u56FE\\u5DF2\\u6301\\u4E45\\u5316\\uFF0C\\u5F00\\u59CB\\u5DF2\\u6279\\u51C6\\u7684\\u672C\\u5730\\u6D4B\\u8BD5\\u5199\\u5165\"}"
+        },
+        {
+          "seq": 15,
+          "type": "ToolCompleted",
+          "payload": "{\"text\":\"\\u6D4B\\u8BD5 receipt \\u5DF2\\u6301\\u4E45\\u5316\\uFF0C\\u7ED3\\u679C\\u5DF2\\u8BB0\\u8D26\"}"
+        },
+        {
+          "seq": 16,
+          "type": "RunSucceeded",
+          "payload": "{\"text\":\"Completed the requested note. The record_note tool result was: { receiptId = e88d3f73fbfbed2e5279d3af86bd67d6ab3d3c5d219b244ba819dc04f02fb5e4, text = P0 \\u590D\\u5BA1 A\\uFF1A\\u65AD\\u7EBF\\u6062\\u590D\\u540E\\u53EA\\u5199\\u5165\\u4E00\\u6B21\\u3002 }\"}"
+        }
+      ]
+    }
+  ],
+  "offlineEvidence": "offline-dom.json",
+  "narrowEvidence": "narrow-order.json",
+  "screenshots": [
+    "offline-actions-disabled.png",
+    "recovered-selection-succeeded.png",
+    "narrow-keyboard-order.png"
+  ],
+  "limits": [
+    "No injected network delay in browser; deterministic reordered read behavior tested with Node gate tests",
+    "390px ordering and Tab transition only; not full accessibility/zoom/mobile acceptance"
+  ],
+  "hostCleanup": true
+}

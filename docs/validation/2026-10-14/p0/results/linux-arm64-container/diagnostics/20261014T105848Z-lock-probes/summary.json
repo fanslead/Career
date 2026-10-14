@@ -1,0 +1,135 @@
+{
+  "dualHost_bind": {
+    "host1HealthAfterProbe": {
+      "body": {
+        "fts5": true,
+        "nativeAot": true,
+        "processId": 56,
+        "sqliteVersion": "3.53.3",
+        "status": "ok",
+        "workerConfigured": true
+      },
+      "status": 200
+    },
+    "host1HealthBeforeProbe": {
+      "body": {
+        "fts5": true,
+        "nativeAot": true,
+        "processId": 56,
+        "sqliteVersion": "3.53.3",
+        "status": "ok",
+        "workerConfigured": true
+      },
+      "status": 200
+    },
+    "host1HealthyBeforeProbe": true,
+    "host1Pid": 56,
+    "host2ExitCodeAfterCleanup": 0,
+    "host2ExitCodeBeforeCleanup": null,
+    "host2Health": {
+      "body": {
+        "fts5": true,
+        "nativeAot": true,
+        "processId": 78,
+        "sqliteVersion": "3.53.3",
+        "status": "ok",
+        "workerConfigured": true
+      },
+      "status": 200
+    },
+    "host2Healthy": true,
+    "host2LastProbe": {
+      "body": {
+        "fts5": true,
+        "nativeAot": true,
+        "processId": 78,
+        "sqliteVersion": "3.53.3",
+        "status": "ok",
+        "workerConfigured": true
+      },
+      "status": 200
+    },
+    "host2Pid": 78,
+    "ports": [
+      51981,
+      51982
+    ],
+    "secondHostRejected": false,
+    "statePath": "/diag/dual-host-bind/state"
+  },
+  "dualHost_tmpfs": {
+    "host1HealthAfterProbe": {
+      "body": {
+        "fts5": true,
+        "nativeAot": true,
+        "processId": 16,
+        "sqliteVersion": "3.53.3",
+        "status": "ok",
+        "workerConfigured": true
+      },
+      "status": 200
+    },
+    "host1HealthBeforeProbe": {
+      "body": {
+        "fts5": true,
+        "nativeAot": true,
+        "processId": 16,
+        "sqliteVersion": "3.53.3",
+        "status": "ok",
+        "workerConfigured": true
+      },
+      "status": 200
+    },
+    "host1HealthyBeforeProbe": true,
+    "host1Pid": 16,
+    "host2ExitCodeAfterCleanup": -6,
+    "host2ExitCodeBeforeCleanup": -6,
+    "host2Health": null,
+    "host2Healthy": false,
+    "host2LastProbe": {
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    "host2Pid": 38,
+    "ports": [
+      51981,
+      51982
+    ],
+    "secondHostRejected": true,
+    "statePath": "/tmp/dual-host-tmpfs/state"
+  },
+  "nativeFlock_bind": {
+    "contenderDenied": false,
+    "contenderExitCode": 0,
+    "contenderStderr": "",
+    "contenderStdout": "CONTENDER_ACQUIRED pid=15\n",
+    "expectedContentionExitCode": 73,
+    "holderAcquired": true,
+    "holderCleanupExitCode": -15,
+    "holderPid": 12,
+    "lockPath": "/diag/flock-bind/native.lock"
+  },
+  "nativeFlock_tmpfs": {
+    "contenderDenied": true,
+    "contenderExitCode": 73,
+    "contenderStderr": "",
+    "contenderStdout": "",
+    "expectedContentionExitCode": 73,
+    "holderAcquired": true,
+    "holderCleanupExitCode": -15,
+    "holderPid": 9,
+    "lockPath": "/tmp/flock-tmpfs/native.lock"
+  },
+  "sqliteBindMount": {
+    "contenderDenied": false,
+    "contenderExitCode": 0,
+    "contenderPid": null,
+    "contenderStderr": "",
+    "contenderStdout": "CONTENDER_BEGIN_IMMEDIATE=ACQUIRED pid=103\n",
+    "dbPath": "/diag/sqlite-bind/probe-lock.db",
+    "expectedSqliteBusyCode": 5,
+    "holderAcquired": true,
+    "holderOutput": "HOLDER_BEGIN_IMMEDIATE=ACQUIRED pid=102\n",
+    "holderPid": 102
+  },
+  "toolVersions": "flock from util-linux 2.39.3"
+}

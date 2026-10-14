@@ -1,0 +1,40 @@
+{
+  "capturedUtc": "2026-10-14T11:08:54.931867+00:00",
+  "system": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "python": "3.14.6",
+  "dotnetSdk": "10.0.400",
+  "node": "v24.18.0",
+  "sources": {
+    "experiments/p0/.dockerignore": "df641f02e7ace2b411c683b87f438011c376bbdebad2aeb93d3ef277ead8639b",
+    "experiments/p0/Dockerfile": "827a698b29e3db7c5b86d130a1e87f7bd7896f5bd8e244bfa11f8763d41080cf",
+    "experiments/p0/P0.Host/Contracts.cs": "084fa79fc7ea42f71043aa5aabeab1dafe21fb2e17e6e4589bff23101b20d80e",
+    "experiments/p0/P0.Host/P0.Host.csproj": "b73c16f9c649d202df723d27ea43d94311ab064adabddc092ee23d37b6316b52",
+    "experiments/p0/P0.Host/ProbeStore.cs": "5dcb8b96c99299d8fedfc9228dfb1ddd76676fdbc07be20578e48ba6718a57a4",
+    "experiments/p0/P0.Host/Program.cs": "5fe060a50fec8f7bf2e31e18e14915034028a0fbbdb0a65d4293177823a78cdf",
+    "experiments/p0/P0.Host/WorkerRunner.cs": "b8d4ca62fb7bbcf0ee711ea96e7386969b8943dd5fa726c932686befc3ef2c26",
+    "experiments/p0/P0.Host/WorkspaceLock.cs": "89f62e3be5d47860915583d90d46f6833ac6cee68fe94312937d122457ec5aca",
+    "experiments/p0/P0.Host/packages.lock.json": "69310c793e197092c52d531800aed38055f13b5f5c057b32ee367622f70c41e9",
+    "experiments/p0/P0.Worker/P0.Worker.csproj": "6c267aa7f3d8b82457d60b76d0111825cc17e3acb5e96c06e6bb7610a7118be7",
+    "experiments/p0/P0.Worker/Program.cs": "48aa81117ba87b8591feca2947e954ed27fc0124acac0c7d398ee223579079a9",
+    "experiments/p0/P0.Worker/packages.lock.json": "c2e2f4627d36314ccc4ab14485eb953d58616c4295a5a51d24153c8dcbd76dbf",
+    "experiments/p0/P0.Worker/smoke.py": "1eba1c6dfea729ab3ce0e555fadbc573d7b5b8c4736ca1a546c0292b3dfda75d",
+    "experiments/p0/Web/package-lock.json": "3fce3621c9ec1eb8a69973828dbfdccc4bcf2f3738a76503caad000001c101ea",
+    "experiments/p0/Web/package.json": "db604dea6aed431a554c9352a4eef40062a136136353a31ddf5f35a91289a444",
+    "experiments/p0/Web/src/App.tsx": "c90f51cdc77c0f091ec0baedefc1cbbefd380492d7ac6638f06ce3ceeeac964b",
+    "experiments/p0/Web/src/main.tsx": "2920a4000cc6d3fc87e25eda0e9ce9b9fc514fb0982bb7e9953111141888f46f",
+    "experiments/p0/Web/src/style.css": "2386e3b77e80ee0c5548a8d59c2a0fa1d6b7a4e7a4d5744850e9d8049903ef6b",
+    "experiments/p0/Web/tsconfig.app.json": "91404fc532d648f70245d8e2025abac3e551db6620dcea8b6bd22674ebb75186",
+    "experiments/p0/Web/tsconfig.json": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+    "experiments/p0/Web/tsconfig.node.json": "f3a28580a92fbf37b9134952103f7013151c37a508b84c5dab51891bc1c21799",
+    "experiments/p0/global.json": "a69d331ea6406150b6daea73038798cf25d2aa8f73dbc25be09cf53160e09935",
+    "experiments/p0/scripts/validate-linux-container.sh": "0c77142cb10d9626fdd372a621f83d674ee574056f1cffbbba2dcd3bee8106ce",
+    "experiments/p0/scripts/validate.py": "aee8d57705530b4d7fdb25fc5e5b557fe3f4aa79aa4db1c8bd16304e1a05436d"
+  },
+  "binaries": {
+    "experiments/p0/.artifacts/osx-arm64/host/P0.Host": "4ba2c8c6091e8cfb075c2b2688583f5762a5c2a892eeb547090a415b08a5ec3f",
+    "experiments/p0/.artifacts/osx-arm64/worker/P0.Worker.dll": "0fc80dcc23797d57f14175dfddf8cb877b0585c3eae075996ef0f19992712a2b"
+  },
+  "gitHead": "f167139373d247252b6026d8d2d09637c2a82d0e",
+  "versionControl": "P0 sources untracked; docs ignored by pre-existing rule; no commit made in this task."
+}

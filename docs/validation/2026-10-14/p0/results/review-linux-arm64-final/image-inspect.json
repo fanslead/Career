@@ -1,0 +1,1 @@
+{"Id":"sha256:d876d8f94e19fa90b79cd84d373bd4f9e175c18beb27e6fb28c4d21d315a74bc","Os":"linux","Architecture":"arm64","Entrypoint":["python3","/src/scripts/validate.py"],"Cmd":["--host","/out/host/P0.Host","--worker","/out/worker/P0.Worker.dll","--dotnet","dotnet","--output","/results"]}

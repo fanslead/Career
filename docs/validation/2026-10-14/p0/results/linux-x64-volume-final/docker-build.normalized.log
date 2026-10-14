@@ -1,0 +1,985 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.64kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1.7
+#2 DONE 0.4s
+
+#3 docker-image://docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e
+#3 resolve docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e done
+#3 CACHED
+
+#4 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#4 ...
+
+#5 [internal] load metadata for docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#5 DONE 2.9s
+
+#4 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#4 DONE 4.5s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 303B done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 1.09kB done
+#7 DONE 0.0s
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 resolve mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510 done
+#8 DONE 0.1s
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 resolve docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d done
+#9 sha256:3f4664f9b20d6f144b2674c2c40de02509aabd87eae0a2d31a62de37444d13e8 0B / 448B 0.2s
+#9 sha256:15f27b93c93d3aaa4df09438a96bad3709b6cbbc38659014d17cc61d8d4fabb9 0B / 1.71MB 0.3s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 0B / 50.33MB 0.3s
+#9 sha256:af54a8f1f08bff19af42c05615745e74742a74437bb1c5e1e99bf0dcb8048257 0B / 3.31kB 0.2s
+#9 sha256:3f4664f9b20d6f144b2674c2c40de02509aabd87eae0a2d31a62de37444d13e8 448B / 448B 0.9s done
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 0B / 28.23MB 0.2s
+#9 sha256:15f27b93c93d3aaa4df09438a96bad3709b6cbbc38659014d17cc61d8d4fabb9 1.05MB / 1.71MB 3.9s
+#9 sha256:af54a8f1f08bff19af42c05615745e74742a74437bb1c5e1e99bf0dcb8048257 0B / 3.31kB 5.3s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 1.05MB / 50.33MB 5.4s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 0B / 28.23MB 5.3s
+#9 sha256:af54a8f1f08bff19af42c05615745e74742a74437bb1c5e1e99bf0dcb8048257 3.31kB / 3.31kB 7.8s done
+#9 sha256:15f27b93c93d3aaa4df09438a96bad3709b6cbbc38659014d17cc61d8d4fabb9 1.71MB / 1.71MB 8.4s done
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 2.10MB / 28.23MB 7.8s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 4.19MB / 50.33MB 9.5s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:0aa01059ebb573d6a6eb78be8941e10c9d9ed3c55ab4b8c1f41ded864f7bbc30 493B / 493B 1.7s done
+#8 sha256:f0631101e796072d4e5f610be7a2d855916080efb19012cf34b8b248afb2ac76 12.58MB / 18.05MB 9.6s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 3.15MB / 189.61MB 9.6s
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 5.24MB / 23.82MB 9.6s
+#8 sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 4.19MB / 12.73MB 8.0s
+#8 sha256:f0631101e796072d4e5f610be7a2d855916080efb19012cf34b8b248afb2ac76 13.63MB / 18.05MB 10.2s
+#8 sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 5.24MB / 12.73MB 8.6s
+#8 sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 6.29MB / 12.73MB 9.3s
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 7.34MB / 23.82MB 12.2s
+#8 sha256:f0631101e796072d4e5f610be7a2d855916080efb19012cf34b8b248afb2ac76 14.68MB / 18.05MB 13.4s
+#8 sha256:f0631101e796072d4e5f610be7a2d855916080efb19012cf34b8b248afb2ac76 15.73MB / 18.05MB 14.0s
+#8 sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 7.34MB / 12.73MB 12.5s
+#8 sha256:f0631101e796072d4e5f610be7a2d855916080efb19012cf34b8b248afb2ac76 16.78MB / 18.05MB 14.4s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 6.29MB / 189.61MB 14.7s
+#8 sha256:f0631101e796072d4e5f610be7a2d855916080efb19012cf34b8b248afb2ac76 18.05MB / 18.05MB 15.0s done
+#8 sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 8.39MB / 12.73MB 13.5s
+#8 sha256:a66223bc783b05e1aa72e29487cd58ad53a3392799f1e79d2244b30a7c9fc141 0B / 153B 0.2s
+#8 sha256:a66223bc783b05e1aa72e29487cd58ad53a3392799f1e79d2244b30a7c9fc141 153B / 153B 1.9s done
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 0B / 36.60MB 0.2s
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 9.44MB / 23.82MB 17.3s
+#8 sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 9.44MB / 12.73MB 15.9s
+#8 sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 10.49MB / 12.73MB 18.0s
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 9.44MB / 50.33MB 19.7s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 5.24MB / 28.23MB 18.8s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 9.44MB / 189.61MB 19.8s
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 11.53MB / 23.82MB 20.7s
+#8 sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 11.53MB / 12.73MB 19.1s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 2.10MB / 36.60MB 4.1s
+#8 sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 12.73MB / 12.73MB 19.6s done
+#8 sha256:7168006654af45cbe8fc8e33143ac1f8358bd2fa73d6003c23ab0190c77f7623 0B / 3.56kB 0.2s
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 13.63MB / 23.82MB 21.8s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 4.19MB / 36.60MB 5.1s
+#8 sha256:7168006654af45cbe8fc8e33143ac1f8358bd2fa73d6003c23ab0190c77f7623 3.56kB / 3.56kB 0.6s done
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 0B / 16.78MB 0.2s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 6.29MB / 36.60MB 6.0s
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 15.73MB / 23.82MB 23.0s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 1.05MB / 16.78MB 2.7s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 13.63MB / 189.61MB 24.9s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 8.39MB / 36.60MB 8.9s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 2.10MB / 16.78MB 4.2s
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 17.83MB / 23.82MB 28.1s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 10.49MB / 36.60MB 11.6s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 3.15MB / 16.78MB 6.8s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 15.73MB / 189.61MB 30.0s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 4.19MB / 16.78MB 8.1s
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 12.58MB / 50.33MB 30.0s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 8.39MB / 28.23MB 29.0s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 19.92MB / 23.82MB 32.7s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 11.53MB / 36.60MB 16.7s
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 22.02MB / 23.82MB 33.6s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 5.24MB / 16.78MB 12.2s
+#8 sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 23.82MB / 23.82MB 34.7s done
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 6.29MB / 16.78MB 13.1s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 0B / 29.76MB 0.2s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 18.87MB / 189.61MB 35.1s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 7.34MB / 16.78MB 15.2s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 8.39MB / 16.78MB 15.5s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 13.63MB / 36.60MB 20.6s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 2.10MB / 29.76MB 3.0s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 9.44MB / 16.78MB 17.1s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 10.49MB / 16.78MB 17.9s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 4.19MB / 29.76MB 5.0s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 22.02MB / 189.61MB 40.2s
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 15.73MB / 50.33MB 40.2s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 11.53MB / 28.23MB 39.3s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 11.53MB / 16.78MB 19.5s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 15.73MB / 36.60MB 24.6s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 6.29MB / 29.76MB 6.8s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 12.58MB / 16.78MB 19.8s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 13.63MB / 16.78MB 20.9s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 8.39MB / 29.76MB 8.9s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 14.68MB / 16.78MB 21.8s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 15.73MB / 16.78MB 22.5s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 17.83MB / 36.60MB 27.8s
+#8 sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 16.78MB / 16.78MB 23.1s done
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 10.49MB / 29.76MB 10.5s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 26.21MB / 189.61MB 45.3s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 12.58MB / 29.76MB 11.6s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 19.92MB / 36.60MB 31.7s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 14.68MB / 29.76MB 13.8s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 30.41MB / 189.61MB 50.4s
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 18.87MB / 50.33MB 50.6s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 13.63MB / 28.23MB 49.5s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 17.83MB / 29.76MB 16.4s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 22.02MB / 36.60MB 36.0s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 19.92MB / 29.76MB 18.6s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 22.02MB / 29.76MB 19.7s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 24.12MB / 29.76MB 20.4s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 35.65MB / 189.61MB 55.5s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 24.12MB / 36.60MB 38.7s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 26.21MB / 29.76MB 21.8s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 26.21MB / 36.60MB 40.5s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 28.31MB / 29.76MB 22.7s
+#8 sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 29.76MB / 29.76MB 24.3s done
+#8 extracting sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58
+#8 extracting sha256:e51aee9c82ec5dd5ba2add49c45c6d85d460512757e2615b69bcdf9469c7cb58 0.6s done
+#8 extracting sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 28.31MB / 36.60MB 43.2s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 44.04MB / 189.61MB 60.6s
+#8 extracting sha256:85c219b2fe4e91c753c13e02b69ddf31fe3debbe1b0e62faf1adb91586f24031 1.3s done
+#8 extracting sha256:7168006654af45cbe8fc8e33143ac1f8358bd2fa73d6003c23ab0190c77f7623 0.0s done
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 23.07MB / 50.33MB 60.9s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 15.73MB / 28.23MB 59.9s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 30.41MB / 36.60MB 44.4s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 32.51MB / 36.60MB 46.1s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 34.60MB / 36.60MB 47.7s
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 51.38MB / 189.61MB 65.7s
+#8 sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 36.60MB / 36.60MB 48.9s done
+#8 extracting sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c
+#8 extracting sha256:6381488c95554c47d00091dd7430062dc74c15da60780bef1bf7e8d9557b591c 1.1s done
+#8 extracting sha256:a66223bc783b05e1aa72e29487cd58ad53a3392799f1e79d2244b30a7c9fc141 0.1s done
+#8 extracting sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf
+#8 extracting sha256:62ac99ef8996a2baf23c28681c8d6e0766eff32ac8f3d77d136ab67e1e73b4bf 0.3s done
+#8 extracting sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c
+#8 extracting sha256:80f64e620c041b64a968c2bb16105b450251d37ee86538048ff3e6d256deb95c 2.1s done
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 61.87MB / 189.61MB 69.6s
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 28.31MB / 50.33MB 70.2s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 17.83MB / 28.23MB 69.2s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 31.46MB / 50.33MB 74.1s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 18.87MB / 28.23MB 74.3s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 34.60MB / 50.33MB 79.1s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 95.42MB / 189.61MB 80.1s
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 19.92MB / 28.23MB 79.4s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 36.70MB / 50.33MB 84.2s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 19.92MB / 28.23MB 84.5s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 38.80MB / 50.33MB 89.3s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 115.34MB / 189.61MB 90.3s
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 20.97MB / 28.23MB 89.6s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 41.94MB / 50.33MB 92.3s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 20.97MB / 28.23MB 94.7s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 44.04MB / 50.33MB 97.4s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 144.70MB / 189.61MB 100.5s
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 22.02MB / 28.23MB 99.8s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 47.19MB / 50.33MB 101.0s
+#9 sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 50.33MB / 50.33MB 105.6s done
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 22.02MB / 28.23MB 104.9s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 176.16MB / 189.61MB 110.9s
+#8 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 23.07MB / 28.23MB 110.0s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 23.07MB / 28.23MB 115.1s
+#9 ...
+
+#8 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#8 sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 189.61MB / 189.61MB 116.3s done
+#8 extracting sha256:b47a51f79680f4b3afa795f0ea34a6d77c0958209f1bd2d3335b4123e39403dd 2.0s done
+#8 extracting sha256:0aa01059ebb573d6a6eb78be8941e10c9d9ed3c55ab4b8c1f41ded864f7bbc30 done
+#8 extracting sha256:f0631101e796072d4e5f610be7a2d855916080efb19012cf34b8b248afb2ac76 0.2s done
+#8 DONE 118.6s
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 24.12MB / 28.23MB 120.2s
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 26.21MB / 28.23MB 124.2s
+#9 ...
+
+#10 [toolchain 2/2] RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends         build-essential clang python3 zlib1g-dev     && rm -rf /var/lib/apt/lists/*     && test "$(dotnet --version)" = "10.0.400"     && python3 --version     && clang --version     && dpkg-query --show build-essential clang python3 zlib1g-dev
+#10 1.792 Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+#10 1.882 Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+#10 2.870 Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+#10 3.230 Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+#10 3.246 Get:5 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1409 kB]
+#10 3.772 Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+#10 4.884 Get:7 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2122 kB]
+#10 5.108 Get:8 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+#10 5.150 Get:9 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+#10 5.944 Get:10 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [55.6 kB]
+#10 5.954 Get:11 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1548 kB]
+#10 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 28.23MB / 28.23MB 128.7s done
+#9 extracting sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd
+#9 extracting sha256:597c6c618d36213af657a6a8444a5d87801f9a219682b206ad21ccb8f3e57bbd 0.9s done
+#9 DONE 130.6s
+
+#10 [toolchain 2/2] RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends         build-essential clang python3 zlib1g-dev     && rm -rf /var/lib/apt/lists/*     && test "$(dotnet --version)" = "10.0.400"     && python3 --version     && clang --version     && dpkg-query --show build-essential clang python3 zlib1g-dev
+#10 10.44 Get:12 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+#10 10.44 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2231 kB]
+#10 10.99 Get:14 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [61.7 kB]
+#10 10.99 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1729 kB]
+#10 11.87 Get:16 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2166 kB]
+#10 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 extracting sha256:af54a8f1f08bff19af42c05615745e74742a74437bb1c5e1e99bf0dcb8048257 0.2s done
+#9 DONE 130.8s
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 extracting sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920
+#9 extracting sha256:35e38e1826d7cdf22ea45a4223741e4cc126db5a2a07cf2072b229270180f920 0.8s done
+#9 DONE 131.6s
+
+#10 [toolchain 2/2] RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends         build-essential clang python3 zlib1g-dev     && rm -rf /var/lib/apt/lists/*     && test "$(dotnet --version)" = "10.0.400"     && python3 --version     && clang --version     && dpkg-query --show build-essential clang python3 zlib1g-dev
+#10 ...
+
+#9 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#9 extracting sha256:15f27b93c93d3aaa4df09438a96bad3709b6cbbc38659014d17cc61d8d4fabb9 0.0s done
+#9 extracting sha256:3f4664f9b20d6f144b2674c2c40de02509aabd87eae0a2d31a62de37444d13e8 done
+#9 DONE 131.7s
+
+#10 [toolchain 2/2] RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends         build-essential clang python3 zlib1g-dev     && rm -rf /var/lib/apt/lists/*     && test "$(dotnet --version)" = "10.0.400"     && python3 --version     && clang --version     && dpkg-query --show build-essential clang python3 zlib1g-dev
+#10 13.31 Get:17 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [669 B]
+#10 ...
+
+#11 [web-build 2/6] WORKDIR /src/Web
+#11 DONE 0.3s
+
+#12 [web-build 3/6] COPY Web/package.json Web/package-lock.json ./
+#12 DONE 0.0s
+
+#10 [toolchain 2/2] RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends         build-essential clang python3 zlib1g-dev     && rm -rf /var/lib/apt/lists/*     && test "$(dotnet --version)" = "10.0.400"     && python3 --version     && clang --version     && dpkg-query --show build-essential clang python3 zlib1g-dev
+#10 13.31 Get:18 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+#10 13.52 Get:19 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+#10 13.79 Fetched 33.6 MB in 14s (2487 kB/s)
+#10 13.79 Reading package lists...
+#10 14.97 Reading package lists...
+#10 15.90 Building dependency tree...
+#10 16.11 Reading state information...
+#10 16.40 The following additional packages will be installed:
+#10 16.40   binutils binutils-common binutils-x86-64-linux-gnu bzip2 clang-18 cpp cpp-13
+#10 16.40   cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu dpkg-dev g++ g++-13
+#10 16.40   g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-13 gcc-13-base
+#10 16.40   gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu libasan8 libbinutils libbsd0
+#10 16.40   libc-bin libc-dev-bin libc6 libc6-dev libcc1-0 libclang-common-18-dev
+#10 16.40   libclang-cpp18 libclang1-18 libcrypt-dev libctf-nobfd0 libctf0 libdpkg-perl
+#10 16.40   libedit2 libgc1 libgcc-13-dev libgomp1 libgprofng0 libhwasan0 libisl23
+#10 16.40   libitm1 libjansson4 libllvm18 liblsan0 libmpc3 libmpfr6 libobjc-13-dev
+#10 16.40   libobjc4 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib
+#10 16.40   libquadmath0 libreadline8t64 libsframe1 libsqlite3-0 libstdc++-13-dev
+#10 16.40   libtsan2 libubsan1 libxml2 linux-libc-dev llvm-18-linker-tools
+#10 16.40   lto-disabled-list make media-types netbase patch python3-minimal python3.12
+#10 16.40   python3.12-minimal readline-common rpcsvc-proto xz-utils
+#10 16.40 Suggested packages:
+#10 16.40   binutils-doc gprofng-gui bzip2-doc clang-18-doc wasi-libc cpp-doc
+#10 16.40   gcc-13-locales cpp-13-doc debian-keyring g++-multilib g++-13-multilib
+#10 16.40   gcc-13-doc gcc-multilib manpages-dev autoconf automake libtool flex bison
+#10 16.40   gdb gcc-doc gcc-13-multilib gdb-x86-64-linux-gnu manpages glibc-doc locales
+#10 16.40   libnss-nis libnss-nisplus gnupg | sq | sqop | pgpainless-cli
+#10 16.40   | sequoia-chameleon-gnupg bzr libstdc++-13-doc make-doc ed diffutils-doc
+#10 16.40   python3-doc python3-tk python3-venv python3.12-venv python3.12-doc
+#10 16.40   binfmt-support readline-doc
+#10 16.40 Recommended packages:
+#10 16.40   llvm-18-dev fakeroot gnupg | sq | sqop | pgpainless-cli
+#10 16.40   | sequoia-chameleon-gnupg libalgorithm-merge-perl manpages manpages-dev
+#10 16.40   libc-devtools libclang-rt-18-dev libfile-fcntllock-perl
+#10 16.40   liblocale-gettext-perl
+#10 16.54 The following NEW packages will be installed:
+#10 16.54   binutils binutils-common binutils-x86-64-linux-gnu build-essential bzip2
+#10 16.54   clang clang-18 cpp cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu
+#10 16.54   dpkg-dev g++ g++-13 g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-13
+#10 16.54   gcc-13-base gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu libasan8
+#10 16.54   libbinutils libbsd0 libc-dev-bin libc6-dev libcc1-0 libclang-common-18-dev
+#10 16.54   libclang-cpp18 libclang1-18 libcrypt-dev libctf-nobfd0 libctf0 libdpkg-perl
+#10 16.54   libedit2 libgc1 libgcc-13-dev libgomp1 libgprofng0 libhwasan0 libisl23
+#10 16.54   libitm1 libjansson4 libllvm18 liblsan0 libmpc3 libmpfr6 libobjc-13-dev
+#10 16.54   libobjc4 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib
+#10 16.54   libquadmath0 libreadline8t64 libsframe1 libsqlite3-0 libstdc++-13-dev
+#10 16.54   libtsan2 libubsan1 libxml2 linux-libc-dev llvm-18-linker-tools
+#10 16.54   lto-disabled-list make media-types netbase patch python3 python3-minimal
+#10 16.54   python3.12 python3.12-minimal readline-common rpcsvc-proto xz-utils
+#10 16.54   zlib1g-dev
+#10 16.55 The following packages will be upgraded:
+#10 16.55   libc-bin libc6
+#10 17.85 2 upgraded, 75 newly installed, 0 to remove and 17 not upgraded.
+#10 17.85 Need to get 135 MB of archives.
+#10 17.85 After this operation, 525 MB of additional disk space will be used.
+#10 17.85 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc6 amd64 2.39-0ubuntu8.9 [3264 kB]
+#10 22.39 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-bin amd64 2.39-0ubuntu8.9 [682 kB]
+#10 23.34 Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.17 [839 kB]
+#10 ...
+
+#13 [web-build 4/6] RUN node --version && npm --version && npm ci --no-audit --no-fund
+#13 0.181 v24.18.0
+#13 0.954 11.16.0
+#13 10.37
+#13 10.37 added 25 packages in 9s
+#13 10.37 npm notice
+#13 10.37 npm notice New major version of npm available! 11.16.0 -> 12.2.0
+#13 10.37 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#13 10.37 npm notice To update run: npm install -g npm@12.2.0
+#13 10.37 npm notice
+#13 DONE 10.5s
+
+#10 [toolchain 2/2] RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends         build-essential clang python3 zlib1g-dev     && rm -rf /var/lib/apt/lists/*     && test "$(dotnet --version)" = "10.0.400"     && python3 --version     && clang --version     && dpkg-query --show build-essential clang python3 zlib1g-dev
+#10 ...
+
+#14 [web-build 5/6] COPY Web/ ./
+#14 DONE 0.0s
+
+#10 [toolchain 2/2] RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends         build-essential clang python3 zlib1g-dev     && rm -rf /var/lib/apt/lists/*     && test "$(dotnet --version)" = "10.0.400"     && python3 --version     && clang --version     && dpkg-query --show build-essential clang python3 zlib1g-dev
+#10 23.92 Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.17 [2335 kB]
+#10 25.73 Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2.1 [27.4 kB]
+#10 25.73 Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+#10 25.73 Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+#10 25.73 Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 readline-common all 8.2-4build1 [56.5 kB]
+#10 25.73 Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libreadline8t64 amd64 8.2-4build1 [153 kB]
+#10 25.81 Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsqlite3-0 amd64 3.45.1-1ubuntu2.8 [702 kB]
+#10 26.37 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.17 [2071 kB]
+#10 27.34 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.17 [651 kB]
+#10 27.70 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2.1 [10.1 kB]
+#10 27.70 Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2.1 [23.0 kB]
+#10 27.70 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libbsd0 amd64 0.12.1-1build1.1 [41.2 kB]
+#10 27.73 Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libxml2 amd64 2.9.14+dfsg-1.3ubuntu3.10 [764 kB]
+#10 28.15 Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 libedit2 amd64 3.1-20230828-1build1 [97.6 kB]
+#10 28.45 Get:18 http://archive.ubuntu.com/ubuntu noble/main amd64 libjansson4 amd64 2.14-2build2 [32.8 kB]
+#10 28.45 Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 xz-utils amd64 5.6.1+really5.4.5-1ubuntu0.3 [267 kB]
+#10 28.53 Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-common amd64 2.42-4ubuntu2.10 [240 kB]
+#10 28.53 Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsframe1 amd64 2.42-4ubuntu2.10 [15.7 kB]
+#10 28.53 Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libbinutils amd64 2.42-4ubuntu2.10 [577 kB]
+#10 28.96 Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf-nobfd0 amd64 2.42-4ubuntu2.10 [98.0 kB]
+#10 28.96 Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf0 amd64 2.42-4ubuntu2.10 [94.5 kB]
+#10 28.97 Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgprofng0 amd64 2.42-4ubuntu2.10 [849 kB]
+#10 29.15 Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.42-4ubuntu2.10 [2463 kB]
+#10 ...
+
+#15 [web-build 6/6] RUN npm run build
+#15 0.807
+#15 0.807 > p0-agent-harness-probe@0.1.0 build
+#15 0.807 > tsc -b && vite build
+#15 0.807
+#15 5.050 vite v8.3.4 building client environment for production...
+#15 5.100 transforming...
+#15 5.246 ✓ 16 modules transformed.
+#15 5.413 rendering chunks...
+#15 5.483 computing gzip size...
+#15 5.498 dist/index.html                   0.45 kB │ gzip:  0.31 kB
+#15 5.498 dist/assets/index-BVTSVWSm.css   11.63 kB │ gzip:  3.49 kB
+#15 5.498 dist/assets/index-Bx8v_ioA.js   237.55 kB │ gzip: 74.32 kB
+#15 5.498
+#15 5.499 ✓ built in 445ms
+#15 DONE 5.6s
+
+#10 [toolchain 2/2] RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends         build-essential clang python3 zlib1g-dev     && rm -rf /var/lib/apt/lists/*     && test "$(dotnet --version)" = "10.0.400"     && python3 --version     && clang --version     && dpkg-query --show build-essential clang python3 zlib1g-dev
+#10 30.15 Get:27 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils amd64 2.42-4ubuntu2.10 [18.2 kB]
+#10 30.17 Get:28 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-dev-bin amd64 2.39-0ubuntu8.9 [20.4 kB]
+#10 30.17 Get:29 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 linux-libc-dev amd64 6.8.0-147.147 [1595 kB]
+#10 30.87 Get:30 http://archive.ubuntu.com/ubuntu noble/main amd64 libcrypt-dev amd64 1:4.4.36-4build1 [112 kB]
+#10 31.14 Get:31 http://archive.ubuntu.com/ubuntu noble/main amd64 rpcsvc-proto amd64 1.4.2-0ubuntu7 [67.4 kB]
+#10 31.14 Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc6-dev amd64 2.39-0ubuntu8.9 [2126 kB]
+#10 31.87 Get:33 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04.1 [51.6 kB]
+#10 31.87 Get:34 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libisl23 amd64 0.26-3build1.1 [680 kB]
+#10 31.93 Get:35 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmpfr6 amd64 4.2.1-1build1.1 [353 kB]
+#10 32.03 Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmpc3 amd64 1.3.1-1build1.1 [54.6 kB]
+#10 32.05 Get:37 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04.1 [10.7 MB]
+#10 35.84 Get:38 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04.1 [1042 B]
+#10 35.84 Get:39 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [5326 B]
+#10 35.84 Get:40 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp amd64 4:13.2.0-7ubuntu1 [22.4 kB]
+#10 35.84 Get:41 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcc1-0 amd64 14.2.0-4ubuntu2~24.04.1 [48.0 kB]
+#10 35.86 Get:42 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgomp1 amd64 14.2.0-4ubuntu2~24.04.1 [148 kB]
+#10 35.90 Get:43 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libitm1 amd64 14.2.0-4ubuntu2~24.04.1 [29.7 kB]
+#10 35.91 Get:44 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libasan8 amd64 14.2.0-4ubuntu2~24.04.1 [3027 kB]
+#10 37.29 Get:45 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblsan0 amd64 14.2.0-4ubuntu2~24.04.1 [1322 kB]
+#10 38.66 Get:46 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtsan2 amd64 14.2.0-4ubuntu2~24.04.1 [2772 kB]
+#10 39.33 Get:47 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libubsan1 amd64 14.2.0-4ubuntu2~24.04.1 [1184 kB]
+#10 39.38 Get:48 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libhwasan0 amd64 14.2.0-4ubuntu2~24.04.1 [1641 kB]
+#10 41.72 Get:49 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libquadmath0 amd64 14.2.0-4ubuntu2~24.04.1 [153 kB]
+#10 41.72 Get:50 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04.1 [2681 kB]
+#10 42.55 Get:51 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04.1 [21.1 MB]
+#10 52.66 Get:52 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04.1 [494 kB]
+#10 52.66 Get:53 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [1212 B]
+#10 52.67 Get:54 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc amd64 4:13.2.0-7ubuntu1 [5018 B]
+#10 52.67 Get:55 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libstdc++-13-dev amd64 13.3.0-6ubuntu2~24.04.1 [2420 kB]
+#10 53.30 Get:56 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04.1 [12.2 MB]
+#10 56.12 Get:57 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13 amd64 13.3.0-6ubuntu2~24.04.1 [16.0 kB]
+#10 56.12 Get:58 http://archive.ubuntu.com/ubuntu noble/main amd64 g++-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [964 B]
+#10 56.12 Get:59 http://archive.ubuntu.com/ubuntu noble/main amd64 g++ amd64 4:13.2.0-7ubuntu1 [1100 B]
+#10 56.12 Get:60 http://archive.ubuntu.com/ubuntu noble/main amd64 make amd64 4.3-4.1build2 [180 kB]
+#10 56.15 Get:61 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.6 [268 kB]
+#10 56.21 Get:62 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1ubuntu0.1 [34.6 kB]
+#10 56.22 Get:63 http://archive.ubuntu.com/ubuntu noble/main amd64 patch amd64 2.7.6-7build3 [104 kB]
+#10 56.23 Get:64 http://archive.ubuntu.com/ubuntu noble/main amd64 lto-disabled-list all 47 [12.4 kB]
+#10 56.24 Get:65 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dpkg-dev all 1.22.6ubuntu6.6 [1074 kB]
+#10 56.63 Get:66 http://archive.ubuntu.com/ubuntu noble/main amd64 build-essential amd64 12.10ubuntu1 [4928 B]
+#10 56.63 Get:67 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libllvm18 amd64 1:18.1.3-1ubuntu1 [27.5 MB]
+#10 67.58 Get:68 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libclang-cpp18 amd64 1:18.1.3-1ubuntu1 [13.5 MB]
+#10 70.85 Get:69 http://archive.ubuntu.com/ubuntu noble/main amd64 libgc1 amd64 1:8.2.6-1build1 [90.3 kB]
+#10 70.87 Get:70 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 libobjc4 amd64 14.2.0-4ubuntu2~24.04.1 [47.1 kB]
+#10 70.87 Get:71 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 libobjc-13-dev amd64 13.3.0-6ubuntu2~24.04.1 [194 kB]
+#10 70.94 Get:72 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 libclang-common-18-dev amd64 1:18.1.3-1ubuntu1 [736 kB]
+#10 70.95 Get:73 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 llvm-18-linker-tools amd64 1:18.1.3-1ubuntu1 [1314 kB]
+#10 71.11 Get:74 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libclang1-18 amd64 1:18.1.3-1ubuntu1 [7803 kB]
+#10 73.18 Get:75 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 clang-18 amd64 1:18.1.3-1ubuntu1 [80.0 kB]
+#10 73.18 Get:76 http://archive.ubuntu.com/ubuntu noble/universe amd64 clang amd64 1:18.0-59~exp2 [5846 B]
+#10 73.18 Get:77 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 zlib1g-dev amd64 1:1.3.dfsg-3.1ubuntu2.2 [894 kB]
+#10 73.78 debconf: delaying package configuration, since apt-utils is not installed
+#10 73.85 Fetched 135 MB in 57s (2378 kB/s)
+#10 73.96 (Reading database ...
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 9345 files and directories currently installed.)
+#10 73.97 Preparing to unpack .../libc6_2.39-0ubuntu8.9_amd64.deb ...
+#10 74.59 Unpacking libc6:amd64 (2.39-0ubuntu8.9) over (2.39-0ubuntu8.8) ...
+#10 75.07 Setting up libc6:amd64 (2.39-0ubuntu8.9) ...
+#10 76.57 (Reading database ...
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 9345 files and directories currently installed.)
+#10 76.58 Preparing to unpack .../libc-bin_2.39-0ubuntu8.9_amd64.deb ...
+#10 76.58 Unpacking libc-bin (2.39-0ubuntu8.9) over (2.39-0ubuntu8.8) ...
+#10 76.72 Setting up libc-bin (2.39-0ubuntu8.9) ...
+#10 76.94 Selecting previously unselected package libpython3.12-minimal:amd64.
+#10 76.95 (Reading database ...
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 9345 files and directories currently installed.)
+#10 76.95 Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#10 76.95 Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#10 77.11 Selecting previously unselected package python3.12-minimal.
+#10 77.11 Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#10 77.17 Unpacking python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#10 77.29 Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#10 77.32 Setting up python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#10 78.49 Selecting previously unselected package python3-minimal.
+#10 78.49 (Reading database ...
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 9656 files and directories currently installed.)
+#10 78.49 Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2.1_amd64.deb ...
+#10 78.50 Unpacking python3-minimal (3.12.3-0ubuntu2.1) ...
+#10 78.61 Selecting previously unselected package media-types.
+#10 78.61 Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+#10 78.61 Unpacking media-types (10.1.0) ...
+#10 78.72 Selecting previously unselected package netbase.
+#10 78.72 Preparing to unpack .../2-netbase_6.4_all.deb ...
+#10 78.72 Unpacking netbase (6.4) ...
+#10 78.83 Selecting previously unselected package readline-common.
+#10 78.83 Preparing to unpack .../3-readline-common_8.2-4build1_all.deb ...
+#10 78.83 Unpacking readline-common (8.2-4build1) ...
+#10 78.94 Selecting previously unselected package libreadline8t64:amd64.
+#10 78.94 Preparing to unpack .../4-libreadline8t64_8.2-4build1_amd64.deb ...
+#10 78.99 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+#10 79.01 Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+#10 79.04 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+#10 79.06 Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+#10 79.07 Unpacking libreadline8t64:amd64 (8.2-4build1) ...
+#10 79.17 Selecting previously unselected package libsqlite3-0:amd64.
+#10 79.17 Preparing to unpack .../5-libsqlite3-0_3.45.1-1ubuntu2.8_amd64.deb ...
+#10 79.18 Unpacking libsqlite3-0:amd64 (3.45.1-1ubuntu2.8) ...
+#10 79.29 Selecting previously unselected package libpython3.12-stdlib:amd64.
+#10 79.29 Preparing to unpack .../6-libpython3.12-stdlib_3.12.3-1ubuntu0.17_amd64.deb ...
+#10 79.29 Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#10 79.46 Selecting previously unselected package python3.12.
+#10 79.46 Preparing to unpack .../7-python3.12_3.12.3-1ubuntu0.17_amd64.deb ...
+#10 79.46 Unpacking python3.12 (3.12.3-1ubuntu0.17) ...
+#10 79.57 Selecting previously unselected package libpython3-stdlib:amd64.
+#10 79.57 Preparing to unpack .../8-libpython3-stdlib_3.12.3-0ubuntu2.1_amd64.deb ...
+#10 79.57 Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#10 79.66 Setting up python3-minimal (3.12.3-0ubuntu2.1) ...
+#10 80.27 Selecting previously unselected package python3.
+#10 80.27 (Reading database ...
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 10133 files and directories currently installed.)
+#10 80.28 Preparing to unpack .../00-python3_3.12.3-0ubuntu2.1_amd64.deb ...
+#10 80.33 Unpacking python3 (3.12.3-0ubuntu2.1) ...
+#10 80.44 Selecting previously unselected package libbsd0:amd64.
+#10 80.44 Preparing to unpack .../01-libbsd0_0.12.1-1build1.1_amd64.deb ...
+#10 80.45 Unpacking libbsd0:amd64 (0.12.1-1build1.1) ...
+#10 80.55 Selecting previously unselected package libxml2:amd64.
+#10 80.55 Preparing to unpack .../02-libxml2_2.9.14+dfsg-1.3ubuntu3.10_amd64.deb ...
+#10 80.55 Unpacking libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.10) ...
+#10 80.66 Selecting previously unselected package libedit2:amd64.
+#10 80.67 Preparing to unpack .../03-libedit2_3.1-20230828-1build1_amd64.deb ...
+#10 80.67 Unpacking libedit2:amd64 (3.1-20230828-1build1) ...
+#10 80.77 Selecting previously unselected package libjansson4:amd64.
+#10 80.77 Preparing to unpack .../04-libjansson4_2.14-2build2_amd64.deb ...
+#10 80.77 Unpacking libjansson4:amd64 (2.14-2build2) ...
+#10 80.88 Selecting previously unselected package xz-utils.
+#10 80.88 Preparing to unpack .../05-xz-utils_5.6.1+really5.4.5-1ubuntu0.3_amd64.deb ...
+#10 80.88 Unpacking xz-utils (5.6.1+really5.4.5-1ubuntu0.3) ...
+#10 80.98 Selecting previously unselected package binutils-common:amd64.
+#10 80.98 Preparing to unpack .../06-binutils-common_2.42-4ubuntu2.10_amd64.deb ...
+#10 80.99 Unpacking binutils-common:amd64 (2.42-4ubuntu2.10) ...
+#10 81.09 Selecting previously unselected package libsframe1:amd64.
+#10 81.09 Preparing to unpack .../07-libsframe1_2.42-4ubuntu2.10_amd64.deb ...
+#10 81.09 Unpacking libsframe1:amd64 (2.42-4ubuntu2.10) ...
+#10 81.20 Selecting previously unselected package libbinutils:amd64.
+#10 81.20 Preparing to unpack .../08-libbinutils_2.42-4ubuntu2.10_amd64.deb ...
+#10 81.20 Unpacking libbinutils:amd64 (2.42-4ubuntu2.10) ...
+#10 81.31 Selecting previously unselected package libctf-nobfd0:amd64.
+#10 81.31 Preparing to unpack .../09-libctf-nobfd0_2.42-4ubuntu2.10_amd64.deb ...
+#10 81.32 Unpacking libctf-nobfd0:amd64 (2.42-4ubuntu2.10) ...
+#10 81.43 Selecting previously unselected package libctf0:amd64.
+#10 81.43 Preparing to unpack .../10-libctf0_2.42-4ubuntu2.10_amd64.deb ...
+#10 81.43 Unpacking libctf0:amd64 (2.42-4ubuntu2.10) ...
+#10 81.55 Selecting previously unselected package libgprofng0:amd64.
+#10 81.55 Preparing to unpack .../11-libgprofng0_2.42-4ubuntu2.10_amd64.deb ...
+#10 81.55 Unpacking libgprofng0:amd64 (2.42-4ubuntu2.10) ...
+#10 81.66 Selecting previously unselected package binutils-x86-64-linux-gnu.
+#10 81.66 Preparing to unpack .../12-binutils-x86-64-linux-gnu_2.42-4ubuntu2.10_amd64.deb ...
+#10 81.67 Unpacking binutils-x86-64-linux-gnu (2.42-4ubuntu2.10) ...
+#10 81.82 Selecting previously unselected package binutils.
+#10 81.82 Preparing to unpack .../13-binutils_2.42-4ubuntu2.10_amd64.deb ...
+#10 81.82 Unpacking binutils (2.42-4ubuntu2.10) ...
+#10 81.92 Selecting previously unselected package libc-dev-bin.
+#10 81.92 Preparing to unpack .../14-libc-dev-bin_2.39-0ubuntu8.9_amd64.deb ...
+#10 81.92 Unpacking libc-dev-bin (2.39-0ubuntu8.9) ...
+#10 82.02 Selecting previously unselected package linux-libc-dev:amd64.
+#10 82.02 Preparing to unpack .../15-linux-libc-dev_6.8.0-147.147_amd64.deb ...
+#10 82.02 Unpacking linux-libc-dev:amd64 (6.8.0-147.147) ...
+#10 82.20 Selecting previously unselected package libcrypt-dev:amd64.
+#10 82.20 Preparing to unpack .../16-libcrypt-dev_1%3a4.4.36-4build1_amd64.deb ...
+#10 82.28 Unpacking libcrypt-dev:amd64 (1:4.4.36-4build1) ...
+#10 82.38 Selecting previously unselected package rpcsvc-proto.
+#10 82.38 Preparing to unpack .../17-rpcsvc-proto_1.4.2-0ubuntu7_amd64.deb ...
+#10 82.39 Unpacking rpcsvc-proto (1.4.2-0ubuntu7) ...
+#10 82.49 Selecting previously unselected package libc6-dev:amd64.
+#10 82.50 Preparing to unpack .../18-libc6-dev_2.39-0ubuntu8.9_amd64.deb ...
+#10 82.50 Unpacking libc6-dev:amd64 (2.39-0ubuntu8.9) ...
+#10 82.68 Selecting previously unselected package gcc-13-base:amd64.
+#10 82.68 Preparing to unpack .../19-gcc-13-base_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 82.68 Unpacking gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+#10 82.79 Selecting previously unselected package libisl23:amd64.
+#10 82.79 Preparing to unpack .../20-libisl23_0.26-3build1.1_amd64.deb ...
+#10 82.79 Unpacking libisl23:amd64 (0.26-3build1.1) ...
+#10 82.91 Selecting previously unselected package libmpfr6:amd64.
+#10 82.91 Preparing to unpack .../21-libmpfr6_4.2.1-1build1.1_amd64.deb ...
+#10 82.91 Unpacking libmpfr6:amd64 (4.2.1-1build1.1) ...
+#10 83.02 Selecting previously unselected package libmpc3:amd64.
+#10 83.02 Preparing to unpack .../22-libmpc3_1.3.1-1build1.1_amd64.deb ...
+#10 83.02 Unpacking libmpc3:amd64 (1.3.1-1build1.1) ...
+#10 83.13 Selecting previously unselected package cpp-13-x86-64-linux-gnu.
+#10 83.13 Preparing to unpack .../23-cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 83.13 Unpacking cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+#10 83.36 Selecting previously unselected package cpp-13.
+#10 83.36 Preparing to unpack .../24-cpp-13_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 83.36 Unpacking cpp-13 (13.3.0-6ubuntu2~24.04.1) ...
+#10 83.46 Selecting previously unselected package cpp-x86-64-linux-gnu.
+#10 83.46 Preparing to unpack .../25-cpp-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+#10 83.47 Unpacking cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+#10 83.57 Selecting previously unselected package cpp.
+#10 83.58 Preparing to unpack .../26-cpp_4%3a13.2.0-7ubuntu1_amd64.deb ...
+#10 83.65 Unpacking cpp (4:13.2.0-7ubuntu1) ...
+#10 83.76 Selecting previously unselected package libcc1-0:amd64.
+#10 83.76 Preparing to unpack .../27-libcc1-0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 83.76 Unpacking libcc1-0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 83.87 Selecting previously unselected package libgomp1:amd64.
+#10 83.87 Preparing to unpack .../28-libgomp1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 83.87 Unpacking libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 83.98 Selecting previously unselected package libitm1:amd64.
+#10 83.98 Preparing to unpack .../29-libitm1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 83.98 Unpacking libitm1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 84.09 Selecting previously unselected package libasan8:amd64.
+#10 84.09 Preparing to unpack .../30-libasan8_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 84.09 Unpacking libasan8:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 84.23 Selecting previously unselected package liblsan0:amd64.
+#10 84.23 Preparing to unpack .../31-liblsan0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 84.24 Unpacking liblsan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 84.35 Selecting previously unselected package libtsan2:amd64.
+#10 84.35 Preparing to unpack .../32-libtsan2_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 84.36 Unpacking libtsan2:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 84.49 Selecting previously unselected package libubsan1:amd64.
+#10 84.49 Preparing to unpack .../33-libubsan1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 84.50 Unpacking libubsan1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 84.61 Selecting previously unselected package libhwasan0:amd64.
+#10 84.61 Preparing to unpack .../34-libhwasan0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 84.62 Unpacking libhwasan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 84.74 Selecting previously unselected package libquadmath0:amd64.
+#10 84.74 Preparing to unpack .../35-libquadmath0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 84.74 Unpacking libquadmath0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 84.84 Selecting previously unselected package libgcc-13-dev:amd64.
+#10 84.85 Preparing to unpack .../36-libgcc-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 84.85 Unpacking libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+#10 85.02 Selecting previously unselected package gcc-13-x86-64-linux-gnu.
+#10 85.03 Preparing to unpack .../37-gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 85.03 Unpacking gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+#10 85.39 Selecting previously unselected package gcc-13.
+#10 85.40 Preparing to unpack .../38-gcc-13_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 85.40 Unpacking gcc-13 (13.3.0-6ubuntu2~24.04.1) ...
+#10 85.51 Selecting previously unselected package gcc-x86-64-linux-gnu.
+#10 85.51 Preparing to unpack .../39-gcc-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+#10 85.51 Unpacking gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+#10 85.62 Selecting previously unselected package gcc.
+#10 85.62 Preparing to unpack .../40-gcc_4%3a13.2.0-7ubuntu1_amd64.deb ...
+#10 85.62 Unpacking gcc (4:13.2.0-7ubuntu1) ...
+#10 85.73 Selecting previously unselected package libstdc++-13-dev:amd64.
+#10 85.73 Preparing to unpack .../41-libstdc++-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 85.73 Unpacking libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+#10 85.95 Selecting previously unselected package g++-13-x86-64-linux-gnu.
+#10 85.95 Preparing to unpack .../42-g++-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 85.95 Unpacking g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+#10 86.21 Selecting previously unselected package g++-13.
+#10 86.21 Preparing to unpack .../43-g++-13_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 86.21 Unpacking g++-13 (13.3.0-6ubuntu2~24.04.1) ...
+#10 86.32 Selecting previously unselected package g++-x86-64-linux-gnu.
+#10 86.32 Preparing to unpack .../44-g++-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+#10 86.32 Unpacking g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+#10 86.43 Selecting previously unselected package g++.
+#10 86.43 Preparing to unpack .../45-g++_4%3a13.2.0-7ubuntu1_amd64.deb ...
+#10 86.43 Unpacking g++ (4:13.2.0-7ubuntu1) ...
+#10 86.54 Selecting previously unselected package make.
+#10 86.54 Preparing to unpack .../46-make_4.3-4.1build2_amd64.deb ...
+#10 86.54 Unpacking make (4.3-4.1build2) ...
+#10 86.65 Selecting previously unselected package libdpkg-perl.
+#10 86.65 Preparing to unpack .../47-libdpkg-perl_1.22.6ubuntu6.6_all.deb ...
+#10 86.66 Unpacking libdpkg-perl (1.22.6ubuntu6.6) ...
+#10 86.78 Selecting previously unselected package bzip2.
+#10 86.78 Preparing to unpack .../48-bzip2_1.0.8-5.1ubuntu0.1_amd64.deb ...
+#10 86.78 Unpacking bzip2 (1.0.8-5.1ubuntu0.1) ...
+#10 86.88 Selecting previously unselected package patch.
+#10 86.89 Preparing to unpack .../49-patch_2.7.6-7build3_amd64.deb ...
+#10 86.89 Unpacking patch (2.7.6-7build3) ...
+#10 87.00 Selecting previously unselected package lto-disabled-list.
+#10 87.00 Preparing to unpack .../50-lto-disabled-list_47_all.deb ...
+#10 87.00 Unpacking lto-disabled-list (47) ...
+#10 87.10 Selecting previously unselected package dpkg-dev.
+#10 87.10 Preparing to unpack .../51-dpkg-dev_1.22.6ubuntu6.6_all.deb ...
+#10 87.11 Unpacking dpkg-dev (1.22.6ubuntu6.6) ...
+#10 87.22 Selecting previously unselected package build-essential.
+#10 87.22 Preparing to unpack .../52-build-essential_12.10ubuntu1_amd64.deb ...
+#10 87.22 Unpacking build-essential (12.10ubuntu1) ...
+#10 87.33 Selecting previously unselected package libllvm18:amd64.
+#10 87.33 Preparing to unpack .../53-libllvm18_1%3a18.1.3-1ubuntu1_amd64.deb ...
+#10 87.33 Unpacking libllvm18:amd64 (1:18.1.3-1ubuntu1) ...
+#10 87.86 Selecting previously unselected package libclang-cpp18.
+#10 87.86 Preparing to unpack .../54-libclang-cpp18_1%3a18.1.3-1ubuntu1_amd64.deb ...
+#10 87.86 Unpacking libclang-cpp18 (1:18.1.3-1ubuntu1) ...
+#10 88.19 Selecting previously unselected package libgc1:amd64.
+#10 88.19 Preparing to unpack .../55-libgc1_1%3a8.2.6-1build1_amd64.deb ...
+#10 88.20 Unpacking libgc1:amd64 (1:8.2.6-1build1) ...
+#10 88.30 Selecting previously unselected package libobjc4:amd64.
+#10 88.31 Preparing to unpack .../56-libobjc4_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+#10 88.31 Unpacking libobjc4:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 88.41 Selecting previously unselected package libobjc-13-dev:amd64.
+#10 88.41 Preparing to unpack .../57-libobjc-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+#10 88.41 Unpacking libobjc-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+#10 88.52 Selecting previously unselected package libclang-common-18-dev:amd64.
+#10 88.52 Preparing to unpack .../58-libclang-common-18-dev_1%3a18.1.3-1ubuntu1_amd64.deb ...
+#10 88.53 Unpacking libclang-common-18-dev:amd64 (1:18.1.3-1ubuntu1) ...
+#10 88.68 Selecting previously unselected package llvm-18-linker-tools.
+#10 88.68 Preparing to unpack .../59-llvm-18-linker-tools_1%3a18.1.3-1ubuntu1_amd64.deb ...
+#10 88.68 Unpacking llvm-18-linker-tools (1:18.1.3-1ubuntu1) ...
+#10 88.81 Selecting previously unselected package libclang1-18.
+#10 88.81 Preparing to unpack .../60-libclang1-18_1%3a18.1.3-1ubuntu1_amd64.deb ...
+#10 88.81 Unpacking libclang1-18 (1:18.1.3-1ubuntu1) ...
+#10 89.04 Selecting previously unselected package clang-18.
+#10 89.04 Preparing to unpack .../61-clang-18_1%3a18.1.3-1ubuntu1_amd64.deb ...
+#10 89.04 Unpacking clang-18 (1:18.1.3-1ubuntu1) ...
+#10 89.15 Selecting previously unselected package clang.
+#10 89.15 Preparing to unpack .../62-clang_1%3a18.0-59~exp2_amd64.deb ...
+#10 89.15 Unpacking clang (1:18.0-59~exp2) ...
+#10 89.26 Selecting previously unselected package zlib1g-dev:amd64.
+#10 89.26 Preparing to unpack .../63-zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb ...
+#10 89.26 Unpacking zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+#10 89.35 Setting up media-types (10.1.0) ...
+#10 89.36 Setting up lto-disabled-list (47) ...
+#10 89.37 Setting up libsqlite3-0:amd64 (3.45.1-1ubuntu2.8) ...
+#10 89.37 Setting up binutils-common:amd64 (2.42-4ubuntu2.10) ...
+#10 89.38 Setting up linux-libc-dev:amd64 (6.8.0-147.147) ...
+#10 89.38 Setting up libctf-nobfd0:amd64 (2.42-4ubuntu2.10) ...
+#10 89.38 Setting up libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.39 Setting up bzip2 (1.0.8-5.1ubuntu0.1) ...
+#10 89.39 Setting up libsframe1:amd64 (2.42-4ubuntu2.10) ...
+#10 89.40 Setting up libjansson4:amd64 (2.14-2build2) ...
+#10 89.40 Setting up rpcsvc-proto (1.4.2-0ubuntu7) ...
+#10 89.40 Setting up gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+#10 89.41 Setting up make (4.3-4.1build2) ...
+#10 89.41 Setting up libmpfr6:amd64 (4.2.1-1build1.1) ...
+#10 89.42 Setting up xz-utils (5.6.1+really5.4.5-1ubuntu0.3) ...
+#10 89.46 update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/lzma.1.gz because associated file /usr/share/man/man1/xz.1.gz (of link group lzma) doesn't exist
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/unlzma.1.gz because associated file /usr/share/man/man1/unxz.1.gz (of link group lzma) doesn't exist
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/lzcat.1.gz because associated file /usr/share/man/man1/xzcat.1.gz (of link group lzma) doesn't exist
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/lzmore.1.gz because associated file /usr/share/man/man1/xzmore.1.gz (of link group lzma) doesn't exist
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/lzless.1.gz because associated file /usr/share/man/man1/xzless.1.gz (of link group lzma) doesn't exist
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/lzdiff.1.gz because associated file /usr/share/man/man1/xzdiff.1.gz (of link group lzma) doesn't exist
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/lzcmp.1.gz because associated file /usr/share/man/man1/xzcmp.1.gz (of link group lzma) doesn't exist
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/lzgrep.1.gz because associated file /usr/share/man/man1/xzgrep.1.gz (of link group lzma) doesn't exist
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/lzegrep.1.gz because associated file /usr/share/man/man1/xzegrep.1.gz (of link group lzma) doesn't exist
+#10 89.46 update-alternatives: warning: skip creation of /usr/share/man/man1/lzfgrep.1.gz because associated file /usr/share/man/man1/xzfgrep.1.gz (of link group lzma) doesn't exist
+#10 89.47 Setting up libquadmath0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.47 Setting up libmpc3:amd64 (1.3.1-1build1.1) ...
+#10 89.48 Setting up patch (2.7.6-7build3) ...
+#10 89.48 Setting up libclang-common-18-dev:amd64 (1:18.1.3-1ubuntu1) ...
+#10 89.48 Setting up libgc1:amd64 (1:8.2.6-1build1) ...
+#10 89.49 Setting up libdpkg-perl (1.22.6ubuntu6.6) ...
+#10 89.49 Setting up libubsan1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.50 Setting up libhwasan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.50 Setting up libcrypt-dev:amd64 (1:4.4.36-4build1) ...
+#10 89.58 Setting up libasan8:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.58 Setting up netbase (6.4) ...
+#10 89.61 Setting up libtsan2:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.61 Setting up libbinutils:amd64 (2.42-4ubuntu2.10) ...
+#10 89.62 Setting up libisl23:amd64 (0.26-3build1.1) ...
+#10 89.62 Setting up libc-dev-bin (2.39-0ubuntu8.9) ...
+#10 89.62 Setting up libbsd0:amd64 (0.12.1-1build1.1) ...
+#10 89.63 Setting up readline-common (8.2-4build1) ...
+#10 89.67 Setting up libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.10) ...
+#10 89.67 Setting up libcc1-0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.68 Setting up liblsan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.68 Setting up libitm1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.69 Setting up libctf0:amd64 (2.42-4ubuntu2.10) ...
+#10 89.69 Setting up cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+#10 89.69 Setting up libedit2:amd64 (3.1-20230828-1build1) ...
+#10 89.70 Setting up libobjc4:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+#10 89.70 Setting up libgprofng0:amd64 (2.42-4ubuntu2.10) ...
+#10 89.70 Setting up libreadline8t64:amd64 (8.2-4build1) ...
+#10 89.71 Setting up libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+#10 89.71 Setting up libc6-dev:amd64 (2.39-0ubuntu8.9) ...
+#10 89.72 Setting up libobjc-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+#10 89.72 Setting up libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+#10 89.72 Setting up libllvm18:amd64 (1:18.1.3-1ubuntu1) ...
+#10 89.73 Setting up binutils-x86-64-linux-gnu (2.42-4ubuntu2.10) ...
+#10 89.73 Setting up cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+#10 89.73 Setting up libclang1-18 (1:18.1.3-1ubuntu1) ...
+#10 89.74 Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#10 89.74 Setting up cpp-13 (13.3.0-6ubuntu2~24.04.1) ...
+#10 89.75 Setting up gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+#10 89.75 Setting up python3.12 (3.12.3-1ubuntu0.17) ...
+#10 90.75 Setting up binutils (2.42-4ubuntu2.10) ...
+#10 90.76 Setting up dpkg-dev (1.22.6ubuntu6.6) ...
+#10 90.76 Setting up gcc-13 (13.3.0-6ubuntu2~24.04.1) ...
+#10 90.77 Setting up llvm-18-linker-tools (1:18.1.3-1ubuntu1) ...
+#10 90.77 Setting up zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+#10 90.78 Setting up cpp (4:13.2.0-7ubuntu1) ...
+#10 90.88 Setting up libclang-cpp18 (1:18.1.3-1ubuntu1) ...
+#10 90.89 Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#10 90.89 Setting up g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+#10 90.89 Setting up gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+#10 90.90 Setting up clang-18 (1:18.1.3-1ubuntu1) ...
+#10 90.90 Setting up python3 (3.12.3-0ubuntu2.1) ...
+#10 91.34 Setting up gcc (4:13.2.0-7ubuntu1) ...
+#10 91.43 Setting up clang (1:18.0-59~exp2) ...
+#10 91.54 Setting up g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+#10 91.55 Setting up g++-13 (13.3.0-6ubuntu2~24.04.1) ...
+#10 91.55 Setting up g++ (4:13.2.0-7ubuntu1) ...
+#10 91.59 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+#10 91.59 update-alternatives: warning: skip creation of /usr/share/man/man1/c++.1.gz because associated file /usr/share/man/man1/g++.1.gz (of link group c++) doesn't exist
+#10 91.59 Setting up build-essential (12.10ubuntu1) ...
+#10 91.60 Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+#10 92.33 Python 3.12.3
+#10 92.48 Ubuntu clang version 18.1.3 (1ubuntu1)
+#10 92.48 Target: x86_64-pc-linux-gnu
+#10 92.48 Thread model: posix
+#10 92.48 InstalledDir: /usr/bin
+#10 92.50 build-essential	12.10ubuntu1
+#10 92.50 clang	1:18.0-59~exp2
+#10 92.50 python3	3.12.3-0ubuntu2.1
+#10 92.50 zlib1g-dev:amd64	1:1.3.dfsg-3.1ubuntu2.2
+#10 DONE 92.8s
+
+#16 [publish 1/8] WORKDIR /src
+#16 DONE 0.0s
+
+#17 [publish 2/8] COPY global.json ./
+#17 DONE 0.0s
+
+#18 [publish 3/8] COPY P0.Host/ ./P0.Host/
+#18 DONE 0.0s
+
+#19 [publish 4/8] COPY P0.Worker/ ./P0.Worker/
+#19 DONE 0.0s
+
+#20 [publish 5/8] COPY scripts/validate.py ./scripts/validate.py
+#20 DONE 0.0s
+
+#21 [publish 6/8] COPY --from=web-build /src/Web/dist ./Web/dist
+#21 DONE 0.0s
+
+#22 [publish 7/8] RUN case "amd64:linux-x64" in arm64:linux-arm64|amd64:linux-x64) ;; *) echo "Mismatched or unsupported TARGETARCH/P0_TARGET_RID: amd64/linux-x64" >&2; exit 2 ;; esac     && mkdir -p /out/locks     && cp P0.Host/packages.lock.json /out/locks/P0.Host.packages.lock.osx-arm64.json     && dotnet restore P0.Host/P0.Host.csproj --runtime "linux-x64" --force-evaluate     && cp P0.Host/packages.lock.json "/out/locks/P0.Host.packages.lock.linux-x64.json"     && dotnet restore P0.Host/P0.Host.csproj --runtime "linux-x64" --locked-mode     && dotnet restore P0.Worker/P0.Worker.csproj --locked-mode     && cp P0.Worker/packages.lock.json /out/locks/P0.Worker.packages.lock.json     && (cd /out/locks && sha256sum P0.Host.packages.lock.osx-arm64.json "P0.Host.packages.lock.linux-x64.json" P0.Worker.packages.lock.json > SHA256SUMS)     && python3 -c 'import json, os; from pathlib import Path; root=Path("/out/locks"); source=json.loads((root/"P0.Host.packages.lock.osx-arm64.json").read_text()); rid=os.environ["P0_TARGET_RID"]; linux=json.loads((root/("P0.Host.packages.lock."+rid+".json")).read_text()); worker=json.loads((root/"P0.Worker.packages.lock.json").read_text()); print("sourceHostTargets="+",".join(source["dependencies"])); print("linuxHostTargets="+",".join(linux["dependencies"])); print("workerTargets="+",".join(worker["dependencies"]))' > /out/locks/target-diff.txt
+#22 1.899   Determining projects to restore...
+#22 48.85   Restored /src/P0.Host/P0.Host.csproj (in 46.34 sec).
+#22 50.69   Determining projects to restore...
+#22 51.79   Restored /src/P0.Host/P0.Host.csproj (in 552 ms).
+#22 53.49   Determining projects to restore...
+#22 66.60   Restored /src/P0.Worker/P0.Worker.csproj (in 12.56 sec).
+#22 DONE 66.9s
+
+#23 [publish 8/8] RUN dotnet publish P0.Host/P0.Host.csproj         --configuration Release         --runtime "linux-x64"         --self-contained true         --no-restore         --output /out/host         -p:PublishAot=true     && dotnet publish P0.Worker/P0.Worker.csproj         --configuration Release         --no-restore         --output /out/worker         -p:UseAppHost=false
+#23 17.08   P0.Host -> /src/P0.Host/bin/Release/net10.0/linux-x64/P0.Host.dll
+#23 18.53   Generating native code
+#23 38.51   P0.Host -> /out/host/
+#23 42.73   P0.Worker -> /src/P0.Worker/bin/Release/net10.0/P0.Worker.dll
+#23 42.79   P0.Worker -> /out/worker/
+#23 DONE 42.9s
+
+#24 exporting to image
+#24 exporting layers
+#24 exporting layers 16.3s done
+#24 exporting manifest sha256:215f7bbf5a09efa4dfcd91071bd0cde919e778c020ff42eb1dd1d561d556afbf done
+#24 exporting config sha256:f7a384c5588225f6662c267f318f8cb04f15bf661ee0e0a87b3491f1fecf975e done
+#24 exporting attestation manifest sha256:1df11610d9d329ad4b6d78f58d2b0adf053964ce4ed73d0337d8ffa0fc5f67fc done
+#24 exporting manifest list sha256:b27cc2aa027a322e12a828dea3fc7d4f36370c98da9d19f4fcfe1912bab47e08 done
+#24 naming to docker.io/library/career-p0-linux-x64:10.0.400 done
+#24 DONE 16.3s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/su78hk15sff2vaiah9mz5c1oa

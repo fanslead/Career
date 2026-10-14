@@ -1,0 +1,33 @@
+{
+  "scope": "Git text copies only; raw files retained locally without modification",
+  "files": [
+    {
+      "originalLocalPath": "docs/validation/2026-10-14/p0/results/linux-arm64-volume-final/binary-fingerprints.txt",
+      "originalSha256": "074b0e9cbf197dd20fa9f22eb3df7b14b614564ceedafe6c20d21edb1b713f42",
+      "committedCopy": "docs/validation/2026-10-14/p0/results/linux-arm64-volume-final/binary-fingerprints.normalized.txt",
+      "committedSha256": "3d46d664917e21b3eca466e487725a0fc0a77b51a4849427034ddcc60d827d78",
+      "transformation": "CRLF and standalone CR converted to LF; trailing spaces/tabs and extra EOF blank lines removed. All other content preserved."
+    },
+    {
+      "originalLocalPath": "docs/validation/2026-10-14/p0/results/linux-x64-volume-final/docker-build.log",
+      "originalSha256": "b780025ddca857c587088bcff78af53534651d218a7392f7f725e263be491df9",
+      "committedCopy": "docs/validation/2026-10-14/p0/results/linux-x64-volume-final/docker-build.normalized.log",
+      "committedSha256": "b5bf379c9df68393ba496968c89349788b15646344e000cc67a523563b8bd4cc",
+      "transformation": "CRLF and standalone CR converted to LF; trailing spaces/tabs and extra EOF blank lines removed. All other content preserved."
+    },
+    {
+      "originalLocalPath": "docs/validation/2026-10-14/p0/results/review-linux-arm64-final/docker-build.log",
+      "originalSha256": "e9582038c2278a3be295c31e9a514eefc58b190b22aab97c8718bfa03316b60a",
+      "committedCopy": "docs/validation/2026-10-14/p0/results/review-linux-arm64-final/docker-build.normalized.log",
+      "committedSha256": "0222c5358fb72e53e48675833c30f816b6e9097bde7208e916c986847087cfbf",
+      "transformation": "CRLF and standalone CR converted to LF; trailing spaces/tabs and extra EOF blank lines removed. All other content preserved."
+    },
+    {
+      "originalLocalPath": "docs/validation/2026-10-14/p0/results/review-linux-x64-final/docker-build.log",
+      "originalSha256": "388642f0241619b996ebe5e14b1095885eee59e963f8d7e60c4e8ebff882b2bf",
+      "committedCopy": "docs/validation/2026-10-14/p0/results/review-linux-x64-final/docker-build.normalized.log",
+      "committedSha256": "f9cb8925326187d7fec24edd09bce6b7508d772358f031d3fa83ba3292751cdb",
+      "transformation": "CRLF and standalone CR converted to LF; trailing spaces/tabs and extra EOF blank lines removed. All other content preserved."
+    }
+  ]
+}

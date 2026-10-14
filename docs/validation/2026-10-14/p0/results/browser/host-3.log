@@ -1,0 +1,9 @@
+Unhandled exception. System.IO.IOException: The process cannot access the file '/Users/funshow/Desktop/0_funshow/Career/docs/validation/2026-10-14/p0/results/browser/state/.host.lock' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Init(String, FileMode, FileAccess, FileShare, FileOptions, Int64, Int64&, UnixFileMode&) + 0x3e4
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String, FileMode, FileAccess, FileShare, FileOptions, Int64, UnixFileMode, Int64&, UnixFileMode&, Boolean, Boolean&, Func`4) + 0x150
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String, FileMode, FileAccess, FileShare, FileOptions, Int64, Nullable`1) + 0x94
+   at System.IO.FileStream..ctor(String, FileMode, FileAccess, FileShare, Int32, FileOptions, Int64) + 0x90
+   at P0.Host.ProbeStore..ctor(String) + 0xc8
+   at Program.<<Main>$>d__0.MoveNext() + 0x180
+--- End of stack trace from previous location ---
+   at Program.<Main>(String[] args) + 0x2c

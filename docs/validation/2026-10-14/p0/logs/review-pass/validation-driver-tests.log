@@ -1,0 +1,15 @@
+test_denial_assertion_requires_persisted_terminal_denial_without_side_effect (test_validate.EvidenceAndAssertionTests.test_denial_assertion_requires_persisted_terminal_denial_without_side_effect) ... ok
+test_empty_persisted_json_text_is_present_but_invalid (test_validate.EvidenceAndAssertionTests.test_empty_persisted_json_text_is_present_but_invalid) ... ok
+test_read_db_evidence_preserves_empty_checkpoint_presence (test_validate.EvidenceAndAssertionTests.test_read_db_evidence_preserves_empty_checkpoint_presence) ... ok
+test_sse_reconnect_requires_nonempty_fresh_expected_event (test_validate.EvidenceAndAssertionTests.test_sse_reconnect_requires_nonempty_fresh_expected_event) ... ok
+test_suite_summary_rejects_empty_or_inconsistent_registry (test_validate.EvidenceAndAssertionTests.test_suite_summary_rejects_empty_or_inconsistent_registry) ... ok
+test_invalid_exported_summary_fails_and_preserves_volume (test_validate.FakeDockerWrapperTests.test_invalid_exported_summary_fails_and_preserves_volume) ... ok
+test_missing_docker_context_is_not_treated_as_missing_volume (test_validate.FakeDockerWrapperTests.test_missing_docker_context_is_not_treated_as_missing_volume) ... ok
+test_successful_wrapper_validates_summary_and_cleans_resources (test_validate.FakeDockerWrapperTests.test_successful_wrapper_validates_summary_and_cleans_resources) ... ok
+test_unknown_docker_inspect_failure_fails_and_preserves_volume (test_validate.FakeDockerWrapperTests.test_unknown_docker_inspect_failure_fails_and_preserves_volume) ... ok
+test_close_retries_persistent_worker_inspection_failure (test_validate.HostCleanupRetryTests.test_close_retries_persistent_worker_inspection_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 6.273s
+
+OK

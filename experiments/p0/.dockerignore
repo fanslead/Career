@@ -1,0 +1,13 @@
+# Local build products and generated frontend assets are rebuilt inside Docker.
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+**/.artifacts/
+**/__pycache__/
+
+# Keep workstation and repository metadata out of the build context.
+.git/
+.vscode/
+**/.DS_Store
+**/*.user

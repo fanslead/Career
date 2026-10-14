@@ -1,0 +1,24 @@
+{
+  "expectedStatus": 403,
+  "actualStatus": 202,
+  "response": {
+    "id": "022288908eb942ebb7607e64fad3922e",
+    "status": "Queued",
+    "prompt": "P0 review forged-host isolation probe",
+    "operationId": null,
+    "argumentsHash": null,
+    "workerPid": null,
+    "modelCalls": 0,
+    "toolCalls": 0,
+    "text": "",
+    "error": null,
+    "receiptCount": 0,
+    "argumentsJson": null
+  },
+  "description": "Loopback HTTP request with untrusted Host and matching Origin must not create a run.",
+  "cleanup": {
+    "pid": 90658,
+    "stopped": true,
+    "note": "Initial helper called missing stop_all method; owned PID verified and stopped explicitly."
+  }
+}

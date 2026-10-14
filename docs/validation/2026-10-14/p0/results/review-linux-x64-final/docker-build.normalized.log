@@ -1,0 +1,122 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.64kB 0.0s done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1.7
+#2 DONE 0.4s
+
+#3 docker-image://docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e
+#3 resolve docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#4 DONE 0.0s
+
+#5 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#5 DONE 2.1s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 303B done
+#6 DONE 0.0s
+
+#7 [toolchain 1/2] FROM mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510
+#7 resolve mcr.microsoft.com/dotnet/sdk:10.0.400-noble@sha256:4beef5b8919dcaa2dc924233bd069257e883cc7a061e09088a97d152d6a48510 0.0s done
+#7 DONE 0.0s
+
+#8 [web-build 1/6] FROM docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d
+#8 resolve docker.io/library/node:24.18.0-bookworm-slim@sha256:6f7b03f7c2c8e2e784dcf9295400527b9b1270fd37b7e9a7285cf83b6951452d done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 1.28kB done
+#9 DONE 0.0s
+
+#10 [publish 1/8] WORKDIR /src
+#10 CACHED
+
+#11 [toolchain 2/2] RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends         build-essential clang python3 zlib1g-dev     && rm -rf /var/lib/apt/lists/*     && test "$(dotnet --version)" = "10.0.400"     && python3 --version     && clang --version     && dpkg-query --show build-essential clang python3 zlib1g-dev
+#11 CACHED
+
+#12 [web-build 2/6] WORKDIR /src/Web
+#12 CACHED
+
+#13 [publish 2/8] COPY global.json ./
+#13 CACHED
+
+#14 [publish 3/8] COPY P0.Host/ ./P0.Host/
+#14 DONE 0.0s
+
+#15 [web-build 3/6] COPY Web/package.json Web/package-lock.json ./
+#15 DONE 0.0s
+
+#16 [publish 4/8] COPY P0.Worker/ ./P0.Worker/
+#16 DONE 0.0s
+
+#17 [publish 5/8] COPY scripts/validate.py ./scripts/validate.py
+#17 DONE 0.0s
+
+#18 [web-build 4/6] RUN node --version && npm --version && npm ci --no-audit --no-fund
+#18 0.179 v24.18.0
+#18 0.909 11.16.0
+#18 10.73
+#18 10.73 added 25 packages in 9s
+#18 10.74 npm notice
+#18 10.74 npm notice New major version of npm available! 11.16.0 -> 12.2.0
+#18 10.74 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#18 10.74 npm notice To update run: npm install -g npm@12.2.0
+#18 10.74 npm notice
+#18 DONE 10.8s
+
+#19 [web-build 5/6] COPY Web/ ./
+#19 DONE 0.0s
+
+#20 [web-build 6/6] RUN npm run build
+#20 0.859
+#20 0.859 > p0-agent-harness-probe@0.1.0 build
+#20 0.859 > tsc -b && vite build
+#20 0.859
+#20 6.216 vite v8.3.4 building client environment for production...
+#20 6.315 transforming...
+#20 6.847 ✓ 17 modules transformed.
+#20 7.391 rendering chunks...
+#20 7.488 computing gzip size...
+#20 7.519 dist/index.html                   0.45 kB │ gzip:  0.31 kB
+#20 7.519 dist/assets/index-DdGRnUZ1.css   11.72 kB │ gzip:  3.51 kB
+#20 7.519 dist/assets/index-BCNExfm2.js   239.41 kB │ gzip: 74.94 kB
+#20 7.519
+#20 7.523 ✓ built in 1.30s
+#20 DONE 7.8s
+
+#21 [publish 6/8] COPY --from=web-build /src/Web/dist ./Web/dist
+#21 DONE 0.0s
+
+#22 [publish 7/8] RUN case "amd64:linux-x64" in arm64:linux-arm64|amd64:linux-x64) ;; *) echo "Mismatched or unsupported TARGETARCH/P0_TARGET_RID: amd64/linux-x64" >&2; exit 2 ;; esac     && mkdir -p /out/locks     && cp P0.Host/packages.lock.json /out/locks/P0.Host.packages.lock.osx-arm64.json     && dotnet restore P0.Host/P0.Host.csproj --runtime "linux-x64" --force-evaluate     && cp P0.Host/packages.lock.json "/out/locks/P0.Host.packages.lock.linux-x64.json"     && dotnet restore P0.Host/P0.Host.csproj --runtime "linux-x64" --locked-mode     && dotnet restore P0.Worker/P0.Worker.csproj --locked-mode     && cp P0.Worker/packages.lock.json /out/locks/P0.Worker.packages.lock.json     && (cd /out/locks && sha256sum P0.Host.packages.lock.osx-arm64.json "P0.Host.packages.lock.linux-x64.json" P0.Worker.packages.lock.json > SHA256SUMS)     && python3 -c 'import json, os; from pathlib import Path; root=Path("/out/locks"); source=json.loads((root/"P0.Host.packages.lock.osx-arm64.json").read_text()); rid=os.environ["P0_TARGET_RID"]; linux=json.loads((root/("P0.Host.packages.lock."+rid+".json")).read_text()); worker=json.loads((root/"P0.Worker.packages.lock.json").read_text()); print("sourceHostTargets="+",".join(source["dependencies"])); print("linuxHostTargets="+",".join(linux["dependencies"])); print("workerTargets="+",".join(worker["dependencies"]))' > /out/locks/target-diff.txt
+#22 3.107   Determining projects to restore...
+#22 42.49   Restored /src/P0.Host/P0.Host.csproj (in 38.42 sec).
+#22 45.68   Determining projects to restore...
+#22 47.78   Restored /src/P0.Host/P0.Host.csproj (in 1.21 sec).
+#22 50.17   Determining projects to restore...
+#22 64.69   Restored /src/P0.Worker/P0.Worker.csproj (in 13.58 sec).
+#22 DONE 65.0s
+
+#23 [publish 8/8] RUN dotnet publish P0.Host/P0.Host.csproj         --configuration Release         --runtime "linux-x64"         --self-contained true         --no-restore         --output /out/host         -p:PublishAot=true     && dotnet publish P0.Worker/P0.Worker.csproj         --configuration Release         --no-restore         --output /out/worker         -p:UseAppHost=false
+#23 18.61   P0.Host -> /src/P0.Host/bin/Release/net10.0/linux-x64/P0.Host.dll
+#23 20.50   Generating native code
+#23 46.29   P0.Host -> /out/host/
+#23 51.49   P0.Worker -> /src/P0.Worker/bin/Release/net10.0/P0.Worker.dll
+#23 51.57   P0.Worker -> /out/worker/
+#23 DONE 51.7s
+
+#24 exporting to image
+#24 exporting layers
+#24 exporting layers 14.9s done
+#24 exporting manifest sha256:c215138fafdaf5565f4e97287841fa9907dee8a7d97aad592aefdcf375cd644d 0.0s done
+#24 exporting config sha256:44d21bd2073c6c8335d1cf501e53e4e481ac3d536cf3b1ceaf790a76a1a62888 done
+#24 exporting attestation manifest sha256:59b67213f2dcad64d57dded06af5cbc85012fa4cfcaaefaf65e2aaa23b55f273 0.0s done
+#24 exporting manifest list sha256:91a5efafc98b39c9ae09296b2639054bec7cb71d3107a1d94f767e67860b662f done
+#24 naming to docker.io/library/career-p0-linux-x64:10.0.400 done
+#24 DONE 15.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lvgnw65exrrqvaa9miotm2g6x
