@@ -1,6 +1,6 @@
 # 九个参考产品的深入比较与设计修正
 
-更新：2026-10-14。研究范围为 OpenClaw、Codex、Pi、Paperclip、NextCoWork、Marvis、WorkBuddy、WeKnora，以及用户追加的 DeepSeek Harness。根据研究修订产品与技术文档；本轮只改文档，P0 保留未完成状态。
+研究日期：2026-10-14。研究范围为 OpenClaw、Codex、Pi、Paperclip、NextCoWork、Marvis、WorkBuddy、WeKnora，以及用户追加的 DeepSeek Harness。本文记录产品研究及其设计修订；P0 状态以 [复审交付](../validation/2026-10-14/p0/review-and-delivery.md)为准。2026-10-15 的正式工程首个本地闭环见 [18 实测](../18-production-m1-delivery.md)，完整生产范围仍按 [14 方案](../14-production-implementation-plan.md)推进。
 
 ## 本轮比前一轮多回答了什么
 
@@ -97,7 +97,7 @@ flowchart TB
 
 ## 设计已如何吸收，后续怎样验证
 
-本轮已经把上述判断落入 [04 协作](../04-agent-harness-and-projects.md)、[06 记忆](../06-memory-and-knowledge.md)、[11 通信](../11-frontend-runtime-protocol.md)和新增 [13 恢复](../13-restart-and-recovery.md)，并更新架构、存储、界面及验收矩阵。所有合同仍为设计目标，当前不继续代码实现。
+研究修订时已把上述判断落入 [04 协作](../04-agent-harness-and-projects.md)、[06 记忆](../06-memory-and-knowledge.md)、[11 通信](../11-frontend-runtime-protocol.md)和新增 [13 恢复](../13-restart-and-recovery.md)，并更新架构、存储、界面及验收矩阵。完整业务合同仍为设计目标；后续 P0 技术实验与生产实现规划分别报告，不用第三方源码存在代替本项目能力验证。
 
 后续重新启动实施时：
 

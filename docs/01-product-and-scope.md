@@ -1,6 +1,6 @@
 # 产品定位与范围
 
-更新：2026-10-14。根据产品研究修订的产品设计基线；用户已确认项见 [决策记录](09-decisions-and-open-questions.md)。最新实施授权仅限 P0 恢复修复与验证；完整业务设计仍未实现，结果见 [P0 记录](validation/2026-10-14/p0/README.md)。
+更新：2026-10-15。根据产品研究修订的产品设计基线；用户已确认项见 [决策记录](09-decisions-and-open-questions.md)。P0 技术实验结果见 [P0 记录](validation/2026-10-14/p0/review-and-delivery.md)；正式工程已按 [生产实现规划](14-production-implementation-plan.md)完成首个单所有者本地任务闭环，实测范围见 [18 交付记录](18-production-m1-delivery.md)。完整业务设计仍分阶段实施。
 
 ## 1. 产品是否有价值
 

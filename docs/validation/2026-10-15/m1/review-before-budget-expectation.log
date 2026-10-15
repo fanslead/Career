@@ -1,0 +1,3 @@
+FAIL M1 lifecycle: Timed out waiting for the call limit to prevent a third model request; last task status='InReview'; approval states=['Rejected', 'Approved'].
+PASS M1 lifecycle: paired workspace, verified model, idempotent task receipt, plan, fixed tool approval, artifact download/hash, acceptance, and Done (task=task_3bfa646ed5d9412295ed792473c7f322, version=19).
+M1 integration report: /Users/funshow/Desktop/0_funshow/Career/artifacts/validation/m1/review-integration-sdk.json

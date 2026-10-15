@@ -1,6 +1,6 @@
 # 系统架构与 AOT 边界
 
-更新：2026-10-14。根据产品研究修订的设计基线，所有模块名与接口名为本项目建议，不是对 MAF 现有 API 的声明。本轮只改文档，P0 保留未完成状态。
+更新：2026-10-15。根据产品研究修订的设计基线，完整模块名与接口名为本项目建议，不是对 MAF 现有 API 的声明。P0 已完成限定范围的复审验证，见 [交付记录](validation/2026-10-14/p0/review-and-delivery.md)；正式工程已建立，当前实际接口和本地闭环范围见 [17 合同](17-production-m1-contract.md)、[18 实测](18-production-m1-delivery.md)，后续阶段见 [14 生产方案](14-production-implementation-plan.md)。
 
 ## 1. 推荐结构
 

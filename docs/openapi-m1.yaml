@@ -1,0 +1,981 @@
+openapi: 3.1.0
+info:
+  title: Career local workspace API
+  version: m1
+  description: >-
+    M1 local-owner API as implemented by Career.Host. All JSON properties use
+    camelCase. The host accepts only its configured loopback address and port
+    (127.0.0.1, localhost, or ::1). A non-empty Origin must exactly match the
+    current local origin (http://127.0.0.1:{port} or http://localhost:{port}).
+    Every POST, PUT, and PATCH request, including anonymous pairing and refresh,
+    must include X-Career-Client: web; GET and HEAD do not require that marker.
+    API responses use Cache-Control: no-store. This document describes only
+    routes currently mapped by Career.Host.
+servers:
+  - url: http://127.0.0.1:{port}
+    description: Default loopback address
+    variables:
+      port:
+        default: "5198"
+        description: Configurable local Career port
+  - url: http://localhost:{port}
+    description: Localhost alias
+    variables:
+      port:
+        default: "5198"
+        description: Configurable local Career port
+security:
+  - OwnerBearer: []
+tags:
+  - name: Bootstrap
+  - name: Authentication
+  - name: Workspace
+  - name: Connection
+  - name: Tasks
+  - name: Approvals
+  - name: Artifacts
+  - name: Events
+paths:
+  /api/bootstrap:
+    get:
+      tags: [Bootstrap]
+      operationId: getBootstrap
+      summary: Read local workspace pairing state
+      description: Anonymous with respect to the owner bearer token. The local Host/Origin guard still applies.
+      security: []
+      responses:
+        "200": { $ref: "#/components/responses/BootstrapOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/auth/pair:
+    post:
+      tags: [Authentication]
+      operationId: pairOwner
+      summary: Pair this browser with the local owner
+      description: Anonymous with respect to OwnerBearer. A successful pairing returns a short-lived access token and sets a rotating HttpOnly refresh cookie scoped to /api/auth. The pairing code is single-use and expires after ten minutes.
+      security:
+        - WebClientMarker: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/PairRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/SessionCreated" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/auth/refresh:
+    post:
+      tags: [Authentication]
+      operationId: refreshOwnerSession
+      summary: Rotate the access and refresh credentials
+      description: Anonymous with respect to OwnerBearer. Requires the current career.refresh cookie set by pairing; the refresh token is single-use and the response rotates the cookie.
+      security:
+        - WebClientMarker: []
+      parameters:
+        - name: career.refresh
+          in: cookie
+          required: true
+          description: HttpOnly, SameSite=Strict refresh credential, scoped to /api/auth.
+          schema: { type: string, minLength: 43, maxLength: 43 }
+      responses:
+        "200": { $ref: "#/components/responses/SessionCreated" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/auth/logout:
+    post:
+      tags: [Authentication]
+      operationId: logoutOwnerSession
+      summary: Revoke the current owner session
+      security:
+        - OwnerBearer: []
+          WebClientMarker: []
+      responses:
+        "204": { $ref: "#/components/responses/NoContent" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/workspace:
+    get:
+      tags: [Workspace]
+      operationId: getWorkspace
+      summary: Read the authoritative workspace snapshot
+      responses:
+        "200": { $ref: "#/components/responses/WorkspaceOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/workspace/pause-intake:
+    post:
+      tags: [Workspace]
+      operationId: pauseWorkspaceIntake
+      summary: Pause new task dispatch
+      description: Existing tasks and in-flight work are retained. The command is idempotent by requestId.
+      security:
+        - OwnerBearer: []
+          WebClientMarker: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TestConnectionRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/WorkspaceOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/workspace/resume-intake:
+    post:
+      tags: [Workspace]
+      operationId: resumeWorkspaceIntake
+      summary: Resume new task dispatch
+      description: The command is idempotent by requestId.
+      security:
+        - OwnerBearer: []
+          WebClientMarker: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TestConnectionRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/WorkspaceOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/connection:
+    get:
+      tags: [Connection]
+      operationId: getConnection
+      summary: Read non-secret model connection settings
+      responses:
+        "200": { $ref: "#/components/responses/ConnectionNullableOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+    put:
+      tags: [Connection]
+      operationId: saveConnection
+      summary: Save the local model connection
+      description: The API key is write-only and is never returned in snapshots or events. Changing settings requires another successful capability test before task execution.
+      security:
+        - OwnerBearer: []
+          WebClientMarker: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/SaveConnectionRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/ConnectionOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/connection/test:
+    post:
+      tags: [Connection]
+      operationId: testConnection
+      summary: Run the current connection capability test
+      description: Uses a bounded local probe and cannot publish a document. The requestId makes an uncertain result recoverable without a second model dispatch.
+      security:
+        - OwnerBearer: []
+          WebClientMarker: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TestConnectionRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/ConnectionOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/tasks:
+    post:
+      tags: [Tasks]
+      operationId: createTask
+      summary: Save a task draft
+      description: Creates an AwaitingPlan task; creating a draft does not invoke a model. requestId provides idempotent retry.
+      security:
+        - OwnerBearer: []
+          WebClientMarker: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/CreateTaskRequest" }
+      responses:
+        "201": { $ref: "#/components/responses/TaskCreated" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/tasks/{id}:
+    parameters:
+      - $ref: "#/components/parameters/TaskId"
+    get:
+      tags: [Tasks]
+      operationId: getTask
+      summary: Read a task and its immutable history
+      responses:
+        "200": { $ref: "#/components/responses/TaskOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+    patch:
+      tags: [Tasks]
+      operationId: reviseTask
+      summary: Revise the current task scope
+      description: Allowed only in AwaitingPlan, Paused, or Failed. Creates a new task revision and a new pending plan; running tasks must first be paused.
+      security:
+        - OwnerBearer: []
+          WebClientMarker: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/UpdateTaskRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/TaskOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/tasks/{id}/confirm-plan:
+    parameters:
+      - $ref: "#/components/parameters/TaskId"
+    post:
+      tags: [Tasks]
+      operationId: confirmTaskPlan
+      summary: Confirm one fixed plan revision
+      description: Must submit the current task version, revision, and proposalHash. A successful confirmation may queue real execution if model capability is verified and intake is open.
+      security:
+        - OwnerBearer: []
+          WebClientMarker: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/ConfirmPlanRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/TaskOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/tasks/{id}/pause:
+    parameters:
+      - $ref: "#/components/parameters/TaskId"
+    post:
+      tags: [Tasks]
+      operationId: pauseTask
+      summary: Request task pause
+      description: The task version is checked. A running worker is asked to stop and the response represents the accepted control state, not a claim that the worker has already exited.
+      security: [{ OwnerBearer: [], WebClientMarker: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TaskCommandRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/TaskOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/tasks/{id}/resume:
+    parameters:
+      - $ref: "#/components/parameters/TaskId"
+    post:
+      tags: [Tasks]
+      operationId: resumeTask
+      summary: Resume a paused task
+      description: Requires a current task version and a verified model connection. Existing completed effects are not replayed.
+      security: [{ OwnerBearer: [], WebClientMarker: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TaskCommandRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/TaskOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/tasks/{id}/cancel:
+    parameters:
+      - $ref: "#/components/parameters/TaskId"
+    post:
+      tags: [Tasks]
+      operationId: cancelTask
+      summary: Request task cancellation
+      description: Completed effects are retained. A running worker must acknowledge stop before cancellation is final.
+      security: [{ OwnerBearer: [], WebClientMarker: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TaskCommandRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/TaskOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/tasks/{id}/retry:
+    parameters:
+      - $ref: "#/components/parameters/TaskId"
+    post:
+      tags: [Tasks]
+      operationId: retryTask
+      summary: Retry a failed or blocked task
+      description: Requires a current task version, no unresolved operation outcome, and a verified model connection.
+      security: [{ OwnerBearer: [], WebClientMarker: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TaskCommandRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/TaskOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/approvals/{id}/decision:
+    parameters:
+      - $ref: "#/components/parameters/ApprovalId"
+    post:
+      tags: [Approvals]
+      operationId: decideApproval
+      summary: Decide one fixed tool approval
+      description: The decision is bound to the current task version and exact payloadHash. A changed or expired proposal must be reread.
+      security: [{ OwnerBearer: [], WebClientMarker: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/ApprovalDecisionRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/TaskOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/tasks/{id}/acceptances:
+    parameters:
+      - $ref: "#/components/parameters/TaskId"
+    post:
+      tags: [Tasks]
+      operationId: decideArtifactAcceptance
+      summary: Accept or return the current artifact version
+      description: The request binds the current task version, revision, artifact id/version, and contentHash. A return requires a non-empty note and may start a new run.
+      security: [{ OwnerBearer: [], WebClientMarker: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/AcceptanceRequest" }
+      responses:
+        "200": { $ref: "#/components/responses/TaskOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "429": { $ref: "#/components/responses/Problem429" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/commands/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        description: requestId used for the command
+        schema: { type: string }
+    get:
+      tags: [Tasks]
+      operationId: getCommandReceipt
+      summary: Read the durable receipt for a command requestId
+      description: Use after an uncertain command response before deciding whether a new command can be issued.
+      responses:
+        "200": { $ref: "#/components/responses/ReceiptOk" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/artifacts/{id}/versions/{version}/download:
+    parameters:
+      - $ref: "#/components/parameters/ArtifactId"
+      - name: version
+        in: path
+        required: true
+        schema: { type: integer, format: int32, minimum: 1 }
+    get:
+      tags: [Artifacts]
+      operationId: downloadArtifactVersion
+      summary: Download an immutable Markdown artifact version
+      description: Returns the stored UTF-8 Markdown as an attachment. The version is immutable and checked against its content hash.
+      responses:
+        "200": { $ref: "#/components/responses/MarkdownAttachment" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "404": { $ref: "#/components/responses/Problem404" }
+        "409": { $ref: "#/components/responses/Problem409" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+  /api/events:
+    get:
+      tags: [Events]
+      operationId: streamWorkspaceEvents
+      summary: Subscribe to workspace events
+      description: >-
+        Server-Sent Events stream. Each workspace event has event name workspace,
+        an id equal to seq, and data containing one EventResponse JSON object.
+        The stream sends comment heartbeats every 15 seconds and ends when the
+        bearer session is no longer valid; reconnect with after set to the last
+        processed sequence. Errors after the stream has begun cannot be returned
+        as application/problem+json.
+      parameters:
+        - name: after
+          in: query
+          required: false
+          description: Resume after this sequence number; omitted or invalid values start at zero.
+          schema: { type: integer, format: int64, default: 0 }
+      responses:
+        "200": { $ref: "#/components/responses/EventStream" }
+        "400": { $ref: "#/components/responses/Problem400" }
+        "401": { $ref: "#/components/responses/Problem401" }
+        "403": { $ref: "#/components/responses/Problem403" }
+        "500": { $ref: "#/components/responses/Problem500" }
+        "503": { $ref: "#/components/responses/Problem503" }
+components:
+  securitySchemes:
+    OwnerBearer:
+      type: http
+      scheme: bearer
+      bearerFormat: opaque
+      description: Short-lived owner access token returned by pairing or refresh; do not persist it outside browser memory.
+    WebClientMarker:
+      type: apiKey
+      in: header
+      name: X-Career-Client
+      description: Required literal value web on every non-GET/HEAD API request; this is a request-origin guard, not an authentication credential.
+  parameters:
+    TaskId:
+      name: id
+      in: path
+      required: true
+      schema: { type: string }
+    ApprovalId:
+      name: id
+      in: path
+      required: true
+      schema: { type: string }
+    ArtifactId:
+      name: id
+      in: path
+      required: true
+      schema: { type: string }
+  requestBodies:
+    CreateTaskRequest:
+      required: true
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/CreateTaskRequest" }
+  responses:
+    BootstrapOk:
+      description: Workspace bootstrap state
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/BootstrapResponse" }
+    SessionCreated:
+      description: Access session issued and refresh cookie rotated
+      headers:
+        Set-Cookie:
+          description: HttpOnly; SameSite=Strict; Path=/api/auth; Max-Age=604800. Secure is set when the request uses HTTPS.
+          schema: { type: string }
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/SessionResponse" }
+    WorkspaceOk:
+      description: Authoritative workspace snapshot
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/WorkspaceResponse" }
+    ConnectionOk:
+      description: Non-secret connection state
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/ConnectionResponse" }
+    ConnectionNullableOk:
+      description: Non-secret connection state, or null if no connection is saved
+      content:
+        application/json:
+          schema:
+            oneOf:
+              - { $ref: "#/components/schemas/ConnectionResponse" }
+              - { type: "null" }
+    TaskOk:
+      description: Authoritative task snapshot after the operation
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/TaskResponse" }
+    TaskCreated:
+      description: Task draft created
+      headers:
+        Location:
+          description: Relative URL of the created task
+          schema: { type: string }
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/TaskResponse" }
+    ReceiptOk:
+      description: Persisted command receipt
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/CommandReceiptResponse" }
+    MarkdownAttachment:
+      description: Immutable Markdown document bytes with an attachment Content-Disposition header
+      headers:
+        Content-Disposition:
+          description: Attachment disposition with the artifact file name
+          schema: { type: string }
+      content:
+        text/markdown:
+          schema: { type: string }
+    EventStream:
+      description: Server-Sent Events stream; data lines carry serialized EventResponse objects
+      content:
+        text/event-stream:
+          schema: { type: string }
+    NoContent:
+      description: Session revoked
+    Problem400:
+      description: Invalid request, disallowed host, malformed JSON, or validation failure
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/ProblemResponse" }
+    Problem401:
+      description: Missing, expired, invalid, or revoked credentials
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/ProblemResponse" }
+    Problem403:
+      description: Origin or X-Career-Client guard rejected the request
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/ProblemResponse" }
+    Problem404:
+      description: Task, approval, command receipt, artifact, or artifact version was not found
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/ProblemResponse" }
+    Problem409:
+      description: Version, state, idempotency, execution, or artifact integrity conflict
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/ProblemResponse" }
+    Problem429:
+      description: Authentication or command rate/concurrency limit reached
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/ProblemResponse" }
+    Problem500:
+      description: Unexpected request failure; reconcile command receipts before retrying a write
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/ProblemResponse" }
+    Problem503:
+      description: Workspace storage or execution recovery is unavailable
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/ProblemResponse" }
+  schemas:
+    CreateTaskRequest:
+      type: object
+      required: [requestId, title, goal, criteria, inputText]
+      properties:
+        requestId: { type: string, format: uuid, description: Stable idempotency key for this command. }
+        title: { type: string, minLength: 1, maxLength: 160 }
+        goal: { type: string, minLength: 1, maxLength: 4000 }
+        criteria:
+          type: array
+          minItems: 1
+          maxItems: 20
+          items: { type: string, minLength: 1, maxLength: 1000 }
+        inputText: { type: string, maxLength: 100000 }
+        mode: { type: string, enum: [office, development, business], default: office }
+        project: { type: [string, "null"], maxLength: 160, default: null }
+    UpdateTaskRequest:
+      type: object
+      required: [requestId, expectedVersion, title, goal, criteria, inputText]
+      properties:
+        requestId: { type: string, format: uuid }
+        expectedVersion: { type: integer, format: int64, minimum: 0 }
+        title: { type: string, minLength: 1, maxLength: 160 }
+        goal: { type: string, minLength: 1, maxLength: 4000 }
+        criteria:
+          type: array
+          minItems: 1
+          maxItems: 20
+          items: { type: string, minLength: 1, maxLength: 1000 }
+        inputText: { type: string, maxLength: 100000 }
+    ConfirmPlanRequest:
+      type: object
+      required: [requestId, expectedVersion, taskRevision, proposalHash]
+      properties:
+        requestId: { type: string, format: uuid }
+        expectedVersion: { type: integer, format: int64, minimum: 0 }
+        taskRevision: { type: integer, format: int32, minimum: 1 }
+        proposalHash: { $ref: "#/components/schemas/Sha256" }
+    TaskCommandRequest:
+      type: object
+      required: [requestId, expectedVersion]
+      properties:
+        requestId: { type: string, format: uuid }
+        expectedVersion: { type: integer, format: int64, minimum: 0 }
+    ApprovalDecisionRequest:
+      type: object
+      required: [requestId, expectedVersion, payloadHash, decision]
+      properties:
+        requestId: { type: string, format: uuid }
+        expectedVersion: { type: integer, format: int64, minimum: 0 }
+        payloadHash: { $ref: "#/components/schemas/Sha256" }
+        decision: { type: string, enum: [approve, reject] }
+        note: { type: [string, "null"], maxLength: 2000, default: null }
+    AcceptanceRequest:
+      type: object
+      required: [requestId, expectedVersion, taskRevision, artifactId, artifactVersion, contentHash, decision]
+      properties:
+        requestId: { type: string, format: uuid }
+        expectedVersion: { type: integer, format: int64, minimum: 0 }
+        taskRevision: { type: integer, format: int32, minimum: 1 }
+        artifactId: { type: string, minLength: 1 }
+        artifactVersion: { type: integer, format: int32, minimum: 1 }
+        contentHash: { $ref: "#/components/schemas/Sha256" }
+        decision: { type: string, enum: [accept, return] }
+        note: { type: [string, "null"], maxLength: 4000, default: null }
+      allOf:
+        - if:
+            properties:
+              decision: { const: return }
+          then:
+            required: [note]
+            properties:
+              note: { type: string, minLength: 1, maxLength: 4000 }
+    PairRequest:
+      type: object
+      required: [code]
+      properties:
+        code: { type: string, minLength: 1 }
+    SessionResponse:
+      type: object
+      required: [accessToken, expiresAt, workspaceId]
+      properties:
+        accessToken: { type: string, minLength: 43, maxLength: 43, description: Short-lived bearer token. }
+        expiresAt: { type: string, format: date-time }
+        workspaceId: { type: string }
+    BootstrapResponse:
+      type: object
+      required: [product, workspaceId, workspaceName, hasOwner, requiresPairing, protocolVersion]
+      properties:
+        product: { type: string }
+        workspaceId: { type: string }
+        workspaceName: { type: string }
+        hasOwner: { type: boolean }
+        requiresPairing: { type: boolean }
+        protocolVersion: { type: string, const: career-worker/1 }
+    ConnectionResponse:
+      type: object
+      required: [id, name, protocol, endpoint, model, hasCredential, allowLocalEndpoint, testState, testMessage, testedAt, maxOutputTokens, maxModelCalls, maxInputCharacters]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        protocol: { type: string, const: chat-completions }
+        endpoint: { type: string, format: uri }
+        model: { type: string }
+        hasCredential: { type: boolean }
+        allowLocalEndpoint: { type: boolean }
+        testState: { type: string, enum: [untested, verified, failed] }
+        testMessage: { type: [string, "null"] }
+        testedAt: { type: [string, "null"], format: date-time }
+        maxOutputTokens: { type: integer, format: int32, minimum: 256, maximum: 16000 }
+        maxModelCalls: { type: integer, format: int32, minimum: 1, maximum: 10 }
+        maxInputCharacters: { type: integer, format: int32, minimum: 100, maximum: 100000 }
+    SaveConnectionRequest:
+      type: object
+      required: [requestId, name, protocol, endpoint, model]
+      properties:
+        requestId: { type: string, format: uuid }
+        name: { type: string, minLength: 1, maxLength: 80 }
+        protocol: { type: string, const: chat-completions }
+        endpoint: { type: string, format: uri, description: Absolute HTTP(S) endpoint; remote endpoints require HTTPS, credentials/query/fragment are rejected, and private targets are denied. }
+        model: { type: string, minLength: 1, maxLength: 160 }
+        apiKey: { type: [string, "null"], maxLength: 4096, default: null, writeOnly: true, description: Omit to retain an existing credential; never returned by the API. }
+        allowLocalEndpoint: { type: boolean, default: false, description: Must be explicitly true to use a loopback HTTP model endpoint. }
+        maxOutputTokens: { type: integer, format: int32, minimum: 256, maximum: 16000, default: 4096 }
+        maxModelCalls: { type: integer, format: int32, minimum: 1, maximum: 10, default: 6 }
+        maxInputCharacters: { type: integer, format: int32, minimum: 100, maximum: 100000, default: 32000 }
+    TestConnectionRequest:
+      type: object
+      required: [requestId]
+      properties:
+        requestId: { type: string, format: uuid }
+    WorkspaceResponse:
+      type: object
+      required: [workspaceId, name, intakePaused, connection, tasks, snapshotSeq, executionAvailable, executionMessage]
+      properties:
+        workspaceId: { type: string }
+        name: { type: string }
+        intakePaused: { type: boolean }
+        connection:
+          oneOf:
+            - { $ref: "#/components/schemas/ConnectionResponse" }
+            - { type: "null" }
+        tasks:
+          type: array
+          items: { $ref: "#/components/schemas/TaskSummaryResponse" }
+        snapshotSeq: { type: integer, format: int64, minimum: 0 }
+        executionAvailable: { type: boolean, default: true }
+        executionMessage: { type: [string, "null"], default: null }
+    TaskSummaryResponse:
+      type: object
+      required: [id, title, status, revision, version, owner, project, updatedAt, progress, pendingApprovals, pendingArtifacts]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        status: { $ref: "#/components/schemas/TaskStatus" }
+        revision: { type: integer, format: int32, minimum: 1 }
+        version: { type: integer, format: int64, minimum: 0 }
+        owner: { type: string }
+        project: { type: [string, "null"] }
+        updatedAt: { type: string, format: date-time }
+        progress: { type: [string, "null"] }
+        pendingApprovals: { type: integer, format: int32, minimum: 0 }
+        pendingArtifacts: { type: integer, format: int32, minimum: 0 }
+    TaskResponse:
+      type: object
+      required: [id, title, goal, criteria, inputText, mode, project, owner, status, revision, version, plan, runs, approvals, artifacts, acceptances, activity, createdAt, updatedAt, snapshotSeq, availableActions]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        goal: { type: string }
+        criteria: { type: array, items: { type: string } }
+        inputText: { type: string }
+        mode: { type: string, enum: [office, development, business] }
+        project: { type: [string, "null"] }
+        owner: { type: string }
+        status: { $ref: "#/components/schemas/TaskStatus" }
+        revision: { type: integer, format: int32, minimum: 1 }
+        version: { type: integer, format: int64, minimum: 0 }
+        plan: { $ref: "#/components/schemas/PlanResponse" }
+        runs: { type: array, items: { $ref: "#/components/schemas/RunResponse" } }
+        approvals: { type: array, items: { $ref: "#/components/schemas/ApprovalResponse" } }
+        artifacts: { type: array, items: { $ref: "#/components/schemas/ArtifactResponse" } }
+        acceptances: { type: array, items: { $ref: "#/components/schemas/AcceptanceResponse" } }
+        activity: { type: array, items: { $ref: "#/components/schemas/ActivityResponse" } }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        snapshotSeq: { type: integer, format: int64, minimum: 0 }
+        availableActions:
+          type: array
+          items:
+            type: string
+            enum: [confirm-plan, pause, resume, cancel, retry, view-approval, view-artifact, accept, return, edit-plan]
+    PlanResponse:
+      type: object
+      required: [id, version, proposalHash, status, scopeDescription]
+      properties:
+        id: { type: string }
+        version: { type: integer, format: int32, minimum: 1 }
+        proposalHash: { $ref: "#/components/schemas/Sha256" }
+        status: { type: string, enum: [Pending, Confirmed, Expired] }
+        scopeDescription: { type: string }
+    RunResponse:
+      type: object
+      required: [id, taskRevision, status, attemptId, attemptNumber, progress, failureCode, failureMessage, modelCalls, inputTokens, outputTokens, usageState, createdAt, endedAt]
+      properties:
+        id: { type: string }
+        taskRevision: { type: integer, format: int32, minimum: 1 }
+        status: { type: string, enum: [Queued, Running, WaitingApproval, Stopping, Paused, Reconciling, Failed, Succeeded, Cancelled] }
+        attemptId: { type: [string, "null"] }
+        attemptNumber: { type: integer, format: int32, minimum: 0 }
+        progress: { type: [string, "null"] }
+        failureCode: { type: [string, "null"] }
+        failureMessage: { type: [string, "null"] }
+        modelCalls: { type: integer, format: int32, minimum: 0 }
+        inputTokens: { type: integer, format: int64, minimum: 0 }
+        outputTokens: { type: integer, format: int64, minimum: 0 }
+        usageState: { type: string, enum: [not-started, pending, pending-or-unknown, confirmed-price-unknown, known, unknown] }
+        createdAt: { type: string, format: date-time }
+        endedAt: { type: [string, "null"], format: date-time }
+    ApprovalResponse:
+      type: object
+      required: [id, runId, operationId, version, toolName, payloadHash, status, target, content, reason, createdAt, expiresAt, decisionNote]
+      properties:
+        id: { type: string }
+        runId: { type: string }
+        operationId: { type: string }
+        version: { type: integer, format: int32, minimum: 1 }
+        toolName: { type: string }
+        payloadHash: { $ref: "#/components/schemas/Sha256" }
+        status: { type: string, enum: [Pending, Approved, Rejected, Expired, Cancelled] }
+        target: { type: string }
+        content: { type: string }
+        reason: { type: string }
+        createdAt: { type: string, format: date-time }
+        expiresAt: { type: string, format: date-time }
+        decisionNote: { type: [string, "null"] }
+    ArtifactResponse:
+      type: object
+      required: [id, runId, taskRevision, version, title, fileName, contentHash, sizeBytes, mediaType, content, sources, checks, unverified, createdAt]
+      properties:
+        id: { type: string }
+        runId: { type: string }
+        taskRevision: { type: integer, format: int32, minimum: 1 }
+        version: { type: integer, format: int32, minimum: 1 }
+        title: { type: string }
+        fileName: { type: string, pattern: '^[^/\\:]+\.md$', maxLength: 120 }
+        contentHash: { $ref: "#/components/schemas/Sha256" }
+        sizeBytes: { type: integer, format: int64, minimum: 0 }
+        mediaType: { type: string, const: "text/markdown; charset=utf-8" }
+        content: { type: string }
+        sources: { type: array, items: { type: string } }
+        checks: { type: array, items: { type: string } }
+        unverified: { type: array, items: { type: string } }
+        createdAt: { type: string, format: date-time }
+    AcceptanceResponse:
+      type: object
+      required: [id, taskRevision, artifactId, artifactVersion, contentHash, decision, note, createdAt]
+      properties:
+        id: { type: string }
+        taskRevision: { type: integer, format: int32, minimum: 1 }
+        artifactId: { type: string }
+        artifactVersion: { type: integer, format: int32, minimum: 1 }
+        contentHash: { $ref: "#/components/schemas/Sha256" }
+        decision: { type: string, enum: [accept, return] }
+        note: { type: [string, "null"] }
+        createdAt: { type: string, format: date-time }
+    ActivityResponse:
+      type: object
+      required: [id, type, message, occurredAt]
+      properties:
+        id: { type: string }
+        type: { type: string }
+        message: { type: string }
+        occurredAt: { type: string, format: date-time }
+    EventResponse:
+      type: object
+      required: [seq, eventId, schemaVersion, occurredAt, taskId, runId, type, message]
+      properties:
+        seq: { type: integer, format: int64, minimum: 1 }
+        eventId: { type: string }
+        schemaVersion: { type: integer, format: int32, minimum: 1 }
+        occurredAt: { type: string, format: date-time }
+        taskId: { type: [string, "null"] }
+        runId: { type: [string, "null"] }
+        type: { type: string }
+        message: { type: string }
+    CommandReceiptResponse:
+      type: object
+      required: [requestId, route, taskId, version, acceptedAt]
+      properties:
+        requestId: { type: string, format: uuid }
+        route: { type: string }
+        taskId: { type: string }
+        version: { type: integer, format: int64, minimum: 0 }
+        acceptedAt: { type: string, format: date-time }
+    ProblemResponse:
+      type: object
+      required: [type, title, status, detail, code]
+      properties:
+        type: { type: string, format: uri-reference }
+        title: { type: string }
+        status: { type: integer, format: int32 }
+        detail: { type: string }
+        code: { type: string }
+        requestId: { type: [string, "null"], format: uuid, default: null }
+        current:
+          oneOf:
+            - { $ref: "#/components/schemas/TaskResponse" }
+            - { type: "null" }
+          default: null
+    TaskStatus:
+      type: string
+      enum: [AwaitingPlan, Queued, Running, WaitingApproval, Stopping, Paused, Blocked, Failed, InReview, Done, Cancelled]
+    Sha256:
+      type: string
+      pattern: '^[a-f0-9]{64}$'
+      description: Lowercase hexadecimal SHA-256 value returned by the authoritative snapshot.

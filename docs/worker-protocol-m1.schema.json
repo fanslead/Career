@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://career.local/schemas/worker-protocol-m1.schema.json",
+  "title": "Career worker stdio protocol M1",
+  "description": "Line-delimited JSON exchanged between Career.Host and its isolated Career.AgentWorker process. Each line is one JSON value. A line is limited to 1,048,576 UTF-8 bytes, excluding its LF or CRLF terminator. The apiKey in WorkerRequest is a secret: implementations must not log or persist it outside the worker invocation.",
+  "oneOf": [
+    { "$ref": "#/$defs/AgentRunRequestEnvelope" },
+    { "$ref": "#/$defs/WorkerHelloEnvelope" },
+    { "$ref": "#/$defs/ToolPublishEnvelope" },
+    { "$ref": "#/$defs/ModelReserveEnvelope" },
+    { "$ref": "#/$defs/ModelSettleEnvelope" },
+    { "$ref": "#/$defs/ToolPublishReplyEnvelope" },
+    { "$ref": "#/$defs/ModelReplyEnvelope" },
+    { "$ref": "#/$defs/FinalResultEnvelope" },
+    { "$ref": "#/$defs/StartupProtocolErrorEnvelope" }
+  ],
+  "$defs": {
+    "WorkerEnvelope": {
+      "type": "object",
+      "description": "Typed Career JSON-RPC envelope. Null-valued members are part of the serialized envelope shape.",
+      "required": ["jsonrpc", "id", "method", "result", "params", "toolResult", "error", "modelResult"],
+      "properties": {
+        "jsonrpc": { "const": "2.0" },
+        "id": { "type": ["string", "null"] },
+        "method": { "type": ["string", "null"] },
+        "result": { "$ref": "#/$defs/WorkerResponseOrNull" },
+        "params": { "$ref": "#/$defs/JsonValueOrNull" },
+        "toolResult": { "$ref": "#/$defs/WorkerToolResponseOrNull" },
+        "error": { "type": ["string", "null"], "description": "The typed envelope field is a nullable string. A startup parse failure is emitted separately as the JSON-RPC error object described by StartupProtocolErrorEnvelope." },
+        "modelResult": { "$ref": "#/$defs/ModelCallResponseOrNull", "default": null }
+      }
+    },
+    "AgentRunRequestEnvelope": {
+      "allOf": [
+        { "$ref": "#/$defs/WorkerEnvelope" },
+        {
+          "properties": {
+            "id": { "const": "run" },
+            "method": { "const": "agent.run" },
+            "result": { "type": "null" },
+            "params": { "$ref": "#/$defs/WorkerRequest" },
+            "toolResult": { "type": "null" },
+            "error": { "type": "null" },
+            "modelResult": { "type": "null" }
+          }
+        }
+      ]
+    },
+    "WorkerHelloEnvelope": {
+      "allOf": [
+        { "$ref": "#/$defs/WorkerEnvelope" },
+        {
+          "properties": {
+            "id": { "type": "null" },
+            "method": { "const": "worker.hello" },
+            "result": { "type": "null" },
+            "params": { "$ref": "#/$defs/WorkerHello" },
+            "toolResult": { "type": "null" },
+            "error": { "type": "null" },
+            "modelResult": { "type": "null" }
+          }
+        }
+      ]
+    },
+    "ToolPublishEnvelope": {
+      "allOf": [
+        { "$ref": "#/$defs/WorkerEnvelope" },
+        {
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "method": { "const": "tool.publish" },
+            "result": { "type": "null" },
+            "params": { "$ref": "#/$defs/WorkerToolRequest" },
+            "toolResult": { "type": "null" },
+            "error": { "type": "null" },
+            "modelResult": { "type": "null" }
+          }
+        }
+      ]
+    },
+    "ModelReserveEnvelope": {
+      "allOf": [
+        { "$ref": "#/$defs/WorkerEnvelope" },
+        {
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "method": { "const": "model.reserve" },
+            "result": { "type": "null" },
+            "params": { "$ref": "#/$defs/ModelCallRequest" },
+            "toolResult": { "type": "null" },
+            "error": { "type": "null" },
+            "modelResult": { "type": "null" }
+          }
+        }
+      ]
+    },
+    "ModelSettleEnvelope": {
+      "allOf": [
+        { "$ref": "#/$defs/WorkerEnvelope" },
+        {
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "method": { "const": "model.settle" },
+            "result": { "type": "null" },
+            "params": { "$ref": "#/$defs/ModelCallRequest" },
+            "toolResult": { "type": "null" },
+            "error": { "type": "null" },
+            "modelResult": { "type": "null" }
+          }
+        }
+      ]
+    },
+    "ToolPublishReplyEnvelope": {
+      "allOf": [
+        { "$ref": "#/$defs/WorkerEnvelope" },
+        {
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "method": { "type": "null" },
+            "result": { "type": "null" },
+            "params": { "type": "null" },
+            "toolResult": { "$ref": "#/$defs/WorkerToolResponse" },
+            "error": { "type": "null" },
+            "modelResult": { "type": "null" }
+          }
+        }
+      ]
+    },
+    "ModelReplyEnvelope": {
+      "allOf": [
+        { "$ref": "#/$defs/WorkerEnvelope" },
+        {
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "method": { "type": "null" },
+            "result": { "type": "null" },
+            "params": { "type": "null" },
+            "toolResult": { "type": "null" },
+            "error": { "type": "null" },
+            "modelResult": { "$ref": "#/$defs/ModelCallResponse" }
+          }
+        }
+      ]
+    },
+    "FinalResultEnvelope": {
+      "allOf": [
+        { "$ref": "#/$defs/WorkerEnvelope" },
+        {
+          "properties": {
+            "id": { "const": "run" },
+            "method": { "type": "null" },
+            "result": { "$ref": "#/$defs/WorkerResponse" },
+            "params": { "type": "null" },
+            "toolResult": { "type": "null" },
+            "error": { "type": "null" },
+            "modelResult": { "type": "null" }
+          }
+        }
+      ]
+    },
+    "StartupProtocolErrorEnvelope": {
+      "type": "object",
+      "description": "The worker's one startup error shape when it cannot deserialize a valid agent.run request. This raw JSON-RPC error object is emitted before a typed WorkerEnvelope can be constructed.",
+      "required": ["jsonrpc", "id", "error"],
+      "properties": {
+        "jsonrpc": { "const": "2.0" },
+        "id": { "const": "run" },
+        "error": { "$ref": "#/$defs/RpcError" }
+      }
+    },
+    "RpcError": {
+      "type": "object",
+      "required": ["code", "message"],
+      "properties": {
+        "code": { "type": "string" },
+        "message": { "type": "string" }
+      }
+    },
+    "WorkerRequest": {
+      "type": "object",
+      "description": "Fixed input for one isolated worker attempt. The host supplies connection credentials only to this process invocation.",
+      "required": ["protocolVersion", "runId", "attemptId", "hostEpoch", "fencingToken", "operationId", "goal", "criteria", "inputText", "protocol", "endpoint", "model", "apiKey", "maxOutputTokens", "maxModelCalls", "maxInputCharacters"],
+      "properties": {
+        "protocolVersion": { "const": "career-worker/1" },
+        "runId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "attemptId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "hostEpoch": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "fencingToken": { "type": "integer", "format": "int64", "minimum": 1 },
+        "operationId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "goal": { "type": "string" },
+        "criteria": { "type": "array", "maxItems": 100, "items": { "type": "string" } },
+        "inputText": { "type": "string" },
+        "protocol": { "type": "string", "description": "The host currently sends chat-completions. The worker accepts OpenAI Chat Completions spelling variants after normalizing spaces, hyphens, underscores, and case." },
+        "endpoint": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "model": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "apiKey": { "type": "string", "minLength": 1, "maxLength": 256, "writeOnly": true },
+        "maxOutputTokens": { "type": "integer", "format": "int32", "minimum": 1, "maximum": 32768 },
+        "maxModelCalls": { "type": "integer", "format": "int32", "minimum": 1, "maximum": 40 },
+        "maxInputCharacters": { "type": "integer", "format": "int32", "minimum": 1, "maximum": 1000000 },
+        "session": { "$ref": "#/$defs/JsonValueOrNull", "default": null, "description": "Opaque resumable MAF session checkpoint; its internal schema is owned by the MAF version and is not part of career-worker/1." },
+        "approval": { "$ref": "#/$defs/JsonValueOrNull", "default": null, "description": "Opaque fixed tool-approval checkpoint; its internal schema is not part of career-worker/1." },
+        "approved": { "type": ["boolean", "null"], "default": null },
+        "publishedArtifactId": { "type": ["string", "null"], "default": null },
+        "testOnly": { "type": "boolean", "default": false },
+        "allowLocalEndpoint": { "type": "boolean", "default": false }
+      }
+    },
+    "WorkerHello": {
+      "type": "object",
+      "required": ["protocolVersion", "runId", "attemptId", "hostEpoch", "fencingToken"],
+      "properties": {
+        "protocolVersion": { "const": "career-worker/1" },
+        "runId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "attemptId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "hostEpoch": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "fencingToken": { "type": "integer", "format": "int64", "minimum": 1 }
+      }
+    },
+    "WorkerResponse": {
+      "type": "object",
+      "required": ["protocolVersion", "runId", "attemptId", "hostEpoch", "fencingToken", "status", "session", "approval", "callId", "toolName", "fileName", "content", "text", "modelCalls", "inputTokens", "outputTokens", "usageState"],
+      "properties": {
+        "protocolVersion": { "const": "career-worker/1" },
+        "runId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "attemptId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "hostEpoch": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "fencingToken": { "type": "integer", "format": "int64", "minimum": 1 },
+        "status": { "type": "string", "enum": ["WaitingApproval", "ApprovalRejected", "Succeeded", "TestSucceeded", "Failed"] },
+        "session": { "$ref": "#/$defs/JsonValueOrNull" },
+        "approval": { "$ref": "#/$defs/JsonValueOrNull" },
+        "callId": { "type": ["string", "null"] },
+        "toolName": { "type": ["string", "null"] },
+        "fileName": { "type": ["string", "null"] },
+        "content": { "type": ["string", "null"] },
+        "text": { "type": "string" },
+        "modelCalls": { "type": "integer", "format": "int32", "minimum": 0 },
+        "inputTokens": { "type": "integer", "format": "int64", "minimum": 0 },
+        "outputTokens": { "type": "integer", "format": "int64", "minimum": 0 },
+        "usageState": { "type": "string", "enum": ["unknown", "known"] },
+        "errorCode": { "type": ["string", "null"], "default": null },
+        "errorMessage": { "type": ["string", "null"], "default": null }
+      }
+    },
+    "WorkerToolRequest": {
+      "type": "object",
+      "required": ["protocolVersion", "runId", "attemptId", "hostEpoch", "fencingToken", "operationId", "fileName", "content"],
+      "properties": {
+        "protocolVersion": { "const": "career-worker/1" },
+        "runId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "attemptId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "hostEpoch": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "fencingToken": { "type": "integer", "format": "int64", "minimum": 1 },
+        "operationId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "fileName": { "type": "string", "minLength": 1, "maxLength": 120, "pattern": "^[^/\\\\:]+\\.md$" },
+        "content": { "type": "string", "minLength": 1, "maxLength": 800000 }
+      }
+    },
+    "WorkerToolResponse": {
+      "type": "object",
+      "required": ["operationId", "artifactId", "contentHash", "status", "message"],
+      "properties": {
+        "operationId": { "type": "string" },
+        "artifactId": { "type": "string" },
+        "contentHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "status": { "const": "Succeeded" },
+        "message": { "type": "string" }
+      }
+    },
+    "ModelCallRequest": {
+      "type": "object",
+      "required": ["protocolVersion", "runId", "attemptId", "hostEpoch", "fencingToken", "callId", "maxOutputTokens"],
+      "properties": {
+        "protocolVersion": { "const": "career-worker/1" },
+        "runId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "attemptId": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "hostEpoch": { "type": "string", "minLength": 1, "maxLength": 256 },
+        "fencingToken": { "type": "integer", "format": "int64", "minimum": 1 },
+        "callId": { "type": "string", "minLength": 1 },
+        "maxOutputTokens": { "type": "integer", "format": "int32", "minimum": 1, "maximum": 16000 },
+        "inputTokens": { "type": ["integer", "null"], "format": "int64", "minimum": 0, "maximum": 1000000000, "default": null },
+        "outputTokens": { "type": ["integer", "null"], "format": "int64", "minimum": 0, "maximum": 1000000000, "default": null },
+        "usageState": { "type": "string", "enum": ["reserved", "known", "unknown"], "default": "reserved" }
+      }
+    },
+    "ModelCallResponse": {
+      "type": "object",
+      "required": ["callId", "allowed", "remainingCalls", "message"],
+      "properties": {
+        "callId": { "type": "string" },
+        "allowed": { "type": "boolean" },
+        "remainingCalls": { "type": "integer", "format": "int32" },
+        "message": { "type": "string" }
+      }
+    },
+    "WorkerResponseOrNull": {
+      "oneOf": [{ "$ref": "#/$defs/WorkerResponse" }, { "type": "null" }]
+    },
+    "WorkerToolResponseOrNull": {
+      "oneOf": [{ "$ref": "#/$defs/WorkerToolResponse" }, { "type": "null" }]
+    },
+    "ModelCallResponseOrNull": {
+      "oneOf": [{ "$ref": "#/$defs/ModelCallResponse" }, { "type": "null" }]
+    },
+    "JsonValueOrNull": {
+      "type": ["object", "array", "string", "number", "boolean", "null"],
+      "description": "Opaque JSON value or null. No narrower runtime type is declared by the C# JsonElement? contract."
+    }
+  }
+}

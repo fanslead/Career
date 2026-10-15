@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "assertions": {
+    "post_publication_provider_failure_preserves_success": "passed",
+    "worker_final_response_actually_dropped": "passed",
+    "host_reconciles_original_publication": "passed",
+    "one_original_file_and_hash": "passed",
+    "independent_fixed_version_acceptance": "passed"
+  },
+  "keychainCleanup": {
+    "cleanup": true,
+    "status": "passed",
+    "deleteReturnCode": 0,
+    "verificationReturnCode": 44,
+    "absenceVerified": true
+  }
+}

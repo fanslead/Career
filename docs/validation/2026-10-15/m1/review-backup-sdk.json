@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "test": "backup_flow",
+  "status": "passed",
+  "credentialsIncluded": false,
+  "checks": {
+    "acceptedTaskAndArtifactReceiptPreserved": true,
+    "archiveManifestAndFileHashesVerified": true,
+    "databaseIsStandaloneRollbackJournal": true,
+    "damagedRestoreRejectedWithoutChangingTarget": true,
+    "restoredArtifactHashVerified": true,
+    "stableWorkspaceIdPreserved": true,
+    "oldSessionRevoked": true,
+    "restoredIntakePaused": true,
+    "restoreBarrierAuditMarkerRetained": true
+  },
+  "archive": {
+    "entryCount": 7,
+    "bytes": 17984
+  },
+  "cleanup": {
+    "keychainItem": {
+      "cleanup": true,
+      "status": "passed",
+      "deleteReturnCode": 0,
+      "verificationReturnCode": 44,
+      "absenceVerified": true
+    }
+  }
+}

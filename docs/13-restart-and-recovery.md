@@ -148,4 +148,4 @@ Worker 升级先检查协议和 checkpoint schema。能够保留旧版本时让�
 
 检查对象同时包括数据库状态、真实文件/外部效果、重复动作次数、可用的 UI 下一步和未结算预算。每项记录固定依赖和原始日志；未跑标未验证。详细阶段与覆盖矩阵见 [08](08-delivery-and-validation.md)。
 
-当前 P0 已发现回执最终文件半写、工具成功但 Run 收尾失败两个缺口；它们保留在实验记录中。本轮文档给出目标修复合同，未修改代码或宣称缺口已消失。
+P0 的回执最终文件半写、工具成功但 Run 收尾失败两项缺口已修复并完成限定配置验证，见 [复审交付](validation/2026-10-14/p0/review-and-delivery.md)。其证据限专用文件回执与实验运行器，不等于完整 Task/Attempt/lease、外部动作或记忆恢复已经实现。本合同的生产实施与剩余门槛见 [14 生产方案](14-production-implementation-plan.md)及 [15 工作包](15-production-work-packages.md)。

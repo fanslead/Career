@@ -1,0 +1,24 @@
+
+> career-web@0.1.0 test
+> node --experimental-strip-types --test tests/*.test.ts
+
+✔ same active action keeps its requestId and pending metadata excludes the request body (7.151125ms)
+✔ resolving a receipt removes its metadata and releases the command key (0.206541ms)
+✔ legacy UUID-only receipts migrate to a global new-command block (0.181667ms)
+✔ a reloaded command can be reconstructed with the original request ID, route, and method (0.210542ms)
+✔ a 409 recovery marker survives dropping its in-memory body until explicit re-entry (0.1515ms)
+✔ approval decision can rebase only while the same pending fixed payload remains (0.761083ms)
+✔ acceptance decision can rebase only to the same latest artifact in the same review revision (0.161167ms)
+✔ sync retry wait removes its abort listener after timer completion and abort (0.558875ms)
+✔ a late reply for task A cannot replace selected task B (0.476791ms)
+✔ older snapshots cannot move a task or workspace backwards (0.092541ms)
+✔ detail refresh selector includes missing and stale task snapshots only (0.806791ms)
+✔ detail reads stay bounded and failed task IDs can be retried explicitly (0.466625ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 91.646792

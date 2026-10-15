@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "assertions": {
+    "sdk_same_caller_roundtrip": "passed",
+    "different_binary_denied_without_provider_call": "passed",
+    "original_key_and_vault_preserved": "passed",
+    "vault_hash_unchanged": "passed"
+  },
+  "statistics": {
+    "sdk_fixture_requests": 2,
+    "native_denial_elapsed_ms": 26,
+    "provider_requests_after_native_attempt": 0,
+    "vault_size_bytes": 117,
+    "provider_requests_after_sdk_recovery": 2
+  }
+}

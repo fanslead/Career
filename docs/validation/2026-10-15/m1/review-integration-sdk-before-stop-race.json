@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "assertions": {
+    "null_required_title_returns_400": "passed",
+    "main_m1_lifecycle_and_confirmed_usage": "passed",
+    "artifact_tamper_integrity_guard": "passed",
+    "auth_boundaries_and_refresh": "passed",
+    "two_call_budget_enforced": "passed",
+    "pending_approval_restart_recovery": "passed",
+    "running_restart_paused_until_manual_resume": "passed",
+    "pause_during_model_call": "passed",
+    "cancel_during_model_call": "passed",
+    "logout_revokes_access_and_refresh": "passed"
+  },
+  "statistics": {
+    "completed_task_version": 19,
+    "confirmed_model_calls": 3,
+    "confirmed_input_tokens": 771,
+    "confirmed_output_tokens": 66,
+    "fixture_requests_before_extended_scenarios": 5,
+    "fixture_text_responses_before_extended_scenarios": 2,
+    "fixture_tool_responses_before_extended_scenarios": 3,
+    "extended_scenario_count": 7
+  },
+  "cleanup": {
+    "keychainItem": {
+      "cleanup": true,
+      "status": "passed",
+      "deleteReturnCode": 0,
+      "verificationReturnCode": 44,
+      "absenceVerified": true
+    }
+  }
+}

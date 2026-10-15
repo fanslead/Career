@@ -1,0 +1,16 @@
+  Determining projects to restore...
+  Restored /Users/funshow/Desktop/0_funshow/Career/src/Career.Contracts/Career.Contracts.csproj (in 156 ms).
+  Restored /Users/funshow/Desktop/0_funshow/Career/src/Career.Host/Career.Host.csproj (in 156 ms).
+  Restored /Users/funshow/Desktop/0_funshow/Career/src/Career.Core/Career.Core.csproj (in 156 ms).
+  Restored /Users/funshow/Desktop/0_funshow/Career/src/Career.Infrastructure/Career.Infrastructure.csproj (in 157 ms).
+  Career.Contracts -> /Users/funshow/Desktop/0_funshow/Career/src/Career.Contracts/bin/Release/net10.0/Career.Contracts.dll
+  Career.Core -> /Users/funshow/Desktop/0_funshow/Career/src/Career.Core/bin/Release/net10.0/Career.Core.dll
+  Career.Infrastructure -> /Users/funshow/Desktop/0_funshow/Career/src/Career.Infrastructure/bin/Release/net10.0/Career.Infrastructure.dll
+  Career.Host -> /Users/funshow/Desktop/0_funshow/Career/src/Career.Host/bin/Release/net10.0/osx-arm64/Career.Host.dll
+  Generating native code
+EXEC : warning : /var/folders/pd/2_nlvl1s4k121pdk4d5_2c8m0000gn/C/clang/ModuleCache/HCUVWJDIE8ME/Foundation-3EJO22UA1F2B1.pcm: No such file or directory [/Users/funshow/Desktop/0_funshow/Career/src/Career.Host/Career.Host.csproj]
+  note: while processing /var/folders/pd/2_nlvl1s4k121pdk4d5_2c8m0000gn/C/clang/ModuleCache/HCUVWJDIE8ME/Foundation-3EJO22UA1F2B1.pcm
+  note: Linking a static library that was built with -gmodules, but the module cache was not found.  Redistributable static libraries should never be built with module debugging enabled.  The debug experience will be degraded due to incomplete debug information.
+EXEC : warning : /var/folders/pd/2_nlvl1s4k121pdk4d5_2c8m0000gn/C/clang/ModuleCache/HCUVWJDIE8ME/_SwiftConcurrencyShims-2EK7503T0009Z.pcm: No such file or directory [/Users/funshow/Desktop/0_funshow/Career/src/Career.Host/Career.Host.csproj]
+  note: while processing /var/folders/pd/2_nlvl1s4k121pdk4d5_2c8m0000gn/C/clang/ModuleCache/HCUVWJDIE8ME/_SwiftConcurrencyShims-2EK7503T0009Z.pcm
+  Career.Host -> /Users/funshow/Desktop/0_funshow/Career/artifacts/release/osx-arm64/app/

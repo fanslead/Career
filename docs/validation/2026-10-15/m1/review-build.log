@@ -1,0 +1,14 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Career.Contracts -> /Users/funshow/Desktop/0_funshow/Career/src/Career.Contracts/bin/Release/net10.0/Career.Contracts.dll
+  Career.AgentWorker -> /Users/funshow/Desktop/0_funshow/Career/src/Career.AgentWorker/bin/Release/net10.0/Career.AgentWorker.dll
+  Career.Core -> /Users/funshow/Desktop/0_funshow/Career/src/Career.Core/bin/Release/net10.0/Career.Core.dll
+  Career.Infrastructure -> /Users/funshow/Desktop/0_funshow/Career/src/Career.Infrastructure/bin/Release/net10.0/Career.Infrastructure.dll
+  Career.Core.Tests -> /Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll
+  Career.Host -> /Users/funshow/Desktop/0_funshow/Career/src/Career.Host/bin/Release/net10.0/Career.Host.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.03

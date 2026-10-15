@@ -1,0 +1,3 @@
+PASS M1 lifecycle: paired workspace, verified model, idempotent task receipt, plan, fixed tool approval, artifact download/hash, acceptance, and Done (task=task_fb7680a9deb44af19371d09fbebd0e19, version=19).
+PASS M1 safeguards: unauthenticated read/write, hostile Origin, expired access refresh, two-call budget enforcement, pending-approval and running-task restart recovery, pause, cancel, and logout.
+M1 integration report: /Users/funshow/Desktop/0_funshow/Career/artifacts/validation/m1/review-integration-native.json

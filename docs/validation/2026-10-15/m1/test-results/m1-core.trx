@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="16b1a046-70c5-4eca-9499-d0a750914e01" name="@funshowdeMacBook-Pro 2026-10-15 00:18:28" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-15T00:18:29.0854720+08:00" queuing="2026-10-15T00:18:29.0854720+08:00" start="2026-10-15T00:18:28.1849430+08:00" finish="2026-10-15T00:18:29.3222140+08:00" />
+  <TestSettings name="default" id="cd6c7878-6afb-4e7f-b871-e873287553e9">
+    <Deployment runDeploymentRoot="_funshowdeMacBook-Pro_2026-10-15_00_18_28" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="ef0a0fde-08c5-4bfa-9a5d-d0d489a46a9e" testId="15fef911-31a0-8e02-b81c-45f155d7bedf" testName="FileNameRejectsUnsafeOrUnsupportedNames (&quot;C:result.md&quot;)" computerName="funshowdeMacBook-Pro" duration="00:00:00.0000137" startTime="2026-10-15T00:18:28.8199040+08:00" endTime="2026-10-15T00:18:28.8199460+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef0a0fde-08c5-4bfa-9a5d-d0d489a46a9e" />
+    <UnitTestResult executionId="8918cee3-4f73-4836-89bb-44167fdebee8" testId="17a4c82e-efef-8656-a9d9-e4a20e9acae6" testName="FileNameRejectsUnsafeOrUnsupportedNames (&quot;reports\result.md&quot;)" computerName="funshowdeMacBook-Pro" duration="00:00:00.0004117" startTime="2026-10-15T00:18:28.8196280+08:00" endTime="2026-10-15T00:18:28.8201400+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8918cee3-4f73-4836-89bb-44167fdebee8" />
+    <UnitTestResult executionId="6d4becbc-c9ef-4569-b478-3c0de0cfcf7d" testId="18c346f7-9550-8d05-b4fd-d3396b3dcf26" testName="RetryQuarantinesPartialStageAndPublishes" computerName="funshowdeMacBook-Pro" duration="00:00:00.0623948" startTime="2026-10-15T00:18:28.7789360+08:00" endTime="2026-10-15T00:18:28.8505520+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d4becbc-c9ef-4569-b478-3c0de0cfcf7d" />
+    <UnitTestResult executionId="1b014662-ad7e-463a-a2a7-74d3c38bda9f" testId="1300b3d7-82f0-85e9-b62c-8f930db7a7b5" testName="PublicationHashChangesWhenContentOrTargetChanges" computerName="funshowdeMacBook-Pro" duration="00:00:00.0084127" startTime="2026-10-15T00:18:28.7789070+08:00" endTime="2026-10-15T00:18:28.7991980+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b014662-ad7e-463a-a2a7-74d3c38bda9f" />
+    <UnitTestResult executionId="d1c225b9-a318-49c5-a04b-684cf43ee105" testId="1fec074e-24ae-87dc-b6c3-38fe19eae551" testName="FileNameRejectsUnsafeOrUnsupportedNames (&quot;.draft.md&quot;)" computerName="funshowdeMacBook-Pro" duration="00:00:00.0000100" startTime="2026-10-15T00:18:28.8199570+08:00" endTime="2026-10-15T00:18:28.8199820+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1c225b9-a318-49c5-a04b-684cf43ee105" />
+    <UnitTestResult executionId="f07b3e9b-63d7-421f-a3bc-40b23e4cb96a" testId="16918084-dff5-8287-8898-eae16d1e255b" testName="CommandReceiptReplaysOnceAndRejectsPayloadReuse" computerName="funshowdeMacBook-Pro" duration="00:00:00.4842665" startTime="2026-10-15T00:18:28.7788660+08:00" endTime="2026-10-15T00:18:29.2724870+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f07b3e9b-63d7-421f-a3bc-40b23e4cb96a" />
+    <UnitTestResult executionId="94562965-57e4-49ce-a951-5a6db5337cd6" testId="1cb0c8f5-9510-8775-a916-467b9110c096" testName="ModelCallLimitPersistsAcrossAttemptsAndRejectsOldAttemptFence" computerName="funshowdeMacBook-Pro" duration="00:00:00.1841965" startTime="2026-10-15T00:18:29.0894530+08:00" endTime="2026-10-15T00:18:29.2737100+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94562965-57e4-49ce-a951-5a6db5337cd6" />
+    <UnitTestResult executionId="c815633f-739e-49fe-908c-fd80182deac8" testId="1fa52ef0-0bc3-863c-a621-0f8f693e466d" testName="PublishReturnsHashOfWrittenFileBytes" computerName="funshowdeMacBook-Pro" duration="00:00:00.0622321" startTime="2026-10-15T00:18:28.7789490+08:00" endTime="2026-10-15T00:18:28.8503920+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c815633f-739e-49fe-908c-fd80182deac8" />
+    <UnitTestResult executionId="540345e7-d07e-45e2-a293-87c1cf9c92c2" testId="16dc49ce-e689-8551-aebe-45ea04146e5c" testName="DecideApproval_RejectsOldTaskVersionAndPayloadHashWithoutPublishing" computerName="funshowdeMacBook-Pro" duration="00:00:00.2128210" startTime="2026-10-15T00:18:28.8221800+08:00" endTime="2026-10-15T00:18:29.0351130+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="540345e7-d07e-45e2-a293-87c1cf9c92c2" />
+    <UnitTestResult executionId="d7410888-54e4-4220-8016-b0d4b742f99a" testId="17329689-b1a1-87bd-834c-598b843ebaf1" testName="Return_CreatesNewRevisionAndRunPreservesPriorArtifactAndRejectsItsHashAndVersion" computerName="funshowdeMacBook-Pro" duration="00:00:00.4250024" startTime="2026-10-15T00:18:28.8638830+08:00" endTime="2026-10-15T00:18:29.2895190+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d7410888-54e4-4220-8016-b0d4b742f99a" />
+    <UnitTestResult executionId="87f7708a-87e1-4881-a4a6-cc03bc2fd1fc" testId="10a7e454-8438-8e15-b98e-591ca9eb96c4" testName="AcceptanceInsertRequiresPublishedArtifactForeignKey" computerName="funshowdeMacBook-Pro" duration="00:00:00.4767274" startTime="2026-10-15T00:18:28.7789410+08:00" endTime="2026-10-15T00:18:29.2650410+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87f7708a-87e1-4881-a4a6-cc03bc2fd1fc" />
+    <UnitTestResult executionId="433c89ac-60ff-4c34-8d5b-1a524573948d" testId="1725f016-0cee-8a5f-9296-a65a8d8bf9a4" testName="Pause_WaitsForStopAcknowledgementAndRevisedUnconfirmedPlanCannotResume" computerName="funshowdeMacBook-Pro" duration="00:00:00.2056963" startTime="2026-10-15T00:18:29.0351660+08:00" endTime="2026-10-15T00:18:29.2409360+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="433c89ac-60ff-4c34-8d5b-1a524573948d" />
+    <UnitTestResult executionId="0f3bb630-d4be-47d5-bffc-2db1578a5826" testId="1d9da6fc-9820-8762-8ac2-78fdee418935" testName="RecoverAfterRestart_PreservesPendingApprovalWithoutStartingOrPublishing" computerName="funshowdeMacBook-Pro" duration="00:00:00.1517972" startTime="2026-10-15T00:18:29.1150860+08:00" endTime="2026-10-15T00:18:29.2669620+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f3bb630-d4be-47d5-bffc-2db1578a5826" />
+    <UnitTestResult executionId="0ef10a4e-5280-4dfb-8f1a-6b2f53c3a63d" testId="14e2006a-4ab4-8df2-be32-3ba022c9e425" testName="UniqueActiveRunConflictRollsBackEventAndTask" computerName="funshowdeMacBook-Pro" duration="00:00:00.4814293" startTime="2026-10-15T00:18:28.7789220+08:00" endTime="2026-10-15T00:18:29.2696040+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ef10a4e-5280-4dfb-8f1a-6b2f53c3a63d" />
+    <UnitTestResult executionId="f45cda3b-c69a-49b4-af2a-239120ce0974" testId="1dd6a177-b823-875e-a381-16dd8a81782d" testName="ReadRejectsTamperingAndPreservesFileBytes" computerName="funshowdeMacBook-Pro" duration="00:00:00.0620309" startTime="2026-10-15T00:18:28.7789270+08:00" endTime="2026-10-15T00:18:28.8502350+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f45cda3b-c69a-49b4-af2a-239120ce0974" />
+    <UnitTestResult executionId="5246c73f-8cd5-489f-bdf2-3f9d640abc06" testId="1fe47ad4-cf15-89bb-b53b-9d04e212f75d" testName="FileNameRejectsUnsafeOrUnsupportedNames (&quot;bad&#xA;name.md&quot;)" computerName="funshowdeMacBook-Pro" duration="00:00:00.0000087" startTime="2026-10-15T00:18:28.8200250+08:00" endTime="2026-10-15T00:18:28.8200450+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5246c73f-8cd5-489f-bdf2-3f9d640abc06" />
+    <UnitTestResult executionId="94eb29d6-0df1-4092-991d-81630eb0e8dc" testId="14fbde5b-b769-8b07-9033-caa21ea1e77f" testName="FileNameRejectsUnsafeOrUnsupportedNames (&quot;result.txt&quot;)" computerName="funshowdeMacBook-Pro" duration="00:00:00.0000114" startTime="2026-10-15T00:18:28.8199900+08:00" endTime="2026-10-15T00:18:28.8200160+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94eb29d6-0df1-4092-991d-81630eb0e8dc" />
+    <UnitTestResult executionId="32bebf0a-9962-4518-9de1-9318234553fc" testId="1a80769a-d846-87ed-9616-5c86d44664d8" testName="RequestIdRejectsMalformedValueAndAcceptsGuid" computerName="funshowdeMacBook-Pro" duration="00:00:00.0002183" startTime="2026-10-15T00:18:28.8200810+08:00" endTime="2026-10-15T00:18:28.8208710+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32bebf0a-9962-4518-9de1-9318234553fc" />
+    <UnitTestResult executionId="d057efc4-38f7-42c6-bb91-94edb6610643" testId="136c609a-5595-8b0c-b8fb-256d6644e3b7" testName="PublishCompleteAndAccept_RequiresSeparateAcceptanceAfterRunSucceeds" computerName="funshowdeMacBook-Pro" duration="00:00:00.3549550" startTime="2026-10-15T00:18:28.8221520+08:00" endTime="2026-10-15T00:18:29.1772430+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d057efc4-38f7-42c6-bb91-94edb6610643" />
+    <UnitTestResult executionId="3840c165-7f35-4855-9cff-abff26a68dbd" testId="1eebc1a0-925a-83d6-b047-a606af8b6b8a" testName="FileNameRejectsUnsafeOrUnsupportedNames (&quot;../result.md&quot;)" computerName="funshowdeMacBook-Pro" duration="00:00:00.0018363" startTime="2026-10-15T00:18:28.8019240+08:00" endTime="2026-10-15T00:18:28.8047070+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3840c165-7f35-4855-9cff-abff26a68dbd" />
+    <UnitTestResult executionId="69656bfb-aea2-4eb7-b9cf-700d99eda26b" testId="18733b13-a583-8985-b75b-544e2ab00296" testName="PlanHashChangesWhenRevisionOrInputChanges" computerName="funshowdeMacBook-Pro" duration="00:00:00.0092026" startTime="2026-10-15T00:18:28.7789570+08:00" endTime="2026-10-15T00:18:28.7992030+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69656bfb-aea2-4eb7-b9cf-700d99eda26b" />
+    <UnitTestResult executionId="d1eea5c9-b17c-4149-aaa1-4763da4844e7" testId="17d37d1e-591d-87aa-a5c1-e6253ea7aab1" testName="Publish_RejectsUnapprovedOperationWithoutCreatingFile" computerName="funshowdeMacBook-Pro" duration="00:00:00.2390227" startTime="2026-10-15T00:18:28.8503040+08:00" endTime="2026-10-15T00:18:29.0893990+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1eea5c9-b17c-4149-aaa1-4763da4844e7" />
+    <UnitTestResult executionId="32153ceb-7712-4f60-abd0-762485497644" testId="1fdf11bd-b0f1-8167-b307-77dfc4a47a12" testName="FileNameRejectsUnsafeOrUnsupportedNames (&quot;this-filename-is-more-than-one-hundred-and-twenty-characters-long-which-the-domain-rejects-to-keep-publication-names-bounded.md&quot;)" computerName="funshowdeMacBook-Pro" duration="00:00:00.0000108" startTime="2026-10-15T00:18:28.8200520+08:00" endTime="2026-10-15T00:18:28.8200740+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32153ceb-7712-4f60-abd0-762485497644" />
+    <UnitTestResult executionId="1cd5e776-f3cc-456e-b889-3c483792358e" testId="1416c6ee-4efe-8a0f-bb94-5e97e9aab411" testName="Publish_RejectsChangedContentAndReplayReturnsOriginalArtifactWithoutDuplicateFile" computerName="funshowdeMacBook-Pro" duration="00:00:00.3001687" startTime="2026-10-15T00:18:28.8504380+08:00" endTime="2026-10-15T00:18:29.1506910+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1cd5e776-f3cc-456e-b889-3c483792358e" />
+    <UnitTestResult executionId="3fd26921-51c5-4020-80ef-5d12867d32dd" testId="14665140-7746-8c83-b59d-eab28b54d14a" testName="IncompatibleMigrationRollsBackCreatedTables" computerName="funshowdeMacBook-Pro" duration="00:00:00.0750591" startTime="2026-10-15T00:18:28.7789530+08:00" endTime="2026-10-15T00:18:28.8632640+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3fd26921-51c5-4020-80ef-5d12867d32dd" />
+    <UnitTestResult executionId="d451fc23-b255-4970-8809-620499784634" testId="102c069c-148e-8825-b353-d27a6538462e" testName="AwaitApproval_RejectsSucceededOperationWithoutResettingArtifactOrOperation" computerName="funshowdeMacBook-Pro" duration="00:00:00.2643840" startTime="2026-10-15T00:18:28.8505730+08:00" endTime="2026-10-15T00:18:29.1150190+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d451fc23-b255-4970-8809-620499784634" />
+    <UnitTestResult executionId="14b4ea85-c2bc-4e9f-8954-b553351645a7" testId="11f7ef8a-76b3-802e-8c75-039b63286bf1" testName="FileNameRejectsUnsafeOrUnsupportedNames (&quot;reports/result.md&quot;)" computerName="funshowdeMacBook-Pro" duration="00:00:00.0001794" startTime="2026-10-15T00:18:28.8196070+08:00" endTime="2026-10-15T00:18:28.8198670+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14b4ea85-c2bc-4e9f-8954-b553351645a7" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PublicationHashChangesWhenContentOrTargetChanges" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1300b3d7-82f0-85e9-b62c-8f930db7a7b5">
+      <Execution id="1b014662-ad7e-463a-a2a7-74d3c38bda9f" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="PublicationHashChangesWhenContentOrTargetChanges" />
+    </UnitTest>
+    <UnitTest name="FileNameRejectsUnsafeOrUnsupportedNames (&quot;reports/result.md&quot;)" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="11f7ef8a-76b3-802e-8c75-039b63286bf1">
+      <Execution id="14b4ea85-c2bc-4e9f-8954-b553351645a7" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="FileNameRejectsUnsafeOrUnsupportedNames" />
+    </UnitTest>
+    <UnitTest name="FileNameRejectsUnsafeOrUnsupportedNames (&quot;result.txt&quot;)" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="14fbde5b-b769-8b07-9033-caa21ea1e77f">
+      <Execution id="94eb29d6-0df1-4092-991d-81630eb0e8dc" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="FileNameRejectsUnsafeOrUnsupportedNames" />
+    </UnitTest>
+    <UnitTest name="IncompatibleMigrationRollsBackCreatedTables" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="14665140-7746-8c83-b59d-eab28b54d14a">
+      <Execution id="3fd26921-51c5-4020-80ef-5d12867d32dd" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.CareerStoreTests" name="IncompatibleMigrationRollsBackCreatedTables" />
+    </UnitTest>
+    <UnitTest name="FileNameRejectsUnsafeOrUnsupportedNames (&quot;this-filename-is-more-than-one-hundred-and-twenty-characters-long-which-the-domain-rejects-to-keep-publication-names-bounded.md&quot;)" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1fdf11bd-b0f1-8167-b307-77dfc4a47a12">
+      <Execution id="32153ceb-7712-4f60-abd0-762485497644" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="FileNameRejectsUnsafeOrUnsupportedNames" />
+    </UnitTest>
+    <UnitTest name="FileNameRejectsUnsafeOrUnsupportedNames (&quot;C:result.md&quot;)" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="15fef911-31a0-8e02-b81c-45f155d7bedf">
+      <Execution id="ef0a0fde-08c5-4bfa-9a5d-d0d489a46a9e" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="FileNameRejectsUnsafeOrUnsupportedNames" />
+    </UnitTest>
+    <UnitTest name="FileNameRejectsUnsafeOrUnsupportedNames (&quot;.draft.md&quot;)" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1fec074e-24ae-87dc-b6c3-38fe19eae551">
+      <Execution id="d1c225b9-a318-49c5-a04b-684cf43ee105" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="FileNameRejectsUnsafeOrUnsupportedNames" />
+    </UnitTest>
+    <UnitTest name="Return_CreatesNewRevisionAndRunPreservesPriorArtifactAndRejectsItsHashAndVersion" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="17329689-b1a1-87bd-834c-598b843ebaf1">
+      <Execution id="d7410888-54e4-4220-8016-b0d4b742f99a" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.TaskServiceLifecycleTests" name="Return_CreatesNewRevisionAndRunPreservesPriorArtifactAndRejectsItsHashAndVersion" />
+    </UnitTest>
+    <UnitTest name="DecideApproval_RejectsOldTaskVersionAndPayloadHashWithoutPublishing" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="16dc49ce-e689-8551-aebe-45ea04146e5c">
+      <Execution id="540345e7-d07e-45e2-a293-87c1cf9c92c2" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.TaskServiceLifecycleTests" name="DecideApproval_RejectsOldTaskVersionAndPayloadHashWithoutPublishing" />
+    </UnitTest>
+    <UnitTest name="RecoverAfterRestart_PreservesPendingApprovalWithoutStartingOrPublishing" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1d9da6fc-9820-8762-8ac2-78fdee418935">
+      <Execution id="0f3bb630-d4be-47d5-bffc-2db1578a5826" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.TaskServiceLifecycleTests" name="RecoverAfterRestart_PreservesPendingApprovalWithoutStartingOrPublishing" />
+    </UnitTest>
+    <UnitTest name="FileNameRejectsUnsafeOrUnsupportedNames (&quot;reports\result.md&quot;)" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="17a4c82e-efef-8656-a9d9-e4a20e9acae6">
+      <Execution id="8918cee3-4f73-4836-89bb-44167fdebee8" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="FileNameRejectsUnsafeOrUnsupportedNames" />
+    </UnitTest>
+    <UnitTest name="PlanHashChangesWhenRevisionOrInputChanges" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="18733b13-a583-8985-b75b-544e2ab00296">
+      <Execution id="69656bfb-aea2-4eb7-b9cf-700d99eda26b" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="PlanHashChangesWhenRevisionOrInputChanges" />
+    </UnitTest>
+    <UnitTest name="Pause_WaitsForStopAcknowledgementAndRevisedUnconfirmedPlanCannotResume" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1725f016-0cee-8a5f-9296-a65a8d8bf9a4">
+      <Execution id="433c89ac-60ff-4c34-8d5b-1a524573948d" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.TaskServiceLifecycleTests" name="Pause_WaitsForStopAcknowledgementAndRevisedUnconfirmedPlanCannotResume" />
+    </UnitTest>
+    <UnitTest name="UniqueActiveRunConflictRollsBackEventAndTask" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="14e2006a-4ab4-8df2-be32-3ba022c9e425">
+      <Execution id="0ef10a4e-5280-4dfb-8f1a-6b2f53c3a63d" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.CareerStoreTests" name="UniqueActiveRunConflictRollsBackEventAndTask" />
+    </UnitTest>
+    <UnitTest name="RetryQuarantinesPartialStageAndPublishes" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="18c346f7-9550-8d05-b4fd-d3396b3dcf26">
+      <Execution id="6d4becbc-c9ef-4569-b478-3c0de0cfcf7d" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.ArtifactPublisherTests" name="RetryQuarantinesPartialStageAndPublishes" />
+    </UnitTest>
+    <UnitTest name="ModelCallLimitPersistsAcrossAttemptsAndRejectsOldAttemptFence" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1cb0c8f5-9510-8775-a916-467b9110c096">
+      <Execution id="94562965-57e4-49ce-a951-5a6db5337cd6" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.TaskServiceLifecycleTests" name="ModelCallLimitPersistsAcrossAttemptsAndRejectsOldAttemptFence" />
+    </UnitTest>
+    <UnitTest name="Publish_RejectsChangedContentAndReplayReturnsOriginalArtifactWithoutDuplicateFile" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1416c6ee-4efe-8a0f-bb94-5e97e9aab411">
+      <Execution id="1cd5e776-f3cc-456e-b889-3c483792358e" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.TaskServiceLifecycleTests" name="Publish_RejectsChangedContentAndReplayReturnsOriginalArtifactWithoutDuplicateFile" />
+    </UnitTest>
+    <UnitTest name="RequestIdRejectsMalformedValueAndAcceptsGuid" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1a80769a-d846-87ed-9616-5c86d44664d8">
+      <Execution id="32bebf0a-9962-4518-9de1-9318234553fc" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="RequestIdRejectsMalformedValueAndAcceptsGuid" />
+    </UnitTest>
+    <UnitTest name="FileNameRejectsUnsafeOrUnsupportedNames (&quot;bad&#xA;name.md&quot;)" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1fe47ad4-cf15-89bb-b53b-9d04e212f75d">
+      <Execution id="5246c73f-8cd5-489f-bdf2-3f9d640abc06" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="FileNameRejectsUnsafeOrUnsupportedNames" />
+    </UnitTest>
+    <UnitTest name="ReadRejectsTamperingAndPreservesFileBytes" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1dd6a177-b823-875e-a381-16dd8a81782d">
+      <Execution id="f45cda3b-c69a-49b4-af2a-239120ce0974" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.ArtifactPublisherTests" name="ReadRejectsTamperingAndPreservesFileBytes" />
+    </UnitTest>
+    <UnitTest name="Publish_RejectsUnapprovedOperationWithoutCreatingFile" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="17d37d1e-591d-87aa-a5c1-e6253ea7aab1">
+      <Execution id="d1eea5c9-b17c-4149-aaa1-4763da4844e7" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.TaskServiceLifecycleTests" name="Publish_RejectsUnapprovedOperationWithoutCreatingFile" />
+    </UnitTest>
+    <UnitTest name="AcceptanceInsertRequiresPublishedArtifactForeignKey" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="10a7e454-8438-8e15-b98e-591ca9eb96c4">
+      <Execution id="87f7708a-87e1-4881-a4a6-cc03bc2fd1fc" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.CareerStoreTests" name="AcceptanceInsertRequiresPublishedArtifactForeignKey" />
+    </UnitTest>
+    <UnitTest name="AwaitApproval_RejectsSucceededOperationWithoutResettingArtifactOrOperation" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="102c069c-148e-8825-b353-d27a6538462e">
+      <Execution id="d451fc23-b255-4970-8809-620499784634" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.TaskServiceLifecycleTests" name="AwaitApproval_RejectsSucceededOperationWithoutResettingArtifactOrOperation" />
+    </UnitTest>
+    <UnitTest name="CommandReceiptReplaysOnceAndRejectsPayloadReuse" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="16918084-dff5-8287-8898-eae16d1e255b">
+      <Execution id="f07b3e9b-63d7-421f-a3bc-40b23e4cb96a" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.CareerStoreTests" name="CommandReceiptReplaysOnceAndRejectsPayloadReuse" />
+    </UnitTest>
+    <UnitTest name="PublishCompleteAndAccept_RequiresSeparateAcceptanceAfterRunSucceeds" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="136c609a-5595-8b0c-b8fb-256d6644e3b7">
+      <Execution id="d057efc4-38f7-42c6-bb91-94edb6610643" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.TaskServiceLifecycleTests" name="PublishCompleteAndAccept_RequiresSeparateAcceptanceAfterRunSucceeds" />
+    </UnitTest>
+    <UnitTest name="PublishReturnsHashOfWrittenFileBytes" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1fa52ef0-0bc3-863c-a621-0f8f693e466d">
+      <Execution id="c815633f-739e-49fe-908c-fd80182deac8" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.ArtifactPublisherTests" name="PublishReturnsHashOfWrittenFileBytes" />
+    </UnitTest>
+    <UnitTest name="FileNameRejectsUnsafeOrUnsupportedNames (&quot;../result.md&quot;)" storage="/users/funshow/desktop/0_funshow/career/tests/career.core.tests/bin/release/net10.0/career.core.tests.dll" id="1eebc1a0-925a-83d6-b047-a606af8b6b8a">
+      <Execution id="3840c165-7f35-4855-9cff-abff26a68dbd" />
+      <TestMethod codeBase="/Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll" adapterTypeName="executor://mstestadapter/v4" className="Career.Core.Tests.DomainRulesTests" name="FileNameRejectsUnsafeOrUnsupportedNames" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="15fef911-31a0-8e02-b81c-45f155d7bedf" executionId="ef0a0fde-08c5-4bfa-9a5d-d0d489a46a9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17a4c82e-efef-8656-a9d9-e4a20e9acae6" executionId="8918cee3-4f73-4836-89bb-44167fdebee8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18c346f7-9550-8d05-b4fd-d3396b3dcf26" executionId="6d4becbc-c9ef-4569-b478-3c0de0cfcf7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1300b3d7-82f0-85e9-b62c-8f930db7a7b5" executionId="1b014662-ad7e-463a-a2a7-74d3c38bda9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fec074e-24ae-87dc-b6c3-38fe19eae551" executionId="d1c225b9-a318-49c5-a04b-684cf43ee105" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16918084-dff5-8287-8898-eae16d1e255b" executionId="f07b3e9b-63d7-421f-a3bc-40b23e4cb96a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1cb0c8f5-9510-8775-a916-467b9110c096" executionId="94562965-57e4-49ce-a951-5a6db5337cd6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fa52ef0-0bc3-863c-a621-0f8f693e466d" executionId="c815633f-739e-49fe-908c-fd80182deac8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16dc49ce-e689-8551-aebe-45ea04146e5c" executionId="540345e7-d07e-45e2-a293-87c1cf9c92c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17329689-b1a1-87bd-834c-598b843ebaf1" executionId="d7410888-54e4-4220-8016-b0d4b742f99a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10a7e454-8438-8e15-b98e-591ca9eb96c4" executionId="87f7708a-87e1-4881-a4a6-cc03bc2fd1fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1725f016-0cee-8a5f-9296-a65a8d8bf9a4" executionId="433c89ac-60ff-4c34-8d5b-1a524573948d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d9da6fc-9820-8762-8ac2-78fdee418935" executionId="0f3bb630-d4be-47d5-bffc-2db1578a5826" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14e2006a-4ab4-8df2-be32-3ba022c9e425" executionId="0ef10a4e-5280-4dfb-8f1a-6b2f53c3a63d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dd6a177-b823-875e-a381-16dd8a81782d" executionId="f45cda3b-c69a-49b4-af2a-239120ce0974" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fe47ad4-cf15-89bb-b53b-9d04e212f75d" executionId="5246c73f-8cd5-489f-bdf2-3f9d640abc06" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14fbde5b-b769-8b07-9033-caa21ea1e77f" executionId="94eb29d6-0df1-4092-991d-81630eb0e8dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a80769a-d846-87ed-9616-5c86d44664d8" executionId="32bebf0a-9962-4518-9de1-9318234553fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="136c609a-5595-8b0c-b8fb-256d6644e3b7" executionId="d057efc4-38f7-42c6-bb91-94edb6610643" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1eebc1a0-925a-83d6-b047-a606af8b6b8a" executionId="3840c165-7f35-4855-9cff-abff26a68dbd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18733b13-a583-8985-b75b-544e2ab00296" executionId="69656bfb-aea2-4eb7-b9cf-700d99eda26b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17d37d1e-591d-87aa-a5c1-e6253ea7aab1" executionId="d1eea5c9-b17c-4149-aaa1-4763da4844e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fdf11bd-b0f1-8167-b307-77dfc4a47a12" executionId="32153ceb-7712-4f60-abd0-762485497644" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1416c6ee-4efe-8a0f-bb94-5e97e9aab411" executionId="1cd5e776-f3cc-456e-b889-3c483792358e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14665140-7746-8c83-b59d-eab28b54d14a" executionId="3fd26921-51c5-4020-80ef-5d12867d32dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="102c069c-148e-8825-b353-d27a6538462e" executionId="d451fc23-b255-4970-8809-620499784634" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11f7ef8a-76b3-802e-8c75-039b63286bf1" executionId="14b4ea85-c2bc-4e9f-8954-b553351645a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="27" executed="27" passed="27" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Test Parallelization enabled for /Users/funshow/Desktop/0_funshow/Career/tests/Career.Core.Tests/bin/Release/net10.0/Career.Core.Tests.dll (Workers: 10, Scope: MethodLevel)
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

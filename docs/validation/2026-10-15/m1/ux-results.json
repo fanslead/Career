@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "checks": {
+    "navigationPreservedTaskDraft": true,
+    "approval320NoHorizontalOverflow": true,
+    "approval320AllFooterActionsInViewport": true,
+    "offlineApprovalDisabledAndNoteRetained": true,
+    "reconnectNoteRetained": true,
+    "staleApprovalConflictRetainedNote": true,
+    "actualChromeZoom200Confirmed": true,
+    "keyboardReachedZoomedConfirmation": true,
+    "acceptance390ActionsVisible": true,
+    "escapeRestoredTriggerFocus": true,
+    "acceptanceKeyboardReturnedMainFocus": true,
+    "uiDownloadHashMatchedPublishedVersion": true
+  },
+  "finalUi": {
+    "acceptedArtifacts": 2,
+    "documentWidth": 1280,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visibleButtons": [
+      {
+        "height": 58.59375,
+        "text": "工作台待处理与近期成果"
+      },
+      {
+        "height": 58.59375,
+        "text": "项目项目目标与任务"
+      },
+      {
+        "height": 58.59375,
+        "text": "团队成员与分工"
+      },
+      {
+        "height": 58.59375,
+        "text": "资料知识库与记忆"
+      },
+      {
+        "height": 58.59375,
+        "text": "设置模型与工作区"
+      },
+      {
+        "height": 44.796875,
+        "text": "退出"
+      },
+      {
+        "height": 44.796875,
+        "text": "总览"
+      },
+      {
+        "height": 44.796875,
+        "text": "任务"
+      },
+      {
+        "height": 44.796875,
+        "text": "审批"
+      },
+      {
+        "height": 44.796875,
+        "text": "成果"
+      },
+      {
+        "height": 44.796875,
+        "text": "下载固定版本"
+      },
+      {
+        "height": 44.796875,
+        "text": "打开任务与验收"
+      },
+      {
+        "height": 44.796875,
+        "text": "下载固定版本"
+      },
+      {
+        "height": 44.796875,
+        "text": "打开任务与验收"
+      }
+    ],
+    "visibleDialogCount": 0
+  }
+}

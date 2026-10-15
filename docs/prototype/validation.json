@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-14",
+  "kind": "interactive-prototype-only",
+  "browser": "Codex in-app browser",
+  "checks": [
+    {
+      "id": "UX-P01",
+      "name": "首次交办、失败返回、草稿与非敏感连接字段保留",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P02",
+      "name": "计划确认后才开始执行；键盘页签焦点保留",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P03",
+      "name": "停止中到已暂停、离线禁写、刷新后仍离线、重连补齐",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P04",
+      "name": "许可后未知结果不重发；核对结论必须有依据；SMTP接受不等于送达",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P05",
+      "name": "报告验收必须勾选；验收后另一邮件任务仍待处理",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P06",
+      "name": "新增团队成员、职责能力保存与列表反馈",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P07",
+      "name": "知识解析失败与重试、记忆共享预览及版本变化、遗忘范围预览",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P08",
+      "name": "连接测试与邮件试发分离、备份恢复新目录及缺密钥提示、账号会话入口",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P09",
+      "name": "320px五菜单、任务、验收、核对弹窗无页面横溢；390px恢复页无横溢；Esc关闭弹窗",
+      "result": "pass",
+      "layout": [
+        {
+          "scrollWidth": 320,
+          "title": "把相关的事，放在一起。",
+          "unlabelledInputs": [],
+          "unnamed": 0,
+          "width": 320
+        },
+        {
+          "scrollWidth": 320,
+          "title": "团队",
+          "unlabelledInputs": [],
+          "unnamed": 0,
+          "width": 320
+        },
+        {
+          "scrollWidth": 320,
+          "title": "资料",
+          "unlabelledInputs": [],
+          "unnamed": 0,
+          "width": 320
+        },
+        {
+          "scrollWidth": 320,
+          "title": "设置",
+          "unlabelledInputs": [],
+          "unnamed": 0,
+          "width": 320
+        }
+      ]
+    },
+    {
+      "id": "UX-P10",
+      "name": "键盘方向键页签焦点随选择移动；A任务消息草稿不进入B任务",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P11",
+      "name": "重连期间打开的弹窗在状态补齐后恢复操作",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P12",
+      "name": "对话搜索无结果提示、创建项目后的空状态隔离",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P13",
+      "name": "全部任务包含独立草稿；待确认计划不能直接执行；暂停派发保持等待且无活动/费用；恢复接单后执行",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P14",
+      "name": "计划返回后负责人和预算保留；重新交办同一草稿不重复建任务；研发页显示对应资料与验收要求",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P15",
+      "name": "320px更新后任务页无横向溢出，当前可见操作按钮均至少44px；390px任务截图已刷新",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P16",
+      "name": "索引旧代次保留至候选完成；候选记忆发布；通讯录新增和通知频率保存；API范围明确对象；恢复唯一当前会话；备份策略与诊断预览；跨一级页面保留设置草稿",
+      "result": "pass"
+    },
+    {
+      "id": "UX-P17",
+      "name": "新增账号/访问页面320px无横向溢出、无未命名输入、可见操作按钮至少44px；控制台无警告或错误",
+      "result": "pass"
+    }
+  ],
+  "notRun": [
+    "真实模型/工具/邮件/数据库/身份/备份",
+    "200%浏览器缩放",
+    "完整屏幕阅读器",
+    "真实手机与软键盘",
+    "Windows和Linux原生浏览器"
+  ]
+}
